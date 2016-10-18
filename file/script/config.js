@@ -1,0 +1,1 @@
+var DTPath = "http://127.0.0.1/destoon/";var SKPath = "http://127.0.0.1/destoon/skin/default/";var MEPath = "http://127.0.0.1/destoon/member/";var DTEditor = "DT_EDITOR";var CKDomain = "";var CKPath = "/";var CKPrex = "cpv_";
