@@ -1,9 +1,9 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 $MOD['feed_enable'] or dheader(DT_PATH);
 require DT_ROOT.'/include/post.func.php';
-$destoon_task = rand_task();
+$xhxxfb_task = rand_task();
 $FD = array();
 foreach($MODULE as $m) {
 	if($m['islink'] || !$m['ismenu'] || $m['moduleid'] < 5) continue;

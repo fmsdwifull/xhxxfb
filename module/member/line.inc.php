@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 login();
 $forward or $forward = DT_PATH;
 $online = $_online ? 0 : 1;

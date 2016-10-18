@@ -1,4 +1,4 @@
-<?php defined('IN_DESTOON') or exit('Access Denied');?><table cellpadding="3" cellspacing="3" width="100%">
+<?php defined('IN_XHXXFB') or exit('Access Denied');?><table cellpadding="3" cellspacing="3" width="100%">
 <?php if(is_array($tags)) { foreach($tags as $t) { ?>
 <tr>
 <td width="200" align="left">&nbsp;<a href="<?php echo $t['linkurl'];?>" target="_blank" title="<?php echo $t['truename'];?>"><?php echo $t['truename'];?>(<?php if($t['gender']==1) { ?>男<?php } else { ?>女<?php } ?>

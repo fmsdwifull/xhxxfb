@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 login();
 isset($MODULE[17]) or dheader($MODULE[2]['linkurl']);
 require DT_ROOT.'/module/'.$module.'/common.inc.php';

@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function daddslashes($string) {
 	return is_array($string) ? array_map('daddslashes', $string) : addslashes($string);
 }
@@ -296,9 +296,9 @@ function send_sms($mobile, $message, $word = 0, $time = 0) {
 	$word or $word = word_count($message);
 	$sms_message = convert($message, DT_CHARSET, 'UTF-8');
 	$data = 'sms_uid='.DT_CLOUD_UID.'&sms_key='.md5(DT_CLOUD_KEY.'|'.$mobile.'|'.md5($sms_message)).'&sms_charset='.DT_CHARSET.'&sms_mobile='.$mobile.'&sms_message='.rawurlencode($sms_message).'&sms_time='.$time;
-	$code = dcurl('http://sms.destoon.com/send.php', $data);
-	if($code && strpos($code, 'destoon_sms_code=') !== false) {
-		$code = explode('destoon_sms_code=', $code);
+	$code = dcurl('http://sms.xhxxfb.com/send.php', $data);
+	if($code && strpos($code, 'xhxxfb_sms_code=') !== false) {
+		$code = explode('xhxxfb_sms_code=', $code);
 		$code = $code[1];
 	} else {
 		$code = 'Can Not Connect SMS Server';
@@ -357,7 +357,7 @@ function cache_read($file, $dir = '', $mode = '') {
 }
 
 function cache_write($file, $string, $dir = '') {
-	if(is_array($string)) $string = "<?php defined('IN_DESTOON') or exit('Access Denied'); return ".strip_nr(var_export($string, true))."; ?>";
+	if(is_array($string)) $string = "<?php defined('IN_XHXXFB') or exit('Access Denied'); return ".strip_nr(var_export($string, true))."; ?>";
 	$file = $dir ? DT_CACHE.'/'.$dir.'/'.$file : DT_CACHE.'/'.$file;
 	$strlen = file_put($file, $string);
 	return $strlen;
@@ -766,7 +766,7 @@ function pages($total, $page = 1, $perpage = 20, $demo = '', $step = 3) {
 	if($page < 1 || $page > $total) $page = 1;
 	if($demo) {
 		$demo_url = $demo;
-		$home_url = str_replace('{destoon_page}', '1', $demo_url);
+		$home_url = str_replace('{xhxxfb_page}', '1', $demo_url);
 	} else {
 		if(defined('DT_REWRITE') && RE_WRITE && $_SERVER["SCRIPT_NAME"] && strpos($DT_URL, '?') === false) {
 			$demo_url = $_SERVER["SCRIPT_NAME"];
@@ -785,7 +785,7 @@ function pages($total, $page = 1, $perpage = 20, $demo = '', $step = 3) {
 							}
 						}
 					}
-					$demo_url = substr($demo_url, 0, -4).'-htm-page-{destoon_page}'.$qstr.'.html';
+					$demo_url = substr($demo_url, 0, -4).'-htm-page-{xhxxfb_page}'.$qstr.'.html';
 				} else {
 					$demo_url = substr($demo_url, 0, -4).'-htm-'.$_SERVER['QUERY_STRING'];
 					$mark = true;
@@ -797,12 +797,12 @@ function pages($total, $page = 1, $perpage = 20, $demo = '', $step = 3) {
 				if(strpos($demo_url, '%') === false) $demo_url =  rawurlencode($demo_url);
 				$demo_url = str_replace(array('%2F', '%3A'), array('/', ':'), $demo_url);
 				if(strpos($demo_url, '-page-') !== false) {
-					$demo_url = preg_replace("/page-([0-9]+)/", 'page-{destoon_page}', $demo_url);
+					$demo_url = preg_replace("/page-([0-9]+)/", 'page-{xhxxfb_page}', $demo_url);
 				} else {
-					$demo_url = str_replace('.html', '-page-{destoon_page}.html', $demo_url);
+					$demo_url = str_replace('.html', '-page-{xhxxfb_page}.html', $demo_url);
 				}
 			}
-			$home_url = str_replace('-page-{destoon_page}', '-page-1', $demo_url);
+			$home_url = str_replace('-page-{xhxxfb_page}', '-page-1', $demo_url);
 		} else {
 			$DT_URL = str_replace('&amp;', '&', $DT_URL);
 			$demo_url = $home_url = preg_replace("/(.*)([&?]page=[0-9]*)(.*)/i", "\\1\\3", $DT_URL);
@@ -823,7 +823,7 @@ function listpages($CAT, $total, $page = 1, $perpage = 20, $step = 2) {
 	$total = ceil($total/$perpage);
 	if($page < 1 || $page > $total) $page = 1;
 	$home_url = $MOD['linkurl'].$CAT['linkurl'];
-	$demo_url = $MOD['linkurl'].listurl($CAT, '{destoon_page}');
+	$demo_url = $MOD['linkurl'].listurl($CAT, '{xhxxfb_page}');
 	$pages = '';
 	include DT_ROOT.'/api/pages.'.((!$DT['pages_mode'] && $page < 100) ? 'default' : 'sample').'.php';
 	return $pages;

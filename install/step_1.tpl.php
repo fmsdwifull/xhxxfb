@@ -1,11 +1,11 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 include IN_ROOT.'/header.tpl.php';
 ?>
 <noscript><br/><br/><center><h3>您的浏览器不支持JavaScript,请更换支持JavaScript的浏览器</h1></center><br/><br/></noscript>
 <div class="head">
 	<div>
-		<strong>欢迎使用，DESTOON B2B网站管理系统V<?php echo DT_VERSION;?> <?php echo strtoupper($CFG['charset']);?> 安装向导</strong><br/>
+		<strong>欢迎使用，xhxxfb B2B网站管理系统V<?php echo DT_VERSION;?> <?php echo strtoupper($CFG['charset']);?> 安装向导</strong><br/>
 		请仔细阅读以下软件使用协议，在理解并同意协议的基础上安装本软件
 	</div>
 </div>
@@ -61,4 +61,4 @@ var interval=window.setInterval(
 <?php
 include IN_ROOT.'/footer.tpl.php';
 ?>
-<script type="text/javascript" src="http://www.destoon.com/install.php?release=<?php echo DT_RELEASE;?>&charset=<?php echo $CFG['charset'];?>&domain=<?php echo urlencode(get_env('url'));?>"></script>
+<script type="text/javascript" src="http://www.xhxxfb.com/install.php?release=<?php echo DT_RELEASE;?>&charset=<?php echo $CFG['charset'];?>&domain=<?php echo urlencode(get_env('url'));?>"></script>

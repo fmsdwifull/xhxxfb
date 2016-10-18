@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $OAUTH = cache_read('oauth.php');
 $site = 'qq';
 $OAUTH[$site]['enable'] or dheader($MODULE[1]['linkurl']);

@@ -1,5 +1,5 @@
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 Dd('word').focus();var chat_time=chat_new_msg=0;var chat_word='';var chat_interval;

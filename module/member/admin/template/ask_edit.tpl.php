@@ -40,7 +40,7 @@ show_menu($menus);
 <?php if($status < 2) { ?>
 <tr>
 <td class="tl"><span class="f_hid">*</span> 问题回复</td>
-<td><textarea name="reply" id="reply" class="dsn"><?php echo $reply;?></textarea><?php echo deditor($moduleid, 'reply', 'Destoon', '100%', 300);?></td>
+<td><textarea name="reply" id="reply" class="dsn"><?php echo $reply;?></textarea><?php echo deditor($moduleid, 'reply', 'xhxxfb', '100%', 300);?></td>
 </tr>
 <tr>
 <td class="tl"><span class="f_hid">*</span> 受理状态</td>

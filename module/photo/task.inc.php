@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($html == 'show') {
 	$itemid or exit;
 	$item = $db->get_one("SELECT * FROM {$table} WHERE itemid=$itemid");
@@ -45,7 +45,7 @@ if($html == 'show') {
 			while($r = $db->fetch_array($result)) {
 				$T[] = $r;
 			}
-			$demo_url = $MOD['linkurl'].itemurl($item, '{destoon_page}');
+			$demo_url = $MOD['linkurl'].itemurl($item, '{xhxxfb_page}');
 			$next_photo = $items > 1 ? next_photo($page, $items, $demo_url) : $linkurl;
 			$prev_photo = $items > 1 ? prev_photo($page, $items, $demo_url) : $linkurl;
 			if($T) {

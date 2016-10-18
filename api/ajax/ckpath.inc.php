@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($_groupid != 1) exit;
 if($moduleid < 5) exit;
 if(strlen($path) < 5) exit;

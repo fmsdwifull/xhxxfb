@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $L['status_expired'] = '<span style="color:red;">已过期</span>';
 $L['status_not_start'] = '<span style="color:#888888;">未开始</span>';
 $L['status_displaying'] = '<span style="color:blue;">投放中</span>';

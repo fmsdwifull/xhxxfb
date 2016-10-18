@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $could_buy = check_group($_groupid, $MOD['group_buy']);
 if($username == $_username || $domain) $could_buy = true;
 $could_buy or dalert($L['msg_buy_deny'], 'goback');
@@ -49,7 +49,7 @@ if($itemid) {
 		$url .= "&kw=$kw";
 		$head_title = $kw.$DT['seo_delimiter'].$head_title;
 	}
-	$demo_url = userurl($username, $url.'&page={destoon_page}', $domain);
+	$demo_url = userurl($username, $url.'&page={xhxxfb_page}', $domain);
 	$pagesize =intval($menu_num[$menuid]);
 	if(!$pagesize || $pagesize > 100) $pagesize = 30;
 	$offset = ($page-1)*$pagesize;

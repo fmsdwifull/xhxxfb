@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $L['send_status'] = array(
 	'<span style="color:#888888;">未知</span>',
 	'<span style="color:#008080;">在途</span>',

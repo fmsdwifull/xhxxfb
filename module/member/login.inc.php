@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($_userid && !$MOD['passport']) dheader($MOD['linkurl']);
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 require MD_ROOT.'/member.class.php';
@@ -20,6 +20,8 @@ if($auth) {
 	}
 }
 $action = 'login';
+
+
 if($submit) {
 	captcha($captcha, $MOD['captcha_login']);
 	$username = trim($username);
@@ -51,12 +53,15 @@ if($submit) {
 	}
 	if($MOD['passport'] == 'uc') include DT_ROOT.'/api/'.$MOD['passport'].'.inc.php';
 	$user = $do->login($username, $password, $cookietime);
+	//var_dump($user) ;die;
 	if($user) {
 		if($MOD['passport'] && $MOD['passport'] != 'uc') {
 			$api_url = '';
 			$user['password'] = is_md5($password) ? $password : md5($password);//Once MD5
-			if(strtoupper($MOD['passport_charset']) != DT_CHARSET) $user = convert($user, DT_CHARSET, $MOD['passport_charset']);
+			if(strtoupper($MOD['passport_charset']) != DT_CHARSET) 
+				$user = convert($user, DT_CHARSET, $MOD['passport_charset']);
 			extract($user);
+			//echo  $MOD['passport'];die;
 			include DT_ROOT.'/api/'.$MOD['passport'].'.inc.php';
 			if($api_url) $forward = $api_url;
 		}

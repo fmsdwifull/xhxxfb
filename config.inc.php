@@ -1,20 +1,20 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 Destoon.COM
+	[xhxxfb B2B System] Copyright (c) 2008-2016 xhxxfb.COM
 	This is NOT a freeware, use is subject to license.txt
 */
 $CFG['database'] = 'mysql';
 $CFG['pconnect'] = '0';
 $CFG['db_host'] = 'localhost';
-$CFG['db_name'] = 'destoon';
+$CFG['db_name'] = 'xhxxfb';
 $CFG['db_user'] = 'root';
 $CFG['db_pass'] = '';
 $CFG['db_charset'] = 'utf8';
 $CFG['db_expires'] = '0';
-$CFG['tb_pre'] = 'destoon_';
+$CFG['tb_pre'] = 'xhxxfb_';
 $CFG['charset'] = 'utf-8';
-$CFG['url'] = 'http://127.0.0.1/destoon/';
+$CFG['url'] = 'http://127.0.0.1/xhxxfb/';
 $CFG['com_domain'] = '';
 $CFG['com_dir'] = '1';
 $CFG['com_rewrite'] = '0';

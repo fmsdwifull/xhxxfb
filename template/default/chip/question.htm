@@ -7,10 +7,10 @@ function reloadquestion() {
 	Dd('canswer').innerHTML = '';
 	Dd('answer').value = '';
 	Dd('canswer').innerHTML = '';
-	$('#destoon_question').remove();
+	$('#xhxxfb_question').remove();
 	s = document.createElement("script");
 	s.type = "text/javascript";
-	s.id = "destoon_question";
+	s.id = "xhxxfb_question";
 	s.src = "{DT_PATH}api/captcha.png.php?action=question&refresh="+Math.random()+".js";
 	document.body.appendChild(s);
 }

@@ -6,9 +6,9 @@ $edition = edition(1);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=<?php echo DT_CHARSET;?>"/>
-<title>管理中心 - <?php echo $DT['sitename']; ?> - Powered By DESTOON B2B <?php echo $edition;?> V<?php echo DT_VERSION; ?> R<?php echo DT_RELEASE;?> <?php echo DT_CHARSET;?> <?php echo strtoupper(DT_LANG);?></title>
+<title>管理中心 - <?php echo $DT['sitename']; ?> - Powered By xhxxfb B2B <?php echo $edition;?> V<?php echo DT_VERSION; ?> R<?php echo DT_RELEASE;?> <?php echo DT_CHARSET;?> <?php echo strtoupper(DT_LANG);?></title>
 <meta name="robots" content="noindex,nofollow"/>
-<meta name="generator" content="DESTOON B2B - www.destoon.com"/>
+<meta name="generator" content="xhxxfb B2B - www.xhxxfb.com"/>
 <meta http-equiv="x-ua-compatible" content="IE=8"/>
 <link rel="shortcut icon" type="image/x-icon" href="<?php echo DT_STATIC;?>favicon.ico"/>
 <link rel="bookmark" type="image/x-icon" href="<?php echo DT_STATIC;?>favicon.ico"/>

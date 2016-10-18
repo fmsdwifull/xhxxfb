@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$MOD['list_html'] || !$itemid) return false;
 $gid = $catid = $itemid;
 $GRP = get_group($gid);
@@ -76,7 +76,7 @@ for(; $page <= $total; $page++) {
 	$seo_title = $GRP['title'].$MOD['seo_name'].$seo_delimiter.$seo_page.$seo_modulename.$seo_delimiter.$seo_sitename;
 	$head_keywords = $GRP['title'].$MOD['seo_name'].','.$MOD['name'];
 	$head_description = dsubstr(dtrim($GRP['content']), 200);
-	$destoon_task = "moduleid=$moduleid&html=list&catid=$catid&page=$page";
+	$xhxxfb_task = "moduleid=$moduleid&html=list&catid=$catid&page=$page";
 	if($EXT['mobile_enable']) $head_mobile = $EXT['mobile_url'].mobileurl($moduleid, $catid, 0, $page);
 	$filename = DT_ROOT.'/'.$MOD['moduledir'].'/'.listurl($_CAT, $page);
 	ob_start();

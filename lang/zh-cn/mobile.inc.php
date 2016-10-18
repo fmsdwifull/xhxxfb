@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $L['mobile_version'] = '手机版';
 $L['msg_mobile_close'] = '系统未开启手机浏览';
 $L['msg_no_address'] = '请先创建收货地址';

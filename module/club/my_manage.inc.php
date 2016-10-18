@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($action) {
 	$gid = isset($gid) ? intval($gid) : 0;
 	$gid or message();

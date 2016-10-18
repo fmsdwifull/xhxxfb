@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $userdb = array();
 if(strpos($MOD['passport_url'], ',') !== false) {
 	$clienturl = explode(',', $MOD['passport_url']);

@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function get_relate($M) {
 	global $db, $table, $MOD;
 	$lists = $tags = array();

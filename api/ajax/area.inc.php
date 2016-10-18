@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $area_title = convert($area_title, 'UTF-8', DT_CHARSET);
 $area_extend = isset($area_extend) ? decrypt($area_extend, DT_KEY.'ARE') : '';
 $areaid = isset($areaid) ? intval($areaid) : 0;

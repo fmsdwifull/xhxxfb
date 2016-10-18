@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($DT['city']) {
 	$DT['index_html'] = 0;
 	$C = cache_read('module-2.php');
@@ -26,7 +26,7 @@ if(!$DT['index_html']) {
 	return false;
 }
 if(!$db->linked) return false;
-$destoon_task = "moduleid=1&html=index";
+$xhxxfb_task = "moduleid=1&html=index";
 $AREA = cache_read('area.php');
 if($EXT['mobile_enable']) $head_mobile = $EXT['mobile_url'];
 $index = 1;

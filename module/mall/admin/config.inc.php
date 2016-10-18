@@ -2,8 +2,8 @@
 defined('DT_ADMIN') or exit('Access Denied');
 $MCFG['module'] = 'mall';
 $MCFG['name'] = '商城';
-$MCFG['author'] = 'DESTOON.COM';
-$MCFG['homepage'] = 'www.destoon.com';
+$MCFG['author'] = 'xhxxfb.COM';
+$MCFG['homepage'] = 'www.xhxxfb.com';
 $MCFG['copy'] = false;
 $MCFG['uninstall'] = true;
 $MCFG['moduleid'] = 16;

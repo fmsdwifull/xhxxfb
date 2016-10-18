@@ -19,5 +19,5 @@ if($_SESSION['token']) {
 		$DS = array('token');
 	}
 }
-require '../destoon.inc.php';
+require '../xhxxfb.inc.php';
 ?>

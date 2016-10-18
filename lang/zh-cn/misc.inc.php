@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $L['message_limit'] = '今日可发送{V0}次 当前已发送{V1}次';
 $L['com_not_member'] = '无法完成操作，该企业未注册本站会员';
 $L['send_self'] = '请不要给自己留言';

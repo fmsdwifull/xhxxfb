@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 /*
  * @Description 易宝支付产品通用支付接口范例 
  * @V3.0

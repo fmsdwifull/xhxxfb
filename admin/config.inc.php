@@ -1,10 +1,10 @@
 <?php
 defined('DT_ADMIN') or exit('Access Denied');
 $MCFG = array();
-$MCFG['module'] = 'destoon';
+$MCFG['module'] = 'xhxxfb';
 $MCFG['name'] = '核心';
-$MCFG['author'] = 'Destoon.COM';
-$MCFG['homepage'] = 'www.destoon.com';
+$MCFG['author'] = 'xhxxfb.COM';
+$MCFG['homepage'] = 'www.xhxxfb.com';
 $MCFG['copy'] = false;
 $MCFG['uninstall'] = false;
 

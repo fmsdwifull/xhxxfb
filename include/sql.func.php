@@ -1,13 +1,13 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function sql_split($sql) {
 	global $CFG, $db;
 	if($CFG['db_charset']) $sql = $db->version() > '4.1' ? preg_replace("/TYPE=(MyISAM|InnoDB|HEAP|MEMORY)( DEFAULT CHARSET=[^; ]+)?/", "ENGINE=\\1 DEFAULT CHARSET=".$CFG['db_charset'], $sql) : preg_replace("/( DEFAULT CHARSET=[^; ]+)?/", '', $sql);
-	if($CFG['tb_pre'] != 'destoon_') $sql = str_replace('destoon_', $CFG['tb_pre'], $sql);
+	if($CFG['tb_pre'] != 'xhxxfb_') $sql = str_replace('xhxxfb_', $CFG['tb_pre'], $sql);
 	$sql = str_replace("\r", "\n", $sql);
 	$sql = str_replace("; \n", ";\n", $sql);
 	$ret = array();

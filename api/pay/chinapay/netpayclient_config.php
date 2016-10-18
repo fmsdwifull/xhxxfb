@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 /*请按照您的实际情况配置以下各参数*/
 
 //私钥文件，在CHINAPAY申请商户号时获取，请相应修改此处，可填相对路径，下同

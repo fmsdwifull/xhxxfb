@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $currency = $MOD['fee_currency'];
 $fee_unit = $currency == 'money' ? $DT['money_unit'] : $DT['credit_unit'];
 $fee_name = $currency == 'money' ? $DT['money_name'] : $DT['credit_name'];

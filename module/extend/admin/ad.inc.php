@@ -136,7 +136,7 @@ switch($action) {
 		}
 	break;
 	case 'view':
-		$destoon_task = '';
+		$xhxxfb_task = '';
 		$filename = '';
 		$ad_moduleid = 0;
 		if($pid) {
@@ -159,7 +159,7 @@ switch($action) {
 		include template('ad_view', $module);
 	break;
 	case 'runcode':
-		$destoon_task = '';
+		$xhxxfb_task = '';
 		$codes = stripslashes($codes);
 		include tpl('ad_runcode', $module);
 	break;

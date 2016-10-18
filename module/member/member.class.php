@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 class member {
 	var $userid;
 	var $username;
@@ -462,6 +462,8 @@ class member {
 		$this->db->query("DELETE FROM {$this->db->pre}online WHERE userid=$_userid");
 		set_cookie('auth', '');
 		set_cookie('userid', '');
+		set_cookie('username', '');
+
 		return true;
 	}
 

@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function tag($parameter, $expires = 0) {
 	global $DT, $CFG, $MODULE, $DT_TIME, $db;
 	if($expires > 0) {

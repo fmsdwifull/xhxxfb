@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require DT_ROOT.'/api/pay/'.$bank.'/config.inc.php';
 require DT_ROOT.'/api/pay/'.$bank.'/notify.class.php';
 /*

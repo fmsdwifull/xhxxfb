@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(preg_match("/^[0-9a-z]{32}$/", $kf)) {
 ?>
 <script type="text/javascript">

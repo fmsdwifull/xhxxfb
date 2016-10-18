@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 /* *
  * 支付宝接口公用函数
  * 详细：该类是请求、通知返回两个文件所调用的公用函数核心处理文件

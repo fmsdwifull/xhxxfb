@@ -1,6 +1,6 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 $moduleid = 16;
@@ -21,7 +21,7 @@ switch($action) {
 		$condition = $star ? "mallid=$itemid AND seller_star=$star" : "mallid=$itemid AND seller_star>0";
 		$r = $db->get_one("SELECT COUNT(*) AS num FROM {$DT_PRE}mall_comment WHERE $condition");
 		$items = $r['num'];
-		$pages = mobile_pages($items, $page, $pagesize, 'javascript:load_comment(\'{destoon_page}&star='.$star.'\');');
+		$pages = mobile_pages($items, $page, $pagesize, 'javascript:load_comment(\'{xhxxfb_page}&star='.$star.'\');');
 		$result = $db->query("SELECT * FROM {$DT_PRE}mall_comment WHERE $condition ORDER BY seller_ctime DESC LIMIT $offset,$pagesize");
 		while($r = $db->fetch_array($result)) {
 			$r['addtime'] = timetodate($r['seller_ctime'], 6);
@@ -50,7 +50,7 @@ switch($action) {
 		*/
 		$r = $db->get_one("SELECT COUNT(*) AS num FROM {$DT_PRE}mall_order WHERE mallid=$itemid AND status=4");
 		$items = $r['num'];
-		$pages = mobile_pages($items, $page, $pagesize, 'javascript:load_order({destoon_page});');
+		$pages = mobile_pages($items, $page, $pagesize, 'javascript:load_order({xhxxfb_page});');
 		$result = $db->query("SELECT * FROM {$DT_PRE}mall_order WHERE mallid=$itemid AND status=4 ORDER BY itemid DESC LIMIT $offset,$pagesize");
 		while($r = $db->fetch_array($result)) {
 			$r['updatetime'] = timetodate($r['updatetime'], 6);

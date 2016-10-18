@@ -1,5 +1,5 @@
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 var d_date, c_year, c_month, t_year, t_month, t_day, v_year, v_month, v_day, ca_sep, ca_id, ca_interval, ca_timeout;
@@ -80,7 +80,7 @@ function ca_setup(year, month) {
 	if(start) for(i = 0; i < start; i++) {cells[j++] = 0;}
 	for(i = 1; i<= days; i++) {cells[j++] = i;}
 	if(end) for(i = 0; i < end; i++) {cells[j++] = 0;}
-	calendar += '<table cellpadding="0" cellspacing="0" width="100%" title="Destoon Calendar Powered By Destoon.COM"><tr>';
+	calendar += '<table cellpadding="0" cellspacing="0" width="100%" title="xhxxfb Calendar Powered By xhxxfb.COM"><tr>';
 	for(i = 0; i < 7; i++) {calendar += '<td width="26" height="24" bgcolor="#F1F1F1"><strong>'+(weeks[i])+'</strong></td>';}
 	calendar += '</tr>';
 	l = cells.length

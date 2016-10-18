@@ -1,11 +1,11 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 include IN_ROOT.'/header.tpl.php';
 ?>
 <div class="head">
 	<div>
 		<strong>提示信息</strong><br/>
-		如果对此提示信息有疑问，请访问www.destoon.com
+		如果对此提示信息有疑问，请访问www.xhxxfb.com
 	</div>
 </div>
 <div class="body">

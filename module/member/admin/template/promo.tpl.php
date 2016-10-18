@@ -21,7 +21,7 @@ show_menu($menus);
 <?php }?>
 </table>
 <div class="pages"><?php echo $pages;?></div>
-<script type="text/javascript">Dh('destoon_menu');</script>
+<script type="text/javascript">Dh('xhxxfb_menu');</script>
 <?php exit; } ?>
 <div class="tt">优惠码搜索</div>
 <form action="?">

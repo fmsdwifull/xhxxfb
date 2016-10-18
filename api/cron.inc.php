@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function nexttime($schedule, $time) {
 	if(strpos($schedule, ',') !== false) {
 		list($h, $m) = explode(',', $schedule);

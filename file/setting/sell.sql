@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_sell_5`;
-CREATE TABLE `destoon_sell_5` (
+DROP TABLE IF EXISTS `xhxxfb_sell_5`;
+CREATE TABLE `xhxxfb_sell_5` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `mycatid` bigint(20) unsigned NOT NULL default '0',
@@ -65,15 +65,15 @@ CREATE TABLE `destoon_sell_5` (
   KEY `areaid` (`areaid`)
 ) TYPE=MyISAM COMMENT='供应';
 
-DROP TABLE IF EXISTS `destoon_sell_data_5`;
-CREATE TABLE `destoon_sell_data_5` (
+DROP TABLE IF EXISTS `xhxxfb_sell_data_5`;
+CREATE TABLE `xhxxfb_sell_data_5` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='供应内容';
 
-DROP TABLE IF EXISTS `destoon_sell_search_5`;
-CREATE TABLE `destoon_sell_search_5` (
+DROP TABLE IF EXISTS `xhxxfb_sell_search_5`;
+CREATE TABLE `xhxxfb_sell_search_5` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',

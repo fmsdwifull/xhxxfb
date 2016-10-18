@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!function_exists('split_content')) {
 	define('DT_ADMIN', true);
 	require_once DT_ROOT.'/admin/global.func.php';

@@ -1,1 +1,1 @@
-<?php defined('IN_DESTOON') or exit('Access Denied');$T['gender'] = $F['gender'] == 2 ? 2 : 1; ?>
+<?php defined('IN_XHXXFB') or exit('Access Denied');$T['gender'] = $F['gender'] == 2 ? 2 : 1; ?>

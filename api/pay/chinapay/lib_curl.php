@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function HttpGet($http, $url) {
 	// create curl resource 
 	curl_setopt($http, CURLOPT_HTTPGET, 1);

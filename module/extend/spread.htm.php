@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$itemid) return false;
 $item = $db->get_one("SELECT * FROM {$DT_PRE}spread WHERE itemid=$itemid");
 if(!$item) return false;

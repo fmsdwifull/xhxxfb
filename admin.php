@@ -1,6 +1,6 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 @set_time_limit(0);
@@ -26,17 +26,17 @@ require_once DT_ROOT.'/include/cache.func.php';
 isset($file) or $file = 'index';
 $secretkey = 'a'.strtolower(substr(md5(DT_KEY), -6));
 if($CFG['authadmin'] == 'cookie') {
-	$_destoon_admin = get_cookie($secretkey);
-	$_destoon_admin = $_destoon_admin ? intval($_destoon_admin) : 0;
+	$_xhxxfb_admin = get_cookie($secretkey);
+	$_xhxxfb_admin = $_xhxxfb_admin ? intval($_xhxxfb_admin) : 0;
 } else {
 	$session = new dsession();
-	$_destoon_admin = isset($_SESSION[$secretkey]) ? intval($_SESSION[$secretkey]) : 0;
+	$_xhxxfb_admin = isset($_SESSION[$secretkey]) ? intval($_SESSION[$secretkey]) : 0;
 }
 $_founder = $CFG['founderid'] == $_userid ? $_userid : 0;
 $_catids = $_childs = '';
 $_catid = $_child = array();
 if($file != 'login') {
-	if($_groupid != 1 || $_admin < 1 || !$_destoon_admin) msg('', '?file=login&forward='.urlencode($DT_URL));
+	if($_groupid != 1 || $_admin < 1 || !$_xhxxfb_admin) msg('', '?file=login&forward='.urlencode($DT_URL));
 	if(!admin_check()) {
 		admin_log(1);
 		$db->query("DELETE FROM {$db->pre}admin WHERE userid=$_userid AND url='?".$DT_QST."'");
@@ -52,7 +52,7 @@ if($psize > 0 && $psize != $pagesize) {
 	$pagesize = $psize;
 	$offset = ($page-1)*$pagesize;
 }
-if($module == 'destoon') {
+if($module == 'xhxxfb') {
 	(include DT_ROOT.'/admin/'.$file.'.inc.php') or msg();
 } else {
 	include DT_ROOT.'/module/'.$module.'/common.inc.php';

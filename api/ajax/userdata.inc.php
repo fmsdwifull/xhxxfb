@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$_userid) exit;
 isset($MODULE[$mid]) or exit;
 if($job == 'get') {

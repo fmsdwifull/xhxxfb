@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $tags = $ids = $_tags = $tbs = $PPT = array();//PPT
 if($DT_QST) {
 	if($kw) {

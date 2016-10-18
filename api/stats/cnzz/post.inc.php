@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $stats = str_replace('&amp;', '&', $stats);
 $stats_cnzz = preg_match("/^http:\/\/[a-z0-9]{1,5}\.cnzz\.com\/stat\.php\?id=[0-9]{5,11}&web_id=[0-9]{5,11}$/", $stats) ? $stats : '';
 ?>

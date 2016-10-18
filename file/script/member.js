@@ -1,5 +1,5 @@
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 function m(i) { try { Dd(i).className = 'tab_on'; } catch(e) {} }

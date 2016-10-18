@@ -140,7 +140,7 @@ show_menu($menus);
 </td>
 <td> </td>
 </table>
-<form method="post" action="?" target="destoon_tag" onsubmit="return check();">
+<form method="post" action="?" target="xhxxfb_tag" onsubmit="return check();">
 <input type="hidden" name="file" value="<?php echo $file;?>"/>
 <input type="hidden" name="action" value="preview"/>
 <input type="hidden" id="tag_expires" name="tag_expires"/>
@@ -180,7 +180,7 @@ show_menu($menus);
 <table cellpadding="2" cellspacing="1" class="tb" style="line-height:200%;">
 <tr>
 <td class="tl"><span class="f_hid">*</span> 参阅</td>
-<td><a href="http://help.destoon.com/faq/tag.php?tc=client" target="_blank" class="t">http://help.destoon.com/faq/tag.php</a><br/>
+<td><a href="http://help.xhxxfb.com/faq/tag.php?tc=client" target="_blank" class="t">http://help.xhxxfb.com/faq/tag.php</a><br/>
 </td>
 </table>
 </div>

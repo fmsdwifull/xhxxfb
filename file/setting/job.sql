@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_job`;
-CREATE TABLE `destoon_job` (
+DROP TABLE IF EXISTS `xhxxfb_job`;
+CREATE TABLE `xhxxfb_job` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -58,8 +58,8 @@ CREATE TABLE `destoon_job` (
   KEY `areaid` (`areaid`)
 ) TYPE=MyISAM COMMENT='招聘';
 
-DROP TABLE IF EXISTS `destoon_job_apply`;
-CREATE TABLE `destoon_job_apply` (
+DROP TABLE IF EXISTS `xhxxfb_job_apply`;
+CREATE TABLE `xhxxfb_job_apply` (
   `applyid` bigint(20) unsigned NOT NULL auto_increment,
   `jobid` bigint(20) unsigned NOT NULL default '0',
   `resumeid` bigint(20) unsigned NOT NULL default '0',
@@ -73,15 +73,15 @@ CREATE TABLE `destoon_job_apply` (
   KEY `apply_username` (`apply_username`)
 ) TYPE=MyISAM COMMENT='应聘工作';
 
-DROP TABLE IF EXISTS `destoon_job_data`;
-CREATE TABLE `destoon_job_data` (
+DROP TABLE IF EXISTS `xhxxfb_job_data`;
+CREATE TABLE `xhxxfb_job_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='招聘内容';
 
-DROP TABLE IF EXISTS `destoon_job_talent`;
-CREATE TABLE `destoon_job_talent` (
+DROP TABLE IF EXISTS `xhxxfb_job_talent`;
+CREATE TABLE `xhxxfb_job_talent` (
   `talentid` bigint(20) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `resumeid` bigint(20) unsigned NOT NULL default '0',
@@ -90,8 +90,8 @@ CREATE TABLE `destoon_job_talent` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='人才库';
 
-DROP TABLE IF EXISTS `destoon_resume`;
-CREATE TABLE `destoon_resume` (
+DROP TABLE IF EXISTS `xhxxfb_resume`;
+CREATE TABLE `xhxxfb_resume` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -145,8 +145,8 @@ CREATE TABLE `destoon_resume` (
   KEY `areaid` (`areaid`)
 ) TYPE=MyISAM COMMENT='简历';
 
-DROP TABLE IF EXISTS `destoon_resume_data`;
-CREATE TABLE `destoon_resume_data` (
+DROP TABLE IF EXISTS `xhxxfb_resume_data`;
+CREATE TABLE `xhxxfb_resume_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)

@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $lists = array();
 $result = $db->query("SELECT areaid,name,style,domain,letter FROM {$DT_PRE}city ORDER BY letter,listorder");
 while($r = $db->fetch_array($result)) {

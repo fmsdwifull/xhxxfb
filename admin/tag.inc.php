@@ -1,6 +1,6 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 defined('DT_ADMIN') or exit('Access Denied');
@@ -73,7 +73,7 @@ switch($action) {
 	break;
 	case 'preview':
 		$db->halt = 0;
-		$destoon_task = '';
+		$xhxxfb_task = '';
 		if($tag_css) $tag_css = stripslashes($tag_css); 
 		if($tag_html_s) $tag_html_s = stripslashes($tag_html_s); 
 		if($tag_html_e) $tag_html_e = stripslashes($tag_html_e); 

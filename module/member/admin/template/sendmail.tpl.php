@@ -75,7 +75,7 @@ show_menu($menus);
 <tr>
 <td class="tl"><span class="f_red">*</span> 邮件正文</td>
 <td>
-<textarea name="content" id="content" class="dsn"></textarea><?php echo deditor($moduleid, 'content', 'Destoon', '100%', 350);?><br/><span id="dcontent" class="f_red"></span>
+<textarea name="content" id="content" class="dsn"></textarea><?php echo deditor($moduleid, 'content', 'xhxxfb', '100%', 350);?><br/><span id="dcontent" class="f_red"></span>
 </td>
 </tr>
 <tr>

@@ -1,7 +1,7 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
-$destoon_task = rand_task();
+$xhxxfb_task = rand_task();
 ($mid > 3 && isset($MODULE[$mid]) && !$MODULE[$mid]['islink']) or $mid = 0;
 $LETTER = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
 $letter = isset($letter) ? strtolower($letter) : '';

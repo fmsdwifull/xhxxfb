@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$_userid) dheader($MODULE[2]['linkurl'].$DT['file_my']);
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 if($action == 'logout' && $admin_user) {

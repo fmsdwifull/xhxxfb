@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $OAUTH = cache_read('oauth.php');
 $site = 'msn';
 $OAUTH[$site]['enable'] or dheader($MODULE[2]['linkurl'].$DT['file_login']);

@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $kf_tq = preg_match("/^[0-9]{5,11}$/", $kf) ? $kf : '';
 ?>
 <tr id="kf_post_tq" style="display:none;">

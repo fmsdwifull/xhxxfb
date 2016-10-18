@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($_userid) dheader($MOD['linkurl']);
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 if(isset($read)) exit(include template('agreement', $module));

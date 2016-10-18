@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 $MOD['ad_enable'] or dheader(DT_PATH);
 $TYPE = $L['ad_type'];
@@ -38,7 +38,7 @@ if($pid || $aid) {
 	}
 	include template('ad_view', $module);
 } else {
-	$destoon_task = "moduleid=$moduleid&html=ad";
+	$xhxxfb_task = "moduleid=$moduleid&html=ad";
 	$head_title = $L['ad_title'];
 	if($catid) $typeid = $catid;
 	$condition = 'open=1';

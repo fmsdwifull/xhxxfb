@@ -1,9 +1,9 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $table = $DT_PRE.'link';
 $url = "file=$file";
 $condition = "username='$username' AND status=3";
-$demo_url = userurl($username, $url.'&page={destoon_page}', $domain);
+$demo_url = userurl($username, $url.'&page={xhxxfb_page}', $domain);
 $pagesize =intval($menu_num[$menuid]);
 if(!$pagesize || $pagesize > 100) $pagesize = 33;
 $offset = ($page-1)*$pagesize;

@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 require DT_ROOT.'/include/post.func.php';
 $this_month = date('n', $DT_TIME);
@@ -76,7 +76,7 @@ if($action == 'list') {
 		$company_count = count($company_record);
 	}	
 	$item = $db->get_one("SELECT itemid FROM {$DT_PRE}spread ORDER BY rand()");
-	$destoon_task = "moduleid=$moduleid&html=spread&itemid=$item[itemid]";
+	$xhxxfb_task = "moduleid=$moduleid&html=spread&itemid=$item[itemid]";
 	include template('spread', $module);
 }
 ?>

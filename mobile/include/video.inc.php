@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($itemid) {
 	$item = $db->get_one("SELECT * FROM {$table} WHERE itemid=$itemid");
 	($item && $item['status'] > 2 && $item['mobile'] == 1) or mobile_msg($L['msg_not_exist']);

@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 Destoon.COM
+	[xhxxfb B2B System] Copyright (c) 2008-2016 xhxxfb.COM
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 class unzip {
 	var $datasec = array();
 	var $ctrl_dir = array();

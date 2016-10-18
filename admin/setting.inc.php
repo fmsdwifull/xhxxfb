@@ -1,6 +1,6 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 defined('DT_ADMIN') or exit('Access Denied');
@@ -32,7 +32,7 @@ switch($action) {
 			$body = '你太棒了！你已成功的从SendCloud发送了一封测试邮件，接下来快登录前台去完善账户信息吧！';
 		} else {
 			$subject = $DT['sitename'].'邮件发送测试';
-			$body = '<b>恭喜！您的站点['.$DT['sitename'].']邮件发送设置成功！</b><br/>------------------------------------<br><a href="http://www.destoon.com/" target="_blank">Send By DESTOON B2B Mail Tester</a>';
+			$body = '<b>恭喜！您的站点['.$DT['sitename'].']邮件发送设置成功！</b><br/>------------------------------------<br><a href="http://www.xhxxfb.com/" target="_blank">Send By xhxxfb B2B Mail Tester</a>';
 		}	
 		if(send_mail($testemail, $subject, $body)) dialog('邮件已发送至'.$testemail.'，请注意查收', $mail_sender);
 		dialog('邮件发送失败，请检查设置');
@@ -51,14 +51,14 @@ switch($action) {
 		include tpl('static');
 	break;
 	case 'cache':
-		$dc->set('destoon', 'b2b', 3600);
-		$pass = $dc->get('destoon') == 'b2b' ? 1 : 0;
+		$dc->set('xhxxfb', 'b2b', 3600);
+		$pass = $dc->get('xhxxfb') == 'b2b' ? 1 : 0;
 		dialog('测试结果：'.($pass ? '<span class="f_green">成功</span>' : '<span class="f_red">失败</span>').'&nbsp; &nbsp;缓存类型：'.$CFG['cache'].'<div style="padding:10px 0 10px 0;">如果类型不正确，请先保存设置再测试</div>');
 	break;
 	case 'html':
 		tohtml('index');
-		$dc->set('destoon', 'b2b', 3600);
-		$dc->get('destoon') == 'b2b' or dalert('缓存类型'.$CFG['cache'].'测试失败，'.($CFG['cache'] == 'file' ? '请检查file目录是否可写' : '请立即更换'), '?moduleid='.$moduleid.'&file='.$file.'&tab=2');
+		$dc->set('xhxxfb', 'b2b', 3600);
+		$dc->get('xhxxfb') == 'b2b' or dalert('缓存类型'.$CFG['cache'].'测试失败，'.($CFG['cache'] == 'file' ? '请检查file目录是否可写' : '请立即更换'), '?moduleid='.$moduleid.'&file='.$file.'&tab=2');
 		dmsg('更新成功', '?moduleid='.$moduleid.'&file='.$file.'&tab='.$tab);
 	break;
 	default:

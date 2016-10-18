@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 isset($username) or $username = '';
 isset($openid) or $openid = '';
 if(check_name($username)) {

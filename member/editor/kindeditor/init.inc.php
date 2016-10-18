@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $moddir = defined('DT_ADMIN') ? $MODULE[2]['moduledir'].'/editor/' : 'editor/';
 $draft = $textareaid == 'content' && $_userid && $DT['save_draft'];
 if($DT['save_draft'] == 2 && !defined('DT_ADMIN')) $draft = false;
@@ -24,7 +24,7 @@ $editor .= 'window.editor = K.create(\'#'.$textareaid.'\', {';
 #$editor .= 'afterCreate : function() { this.loadPlugin(\'autoheight\'); },';
 $editor .= 'urlType:\'domain\',';
 #$editor .= 'newlineTag:\'br\',';
-if($toolbarset == 'Destoon') {
+if($toolbarset == 'xhxxfb') {
 	$editor .= "items : [".(defined('DT_ADMIN') ? "'source', '|', " : "")."'wordpaste', 'plainpaste', '|', 'bold', 'forecolor', 'fontsize', 'link', 'unlink', 'image', 'multiimage', 'media', 'hr', 'justifyleft', 'justifycenter', 'justifyright', 'insertfile', ".($moduleid == 18 ? "'emoticons', " : "")."'fullscreen'],";
 } else if($toolbarset == 'Simple') {
 	$editor .= "items : [".(defined('DT_ADMIN') ? "'source', '|', " : "")."'wordpaste', 'plainpaste', '|', 'bold', 'forecolor', 'fontsize', 'link', 'unlink', 'image', 'justifyleft', 'justifycenter', 'justifyright', 'insertfile', ".($moduleid == 18 ? "'emoticons', " : "")."'fullscreen'],";

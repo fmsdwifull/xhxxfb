@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($action == 'company') {//Company News
 	include DT_ROOT.'/include/seo.inc.php';
 	$seo_title = $L['news_title'].$seo_delimiter.$seo_page.$seo_modulename.$seo_delimiter.$seo_sitename;
@@ -34,7 +34,7 @@ if($itemid) {
 		$url .= "&typeid=$typeid";
 		$head_title = $MTYPE[$typeid]['typename'].$DT['seo_delimiter'].$head_title;
 	}
-	$demo_url = userurl($username, $url.'&page={destoon_page}', $domain);
+	$demo_url = userurl($username, $url.'&page={xhxxfb_page}', $domain);
 
 	$pagesize =intval($menu_num[$menuid]);
 	if(!$pagesize || $pagesize > 100) $pagesize = 30;

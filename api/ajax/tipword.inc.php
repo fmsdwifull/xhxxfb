@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$DT['search_tips']) exit;
 isset($MODULE[$mid]) or exit;
 if(!$word || strlen($word) < 2 || strlen($word) > 30) exit;

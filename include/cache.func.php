@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 Destoon.COM
+	[xhxxfb B2B System] Copyright (c) 2008-2015 xhxxfb.COM
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function cache_all() {
 	cache_module();
 	cache_area();

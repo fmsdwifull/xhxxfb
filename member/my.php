@@ -4,7 +4,7 @@ require '../common.inc.php';
 if($DT_BOT) dhttp(403);
 if($mid) {
 	$group_editor = $MG['editor'];
-	in_array($group_editor, array('Default', 'Destoon', 'Simple', 'Basic')) or $group_editor = 'Destoon';
+	in_array($group_editor, array('Default', 'xhxxfb', 'Simple', 'Basic')) or $group_editor = 'xhxxfb';
 	$MST = cache_read('module-2.php');
 	isset($admin_user) or $admin_user = false;
 	$show_oauth = $MST['oauth'];

@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_quote`;
-CREATE TABLE `destoon_quote` (
+DROP TABLE IF EXISTS `xhxxfb_quote`;
+CREATE TABLE `xhxxfb_quote` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -30,15 +30,15 @@ CREATE TABLE `destoon_quote` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='行情';
 
-DROP TABLE IF EXISTS `destoon_quote_data`;
-CREATE TABLE `destoon_quote_data` (
+DROP TABLE IF EXISTS `xhxxfb_quote_data`;
+CREATE TABLE `xhxxfb_quote_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` longtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='行情内容';
 
-DROP TABLE IF EXISTS `destoon_quote_price`;
-CREATE TABLE `destoon_quote_price` (
+DROP TABLE IF EXISTS `xhxxfb_quote_price`;
+CREATE TABLE `xhxxfb_quote_price` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `pid` bigint(20) unsigned NOT NULL default '0',
   `price` decimal(10,2) NOT NULL,
@@ -59,8 +59,8 @@ CREATE TABLE `destoon_quote_price` (
   KEY `pid` (`pid`)
 ) TYPE=MyISAM COMMENT='行情报价';
 
-DROP TABLE IF EXISTS `destoon_quote_product`;
-CREATE TABLE `destoon_quote_product` (
+DROP TABLE IF EXISTS `xhxxfb_quote_product`;
+CREATE TABLE `xhxxfb_quote_product` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',

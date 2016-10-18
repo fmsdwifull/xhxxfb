@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $task_item or $task_item = 3600;
 if($html == 'webpage') {
 	$itemid or exit;

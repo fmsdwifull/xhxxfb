@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require_once DT_ROOT.'/module/member/global.func.php';
 function home_pages($total, $pagesize, $demo_url, $page = 1) {
 	global $MOD, $L;
@@ -7,7 +7,7 @@ function home_pages($total, $pagesize, $demo_url, $page = 1) {
 	$items = $total;
 	$total = ceil($total/$pagesize);
 	$page = intval($page);
-	$home_url = str_replace('{destoon_page}', '1', str_replace(array('%7B', '%7D'), array('{', '}'), $demo_url));
+	$home_url = str_replace('{xhxxfb_page}', '1', str_replace(array('%7B', '%7D'), array('{', '}'), $demo_url));
 	include DT_ROOT.'/api/pages.sample.php';
 	return $pages;
 }

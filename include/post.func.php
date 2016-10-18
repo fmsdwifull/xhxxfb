@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function deditor($moduleid = 1, $textareaid = 'content', $toolbarset = 'Default', $width = 500, $height = 400) {
 	global $DT, $MODULE, $_userid;
 	$editor = '';
@@ -12,25 +12,25 @@ function deditor($moduleid = 1, $textareaid = 'content', $toolbarset = 'Default'
 }
 
 function dstyle($name, $value = '') {
-	global $destoon_style_id;
+	global $xhxxfb_style_id;
 	$style = $color = '';
 	if(preg_match("/^#[0-9a-zA-Z]{6}$/", $value)) $color = $value;
-	if(!$destoon_style_id) {
-		$destoon_style_id = 1;
+	if(!$xhxxfb_style_id) {
+		$xhxxfb_style_id = 1;
 		$style .= '<script type="text/javascript" src="'.DT_STATIC.'file/script/color.js"></script>';
 	} else {
-		$destoon_style_id++;
+		$xhxxfb_style_id++;
 	}
-	$style .= '<input type="hidden" name="'.$name.'" id="color_input_'.$destoon_style_id.'" value="'.$color.'"/><img src="'.DT_PATH.'file/image/color.gif" width="21" height="18" align="absmiddle" id="color_img_'.$destoon_style_id.'" style="cursor:pointer;background:'.$color.'" onclick="color_show('.$destoon_style_id.', Dd(\'color_input_'.$destoon_style_id.'\').value, this);"/>';
+	$style .= '<input type="hidden" name="'.$name.'" id="color_input_'.$xhxxfb_style_id.'" value="'.$color.'"/><img src="'.DT_PATH.'file/image/color.gif" width="21" height="18" align="absmiddle" id="color_img_'.$xhxxfb_style_id.'" style="cursor:pointer;background:'.$color.'" onclick="color_show('.$xhxxfb_style_id.', Dd(\'color_input_'.$xhxxfb_style_id.'\').value, this);"/>';
 	return $style;
 }
 
 function dcalendar($name, $value = '', $sep = '-') {
-	global $destoon_calendar_id;
+	global $xhxxfb_calendar_id;
 	$calendar = '';
 	$id = str_replace(array('[', ']'), array('', ''), $name);
-	if(!$destoon_calendar_id) {
-		$destoon_calendar_id = 1;
+	if(!$xhxxfb_calendar_id) {
+		$xhxxfb_calendar_id = 1;
 		$calendar .= '<script type="text/javascript" src="'.DT_STATIC.'file/script/calendar.js"></script>';
 	}
 	$calendar .= '<input type="text" name="'.$name.'" id="'.$id.'" value="'.$value.'" size="10" onfocus="ca_show(\''.$id.'\', this, \''.$sep.'\');" readonly ondblclick="this.value=\'\';"/> <img src="'.DT_STATIC.'file/image/calendar.gif" align="absmiddle" onclick="ca_show(\''.$id.'\', this, \''.$sep.'\');" style="cursor:pointer;"/>';
@@ -109,15 +109,15 @@ function url_select($name, $ext = 'htm', $type = 'list', $urlid = 0, $extend = '
 
 function tpl_select($file = 'index', $module = '', $name = 'template', $title = '', $template = '', $extend = '') {
 	include load('include.lang');
-	global $CFG, $destoon_tpl_id;
-	if(!$destoon_tpl_id) {
-		$destoon_tpl_id = 1;
+	global $CFG, $xhxxfb_tpl_id;
+	if(!$xhxxfb_tpl_id) {
+		$xhxxfb_tpl_id = 1;
 	} else {
-		$destoon_tpl_id++;
+		$xhxxfb_tpl_id++;
 	}
     $tpldir = $module ? DT_ROOT."/template/".$CFG['template']."/".$module : DT_ROOT."/template/".$CFG['template'];
 	@include $tpldir."/these.name.php";
-	$select = '<span id="destoon_template_'.$destoon_tpl_id.'"><select name="'.$name.'" '.$extend.'><option value="">'.$title.'</option>';
+	$select = '<span id="xhxxfb_template_'.$xhxxfb_tpl_id.'"><select name="'.$name.'" '.$extend.'><option value="">'.$title.'</option>';
 	$files = glob($tpldir."/*.htm");
 	foreach($files as $tplfile)	{
 		$tplfile = basename($tplfile);
@@ -129,7 +129,7 @@ function tpl_select($file = 'index', $module = '', $name = 'template', $title = 
 		}
 	}
 	$select .= '</select></span>';
-	if(defined('DT_ADMIN')) $select .= '&nbsp;&nbsp;<a href="javascript:tpl_edit(\''.$file.'\', \''.$module.'\', '.$destoon_tpl_id.');" class="t">'.$L['post_edit'].'</a> &nbsp;<a href="javascript:tpl_add(\''.$file.'\', \''.$module.'\');" class="t">'.$L['post_new'].'</a>';
+	if(defined('DT_ADMIN')) $select .= '&nbsp;&nbsp;<a href="javascript:tpl_edit(\''.$file.'\', \''.$module.'\', '.$xhxxfb_tpl_id.');" class="t">'.$L['post_edit'].'</a> &nbsp;<a href="javascript:tpl_add(\''.$file.'\', \''.$module.'\');" class="t">'.$L['post_new'].'</a>';
 	return $select;
 }
 

@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 isset($file) or $file = 'homepage';
 if(isset($update) || isset($preview)) {
 	$db->cids = 1;

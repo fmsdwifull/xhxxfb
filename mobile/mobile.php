@@ -56,7 +56,7 @@ if($action == 'pc') {
 		}
 		$android_app = DT_PATH.'api/qrcode.png.php?auth='.encrypt($app, DT_KEY.'QRCODE');
 	}
-	$destoon_task = rand_task();
+	$xhxxfb_task = rand_task();
 	$head_title = $L['mobile_title'];
 	include template('mobile', $module);
 }

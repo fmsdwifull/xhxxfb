@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($DT_BOT) dhttp(403);
 if(is_array($itemid) && !$_userid) {
 	$DT_URL = $MOD['linkurl'].'cart.php?action=add';

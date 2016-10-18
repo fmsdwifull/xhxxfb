@@ -56,19 +56,19 @@ show_menu($menus);
 </form>
 </table>
 <?php if($_founder) {?>
-<div id="destoon"></div>
+<div id="xhxxfb"></div>
 <div class="tt">系统信息</div>
 <table cellpadding="2" cellspacing="1" class="tb">
 <tr>
 <td class="tl">程序信息</td>
-<td>&nbsp;<a href="?file=cloud&action=update" class="t">DESTOON B2B Version <?php echo DT_VERSION;?> Release <?php echo DT_RELEASE;?> <?php echo DT_CHARSET;?> <?php echo strtoupper(DT_LANG);?> [检查更新]</a></td>
+<td>&nbsp;<a href="?file=cloud&action=update" class="t">xhxxfb B2B Version <?php echo DT_VERSION;?> Release <?php echo DT_RELEASE;?> <?php echo DT_CHARSET;?> <?php echo strtoupper(DT_LANG);?> [检查更新]</a></td>
 </tr>
 <tr>
 <td class="tl">软件版本</td>
 <?php if($edition == '&#20010;&#20154;&#29256;') { ?>
-<td id="destoon_edition">&nbsp;<span class="f_blue"><?php echo $edition;?></span> <span class="f_red">(未授权)</span>&nbsp;&nbsp;<a href="?file=cloud&action=buy" target="_blank" class="t">[购买授权]</a></td>
+<td id="xhxxfb_edition">&nbsp;<span class="f_blue"><?php echo $edition;?></span> <span class="f_red">(未授权)</span>&nbsp;&nbsp;<a href="?file=cloud&action=buy" target="_blank" class="t">[购买授权]</a></td>
 <?php } else { ?>
-<td id="destoon_edition">&nbsp;<span class="f_blue">商业<?php echo $edition;?></span>&nbsp;&nbsp;<a href="?file=cloud&action=biz" target="_blank" class="t" title="技术支持">[技术支持]</a></td>
+<td id="xhxxfb_edition">&nbsp;<span class="f_blue">商业<?php echo $edition;?></span>&nbsp;&nbsp;<a href="?file=cloud&action=biz" target="_blank" class="t" title="技术支持">[技术支持]</a></td>
 <?php } ?>
 </tr>
 <tr>
@@ -77,19 +77,19 @@ show_menu($menus);
 </tr>
 <tr>
 <td class="tl">官方网站</td>
-<td>&nbsp;<a href="http://www.destoon.com/?tracert=AdminMain" target="_blank">http://www.destoon.com</a></td>
+<td>&nbsp;<a href="http://www.xhxxfb.com/?tracert=AdminMain" target="_blank">http://www.xhxxfb.com</a></td>
 </tr>
 <tr>
 <td class="tl">支持论坛</td>
-<td>&nbsp;<a href="http://bbs.destoon.com/?tracert=AdminMain" target="_blank">http://bbs.destoon.com</a></td>
+<td>&nbsp;<a href="http://bbs.xhxxfb.com/?tracert=AdminMain" target="_blank">http://bbs.xhxxfb.com</a></td>
 </tr>
 <tr>
 <td class="tl">帮助文档</td>
-<td>&nbsp;<a href="http://www.destoon.com/doc/?tracert=AdminMain" target="_blank">http://www.destoon.com/doc/</a></td>
+<td>&nbsp;<a href="http://www.xhxxfb.com/doc/?tracert=AdminMain" target="_blank">http://www.xhxxfb.com/doc/</a></td>
 </tr>
 <tr>
 <td class="tl">专用主机</td>
-<td>&nbsp;<a href="http://www.destoon.com/host/?tracert=AdminMain" target="_blank">http://www.destoon.com/host/</a></td>
+<td>&nbsp;<a href="http://www.xhxxfb.com/host/?tracert=AdminMain" target="_blank">http://www.xhxxfb.com/host/</a></td>
 </tr>
 <tr>
 <td class="tl">服务器时间</td>
@@ -117,13 +117,13 @@ show_menu($menus);
 <script type="text/javascript" src="<?php echo $notice_url;?>"></script>
 <script type="text/javascript">
 $(function(){
-	var destoon_release = <?php echo DT_RELEASE;?>;
-	var destoon_version = <?php echo DT_VERSION;?>;
-	if(typeof destoon_lastrelease != 'undefined') {
-		var lastrelease = parseInt(destoon_lastrelease.replace('-', '').replace('-', ''));
-		if(destoon_lastversion == destoon_version && destoon_release < lastrelease) {
-			$('#last_v').html(destoon_lastversion);
-			$('#last_r').html(destoon_lastrelease);
+	var xhxxfb_release = <?php echo DT_RELEASE;?>;
+	var xhxxfb_version = <?php echo DT_VERSION;?>;
+	if(typeof xhxxfb_lastrelease != 'undefined') {
+		var lastrelease = parseInt(xhxxfb_lastrelease.replace('-', '').replace('-', ''));
+		if(xhxxfb_lastversion == xhxxfb_version && xhxxfb_release < lastrelease) {
+			$('#last_v').html(xhxxfb_lastversion);
+			$('#last_r').html(xhxxfb_lastrelease);
 			$('#tips_update').slideDown(600);
 		}
 	}

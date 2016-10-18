@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $TYPE = array('全部主题', '最新发表', '最新回复', '精华主题', '热门主题');
 $COLOR = array('FF0000'=>'红色', '0000FF'=>'蓝色', 'FF6600'=>'橙色');
 $MANAGE = array('类型', '删除', '修改', '加精', '置顶', '高亮');

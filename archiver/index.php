@@ -43,7 +43,7 @@ if(isset($month) && isset($M[$month])) {
 	$ttime = strtotime($ym.'-'.$t.' 23:59:59');
 	$condition = "status>2 AND addtime>$ftime AND addtime<$ttime";	
 	$num = $db->count($table, $condition, $CFG['db_expires']);
-	$demo_url = $DT['rewrite'] ? rewrite('index.php?mid='.$mid.'&month='.$month.'&page={destoon_page}') : '?mid-'.$mid.'-month-'.$month.'-page-{destoon_page}.html';
+	$demo_url = $DT['rewrite'] ? rewrite('index.php?mid='.$mid.'&month='.$month.'&page={xhxxfb_page}') : '?mid-'.$mid.'-month-'.$month.'-page-{xhxxfb_page}.html';
 	$pages = pages($num, $page, $pagesize, $demo_url);
 	$tmp = explode('<input type="text"', $pages);
 	$pages = $tmp[0];

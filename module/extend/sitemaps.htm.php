@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$MOD['sitemaps']) {
 	file_del(DT_ROOT.'/sitemaps.xml');
 	return false;

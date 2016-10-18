@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $moduleid = 22;
 $module = 'info';
 $MOD = cache_read('module-'.$moduleid.'.php');
@@ -44,7 +44,7 @@ if($itemid) {
 		$url .= "&kw=$kw";
 		$head_title = $kw.$DT['seo_delimiter'].$head_title;
 	}
-	$demo_url = userurl($username, $url.'&page={destoon_page}', $domain);
+	$demo_url = userurl($username, $url.'&page={xhxxfb_page}', $domain);
 	$pagesize =intval($menu_num[$menuid]);
 	if(!$pagesize || $pagesize > 100) $pagesize = 30;
 	$offset = ($page-1)*$pagesize;

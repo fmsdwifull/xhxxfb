@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 preg_match("/^[0-9\.\,]{13,17}$/", $map) or $map = '';
 ?>
 <tr>

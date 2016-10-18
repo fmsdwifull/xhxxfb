@@ -1,1 +1,1 @@
-var DTPath = "http://127.0.0.1/destoon/";var SKPath = "http://127.0.0.1/destoon/skin/default/";var MEPath = "http://127.0.0.1/destoon/member/";var DTEditor = "DT_EDITOR";var CKDomain = "";var CKPath = "/";var CKPrex = "cpv_";
+var DTPath = "http://127.0.0.1/xhxxfb/";var SKPath = "http://127.0.0.1/xhxxfb/skin/default/";var MEPath = "http://127.0.0.1/xhxxfb/member/";var DTEditor = "fckeditor";var CKDomain = "";var CKPath = "/";var CKPrex = "cpv_";

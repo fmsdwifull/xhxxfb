@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $swf_is_admin = defined('DT_ADMIN');
 ?>
 <tr>

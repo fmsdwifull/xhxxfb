@@ -16,5 +16,5 @@ if($_SESSION['ne_access_token']) {
 		$DS = array('ne_access_token');
 	}
 }
-require '../destoon.inc.php';
+require '../xhxxfb.inc.php';
 ?>

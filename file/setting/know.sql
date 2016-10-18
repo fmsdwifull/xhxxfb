@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_know`;
-CREATE TABLE `destoon_know` (
+DROP TABLE IF EXISTS `xhxxfb_know`;
+CREATE TABLE `xhxxfb_know` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -44,8 +44,8 @@ CREATE TABLE `destoon_know` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='知道';
 
-DROP TABLE IF EXISTS `destoon_know_answer`;
-CREATE TABLE `destoon_know_answer` (
+DROP TABLE IF EXISTS `xhxxfb_know_answer`;
+CREATE TABLE `xhxxfb_know_answer` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `qid` bigint(20) unsigned NOT NULL default '0',
   `linkurl` varchar(255) NOT NULL default '',
@@ -64,15 +64,15 @@ CREATE TABLE `destoon_know_answer` (
   KEY `qid` (`qid`)
 ) TYPE=MyISAM COMMENT='知道回答';
 
-DROP TABLE IF EXISTS `destoon_know_data`;
-CREATE TABLE `destoon_know_data` (
+DROP TABLE IF EXISTS `xhxxfb_know_data`;
+CREATE TABLE `xhxxfb_know_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` longtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='知道内容';
 
-DROP TABLE IF EXISTS `destoon_know_expert`;
-CREATE TABLE `destoon_know_expert` (
+DROP TABLE IF EXISTS `xhxxfb_know_expert`;
+CREATE TABLE `xhxxfb_know_expert` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `title` varchar(100) NOT NULL,
   `style` varchar(50) NOT NULL default '',
@@ -93,8 +93,8 @@ CREATE TABLE `destoon_know_expert` (
   KEY `addtime` (`addtime`)
 ) TYPE=MyISAM COMMENT='知道专家';
 
-DROP TABLE IF EXISTS `destoon_know_vote`;
-CREATE TABLE `destoon_know_vote` (
+DROP TABLE IF EXISTS `xhxxfb_know_vote`;
+CREATE TABLE `xhxxfb_know_vote` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `qid` bigint(20) unsigned NOT NULL default '0',
   `aid` bigint(20) unsigned NOT NULL default '0',

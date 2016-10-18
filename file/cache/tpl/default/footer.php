@@ -1,4 +1,4 @@
-<?php defined('IN_DESTOON') or exit('Access Denied');?><div class="m">
+<?php defined('IN_XHXXFB') or exit('Access Denied');?><div class="m">
 <div class="b10">&nbsp;</div>
 <div class="foot_page">
 <a href="<?php echo $MODULE['1']['linkurl'];?>">网站首页</a>
@@ -16,13 +16,13 @@
 <div class="foot">
 <div id="copyright"><?php echo $DT['copyright'];?></div>
 <?php if(DT_DEBUG) { ?><div class="px11"><?php echo debug();?></div><?php } ?>
-<div id="powered"><a href="http://www.destoon.com/" target="_blank"><img src="<?php echo DT_STATIC;?>file/image/powered.gif" width="136" height="10" alt="Powered by DESTOON"/></a></div>
+<div id="powered"><a href="http://www.xhxxfb.com/" target="_blank"><img src="<?php echo DT_STATIC;?>file/image/powered.gif" width="136" height="10" alt="Powered by xhxxfb"/></a></div>
 </div>
 </div>
 <div class="back2top"><a href="javascript:void(0);" title="返回顶部">&nbsp;</a></div>
 <script type="text/javascript">
-<?php if($destoon_task) { ?>
-show_task('<?php echo $destoon_task;?>');
+<?php if($xhxxfb_task) { ?>
+show_task('<?php echo $xhxxfb_task;?>');
 <?php } else { ?>
 <?php include DT_ROOT.'/api/task.inc.php';?>
 <?php } ?>

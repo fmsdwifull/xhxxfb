@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 $MOD['poll_enable'] or dheader(DT_PATH);
 require DT_ROOT.'/include/post.func.php';
@@ -10,10 +10,10 @@ $_TP = sort_type($TYPE);
 require MD_ROOT.'/'.$ext.'.class.php';
 $do = new $ext();
 $typeid = isset($typeid) ? intval($typeid) : 0;
-$destoon_task = rand_task();
+$xhxxfb_task = rand_task();
 if($action == 'js') {
 	$itemid or exit;
-	echo 'document.write(\'<iframe src="'.$url.'index.php?action=show&itemid='.$itemid.'" style="width:99%;height:0;" scrolling="no" frameborder="0" id="destoon_poll_'.$itemid.'"></iframe>\');';
+	echo 'document.write(\'<iframe src="'.$url.'index.php?action=show&itemid='.$itemid.'" style="width:99%;height:0;" scrolling="no" frameborder="0" id="xhxxfb_poll_'.$itemid.'"></iframe>\');';
 } else if($action == 'ajax') {
 	$itemid or exit($L['poll_error_3']);
 	$I = $db->get_one("SELECT * FROM {$DT_PRE}poll_item WHERE itemid=$itemid");

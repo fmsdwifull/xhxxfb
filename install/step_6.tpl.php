@@ -1,16 +1,16 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 include IN_ROOT.'/header.tpl.php';
 ?>
 <div class="head">
 	<div>
 		<strong>系统安装成功</strong><br/>
-		恭喜!您已经成功安装DESTOON B2B网站管理系统
+		恭喜!您已经成功安装xhxxfb B2B网站管理系统
 	</div>
 </div>
 <div class="body">
 <div>
-	<strong style="font-size:14px;">恭喜！您已经成功安装DESTOON B2B网站管理系统</strong><br/><br/>
+	<strong style="font-size:14px;">恭喜！您已经成功安装xhxxfb B2B网站管理系统</strong><br/><br/>
 	<fieldset>
 	<legend>&nbsp;网站管理信息&nbsp;</legend>
 	<table cellpadding="2" cellspacing="2" width="100%">
@@ -29,8 +29,8 @@ include IN_ROOT.'/header.tpl.php';
 	</table>
 	</fieldset>
 	<br/><br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;非常感谢选择DESTOON B2B产品<br/><br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多产品相关信息，敬请关注 <a href="http://www.destoon.com" target="_blank">www.destoon.com</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;非常感谢选择xhxxfb B2B产品<br/><br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多产品相关信息，敬请关注 <a href="http://www.xhxxfb.com" target="_blank">www.xhxxfb.com</a>
 </div>
 </div>
 <div class="foot">

@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 $username = $domain = '';
 if(isset($homepage) && check_name($homepage)) {
@@ -59,7 +59,7 @@ if($username) {
 	include DT_ROOT.'/include/seo.inc.php';
 	if($page == 1) $head_canonical = $MOD['linkurl'];
 	if($EXT['mobile_enable']) $head_mobile = $EXT['mobile_url'].mobileurl($moduleid, 0, 0, $page);
-	$destoon_task = "moduleid=$moduleid&html=index";
+	$xhxxfb_task = "moduleid=$moduleid&html=index";
 	include template('index', $module);
 }
 ?>

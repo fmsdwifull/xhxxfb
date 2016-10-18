@@ -171,7 +171,7 @@ function LoadSelection()
 		GetE('cmbLnkTarget').value	= oLink.target ;
 	}
 
-	OnDialogTabChange('Info');//DESTOON ADD
+	OnDialogTabChange('Info');//xhxxfb ADD
 	var ss = dialog.document.getElementsByTagName('div');
 	ss[5].className = 'PopupTab';
 	ss[6].className = 'PopupTabSelected';
@@ -257,8 +257,8 @@ function UpdateImage( e, skipId )
 	e.src = GetE('txtUrl').value ;
 	SetAttribute( e, "_fcksavedurl", GetE('txtUrl').value ) ;
 	SetAttribute( e, "alt"   , GetE('txtAlt').value ) ;
-	if(GetE('txtWidth').value > 0) SetAttribute( e, "width" , GetE('txtWidth').value ) ;//DESTOON ADD
-	if(GetE('txtHeight').value > 0) SetAttribute( e, "height", GetE('txtHeight').value ) ;//DESTOON ADD
+	if(GetE('txtWidth').value > 0) SetAttribute( e, "width" , GetE('txtWidth').value ) ;//xhxxfb ADD
+	if(GetE('txtHeight').value > 0) SetAttribute( e, "height", GetE('txtHeight').value ) ;//xhxxfb ADD
 	SetAttribute( e, "vspace", GetE('txtVSpace').value ) ;
 	SetAttribute( e, "hspace", GetE('txtHSpace').value ) ;
 	SetAttribute( e, "border", GetE('txtBorder').value ) ;

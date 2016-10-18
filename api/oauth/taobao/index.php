@@ -13,5 +13,5 @@ if($_SESSION['tb_access_token']) {
 		$DS = array('tb_access_token', 'tb_openid', 'tb_nickname');
 	}
 }
-require '../destoon.inc.php';
+require '../xhxxfb.inc.php';
 ?>

@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_article_21`;
-CREATE TABLE `destoon_article_21` (
+DROP TABLE IF EXISTS `xhxxfb_article_21`;
+CREATE TABLE `xhxxfb_article_21` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -35,8 +35,8 @@ CREATE TABLE `destoon_article_21` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='资讯';
 
-DROP TABLE IF EXISTS `destoon_article_data_21`;
-CREATE TABLE `destoon_article_data_21` (
+DROP TABLE IF EXISTS `xhxxfb_article_data_21`;
+CREATE TABLE `xhxxfb_article_data_21` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` longtext NOT NULL,
   PRIMARY KEY  (`itemid`)

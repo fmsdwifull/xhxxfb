@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 //****************************************	//MD5密钥要跟订单提交页相同，如Send.asp里的 key = "test" ,修改""号内 test 为您的密钥
 											//如果您还没有设置MD5密钥请登录我们为您提供商户后台，地址：https://merchant3.chinabank.com.cn/
 $key = $PAY[$bank]['keycode'];	//登录后在上面的导航栏里可能找到“B2C”，在二级导航栏里有“MD5密钥设置”

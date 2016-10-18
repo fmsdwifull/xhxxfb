@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $CAT or exit;
 $CAT['property'] or exit;
 include DT_ROOT.'/include/property.func.php';

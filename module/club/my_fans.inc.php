@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require MD_ROOT.'/fans.class.php';
 $do = new fans();
 if($action) {

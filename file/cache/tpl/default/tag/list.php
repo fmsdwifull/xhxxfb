@@ -1,4 +1,4 @@
-<?php defined('IN_DESTOON') or exit('Access Denied');?><ul>
+<?php defined('IN_XHXXFB') or exit('Access Denied');?><ul>
 <?php if(is_array($tags)) { foreach($tags as $i => $t) { ?>
 <li><?php if($datetype) { ?><span class="f_r px11">&nbsp;<?php echo timetodate($t['addtime'], $datetype);?></span><?php } ?>
 <?php if($showcat) { ?><a href="<?php echo $t['caturl'];?>"<?php if($target) { ?> target="<?php echo $target;?>"<?php } ?>

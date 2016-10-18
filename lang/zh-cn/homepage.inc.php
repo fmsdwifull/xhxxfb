@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $L['msg_buy_deny'] = '您所在的会员组无权查看采购清单';
 $L['msg_contact_deny'] = '您所在的会员组无权查看联系方式';
 $HMENU = $DMENU = array('公司介绍', '供应产品', '采购清单', '新闻中心', '荣誉资质', '人才招聘', '联系方式', '公司相册', '招商代理', '品牌展示', '公司视频', '友情链接', '商城', '诚信档案');

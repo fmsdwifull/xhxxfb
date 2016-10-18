@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 set_cookie('trade_id', $itemid);
 require_once DT_ROOT.'/api/trade/alipay/1/pay/alipay_service.class.php';
 /**************************请求参数**************************/

@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $kf_53kf = preg_match("/^[0-9a-zA-z_\-]{4,20}$/", $kf) ? $kf : '';
 ?>
 <tr id="kf_post_53kf" style="display:none;">

@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 $MOD['gift_enable'] or dheader(DT_PATH);
 require DT_ROOT.'/include/post.func.php';
@@ -10,7 +10,7 @@ $_TP = sort_type($TYPE);
 require MD_ROOT.'/'.$ext.'.class.php';
 $do = new $ext();
 $typeid = isset($typeid) ? intval($typeid) : 0;
-$destoon_task = rand_task();
+$xhxxfb_task = rand_task();
 switch($action) {
 	case 'my':
 		login();

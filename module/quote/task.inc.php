@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($html == 'show') {
 	$itemid or exit;
 	$item = $db->get_one("SELECT * FROM {$table} WHERE itemid=$itemid");
@@ -47,7 +47,7 @@ if($html == 'show') {
 			if(strpos($content, '<hr class="de-pagebreak" />') !== false) {
 				$content = explode('<hr class="de-pagebreak" />', $content);
 				$total = count($content);
-				$pages = pages($total, $page, 1, $MOD['linkurl'].itemurl($item, '{destoon_page}'));
+				$pages = pages($total, $page, 1, $MOD['linkurl'].itemurl($item, '{xhxxfb_page}'));
 				if($pages) $pages = substr($pages, 0, strpos($pages, '<cite>'));
 				$content = $content[$page-1];
 			}

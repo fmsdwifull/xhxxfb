@@ -1,6 +1,6 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 defined('DT_ADMIN') or exit('Access Denied');
@@ -49,11 +49,11 @@ switch($action) {
 				if(in_array($dir, $sysdirs)) msg('安装目录与系统目录冲突，请更换安装目录');
 				if(!dir_create(DT_ROOT.'/'.$dir.'/')) msg('无法创建'.$dir.'目录，请检查PHP是否有创建权限或手动创建');
 				if(!is_write(DT_ROOT.'/'.$dir.'/')) msg('目录'.$dir.'无法写入，请设置此目录可写权限');
-				if(!file_put(DT_ROOT.'/'.$dir.'/config.inc.php', "DESTOON")) msg('目录'.$dir.'无法写入，请设置此目录可写权限');
+				if(!file_put(DT_ROOT.'/'.$dir.'/config.inc.php', "xhxxfb")) msg('目录'.$dir.'无法写入，请设置此目录可写权限');
 			}
 			if($post['domain']) $post['domain'] = fix_domain($post['domain']);
 			$post['linkurl'] = $post['islink'] ? $post['linkurl'] : ($post['domain'] ? $post['domain'] : linkurl($post['moduledir']."/"));
-			if($post['islink']) $post['module'] = 'destoon';
+			if($post['islink']) $post['module'] = 'xhxxfb';
 			$post['installtime'] = $DT_TIME;
 			if($MCFG['moduleid']) {
 				$db->query("DELETE FROM {$DT_PRE}module WHERE moduleid=".$MCFG['moduleid']);
@@ -174,7 +174,7 @@ switch($action) {
 			$module = $r['module'];
 			$dir = $r['moduledir'];
 			if(!dir_create(DT_ROOT.'/'.$dir)) msg('无法创建'.$dir.'目录，请检查PHP是否有创建权限或手动创建');
-			if(!file_put(DT_ROOT.'/'.$dir.'/config.inc.php', "DesToon Test")) msg('目录'.$dir.'无法写入，如果是Linux/Unix服务器，请设置此目录可写权限');
+			if(!file_put(DT_ROOT.'/'.$dir.'/config.inc.php', "xhxxfb Test")) msg('目录'.$dir.'无法写入，如果是Linux/Unix服务器，请设置此目录可写权限');
 			file_put(DT_ROOT.'/'.$dir.'/config.inc.php', "<?php\n\$moduleid = ".$moduleid.";\n?>");
 			include $remkdir;			
 			cache_module();

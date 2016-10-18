@@ -1,6 +1,6 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 require 'common.inc.php';
@@ -41,6 +41,8 @@ if(isset($homepage) && check_name($homepage)) {
 		}
 	}
 }
+//echo $username."sss";die;
+
 if($username) {
 	$moduleid = 4;
 	$module = 'company';
@@ -49,6 +51,7 @@ if($username) {
 	require DT_ROOT.'/module/'.$module.'/common.inc.php';
 	include DT_ROOT.'/module/'.$module.'/init.inc.php';
 } else {
+
 	if($DT['safe_domain']) {
 		$safe_domain = explode('|', $DT['safe_domain']);
 		$pass_domain = false;
@@ -57,11 +60,19 @@ if($username) {
 		}
 		$pass_domain or dhttp(404);
 	}
-	if($DT['index_html']) {
+        //echo $DT['index_html']."ssss";die;
+	
+        if($DT['index_html']) {
+            
+            set_cookie('oauth_user','ddddddf');
 		$html_file = $CFG['com_dir'] ? DT_ROOT.'/'.$DT['index'].'.'.$DT['file_ext'] : DT_CACHE.'/index.inc.html';
-		if(!is_file($html_file)) tohtml('index');		
-		if(is_file($html_file)) exit(include($html_file));
+		if(!is_file($html_file)) 
+                    tohtml('index');		
+		if(is_file($html_file)) 
+                    exit(include($html_file));
 	}
+        die;
+        
 	$AREA or $AREA = cache_read('area.php');
 	if($EXT['mobile_enable']) $head_mobile = $EXT['mobile_url'];
 	$index = 1;

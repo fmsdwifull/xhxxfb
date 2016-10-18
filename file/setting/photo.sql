@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_photo_12`;
-CREATE TABLE `destoon_photo_12` (
+DROP TABLE IF EXISTS `xhxxfb_photo_12`;
+CREATE TABLE `xhxxfb_photo_12` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -33,15 +33,15 @@ CREATE TABLE `destoon_photo_12` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='图库';
 
-DROP TABLE IF EXISTS `destoon_photo_data_12`;
-CREATE TABLE `destoon_photo_data_12` (
+DROP TABLE IF EXISTS `xhxxfb_photo_data_12`;
+CREATE TABLE `xhxxfb_photo_data_12` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` longtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='图库内容';
 
-DROP TABLE IF EXISTS `destoon_photo_item_12`;
-CREATE TABLE `destoon_photo_item_12` (
+DROP TABLE IF EXISTS `xhxxfb_photo_item_12`;
+CREATE TABLE `xhxxfb_photo_item_12` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `item` bigint(20) unsigned NOT NULL default '0',
   `introduce` text NOT NULL,

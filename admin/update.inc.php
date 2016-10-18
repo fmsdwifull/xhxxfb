@@ -1,6 +1,6 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 defined('DT_ADMIN') or exit('Access Denied');
@@ -11,7 +11,7 @@ switch($action) {
 	case 'download':
 		$PHP_URL = @get_cfg_var("allow_url_fopen");
 		if(!$PHP_URL) msg('当前服务器不支持URL打开文件，请修改php.ini中allow_url_fopen = on');
-		$url = 'http://www.destoon.com/update.php?product=b2b&release='.$release.'&charset='.DT_CHARSET.'&version='.DT_VERSION.'&domain='.(DT_DOMAIN ? DT_DOMAIN : DT_PATH);
+		$url = 'http://www.xhxxfb.com/update.php?product=b2b&release='.$release.'&charset='.DT_CHARSET.'&version='.DT_VERSION.'&domain='.(DT_DOMAIN ? DT_DOMAIN : DT_PATH);
 		$code = @file_get_contents($url);
 		if($code) {
 			if(substr($code, 0, 8) == 'StatusOk') {
@@ -36,24 +36,24 @@ switch($action) {
 		require DT_ROOT.'/admin/unzip.class.php';
 		$zip = new unzip;
 		$zip->extract_zip($release_dir.'/'.$release.'.zip', $release_dir.'/source/');
-		if(is_file($release_dir.'/source/destoon/version.inc.php')) {			
+		if(is_file($release_dir.'/source/xhxxfb/version.inc.php')) {			
 			msg('更新解压缩成功，开始更新文件..', '?file='.$file.'&action=copy&release='.$release);
 		} else {
 			msg('更新解压缩失败，请重试..');
 		}
 	break;
 	case 'copy':
-		if($CFG['template'] != 'default' && is_dir($release_dir.'/source/destoon/template/default')) @rename($release_dir.'/source/destoon/template/default', $release_dir.'/source/destoon/template/'.$CFG['template']);
-		if($CFG['skin'] != 'default' && is_dir($release_dir.'/source/destoon/skin/default')) @rename($release_dir.'/source/destoon/skin/default', $release_dir.'/source/destoon/skin/'.$CFG['skin']);
-		$files = file_list($release_dir.'/source/destoon');
+		if($CFG['template'] != 'default' && is_dir($release_dir.'/source/xhxxfb/template/default')) @rename($release_dir.'/source/xhxxfb/template/default', $release_dir.'/source/xhxxfb/template/'.$CFG['template']);
+		if($CFG['skin'] != 'default' && is_dir($release_dir.'/source/xhxxfb/skin/default')) @rename($release_dir.'/source/xhxxfb/skin/default', $release_dir.'/source/xhxxfb/skin/'.$CFG['skin']);
+		$files = file_list($release_dir.'/source/xhxxfb');
 		foreach($files as $v) {
-			$file_a = str_replace('file/update/'.$release.'/source/destoon/', '', $v);
-			$file_b = str_replace('source/destoon/', 'backup/', $v);
+			$file_a = str_replace('file/update/'.$release.'/source/xhxxfb/', '', $v);
+			$file_b = str_replace('source/xhxxfb/', 'backup/', $v);
 			if(is_file($file_a)) file_copy($file_a, $file_b);
 		}
 		foreach($files as $v) {
-			$file_a = str_replace('file/update/'.$release.'/source/destoon/', '', $v);
-			file_copy($v, $file_a) or msg('因文件权限不可写，系统无法覆盖'.str_replace(DT_ROOT.'/', '', $file_a).'<br/>请通过FTP工具移动file/update/'.$release.'/source/destoon/目录内所有文件覆盖到站点根目录(Windows独立服务器可以直接复制->粘贴)<br/>Linux独立服务器执行\cp -rf '.DT_ROOT.'/file/update/'.$release.'/source/destoon/* '.DT_ROOT.'/');
+			$file_a = str_replace('file/update/'.$release.'/source/xhxxfb/', '', $v);
+			file_copy($v, $file_a) or msg('因文件权限不可写，系统无法覆盖'.str_replace(DT_ROOT.'/', '', $file_a).'<br/>请通过FTP工具移动file/update/'.$release.'/source/xhxxfb/目录内所有文件覆盖到站点根目录(Windows独立服务器可以直接复制->粘贴)<br/>Linux独立服务器执行\cp -rf '.DT_ROOT.'/file/update/'.$release.'/source/xhxxfb/* '.DT_ROOT.'/');
 		}
 		msg('文件更新成功，开始运行更新..', '?file='.$file.'&action=cmd&release='.$release);
 	break;

@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(preg_match("/^[a-z0-9]{32}$/", $stats)) {
 ?>
 &nbsp;|&nbsp;

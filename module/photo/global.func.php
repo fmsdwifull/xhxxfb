@@ -1,11 +1,11 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function side_photo($T, $page, $demo_url) {
 	$demo_url = str_replace(array('%7B', '%7D'), array('{', '}'), $demo_url);
 	$S = array();
 	$i = $j = 0;
 	foreach($T as $k=>$v) {
-		$T[$k]['linkurl'] = str_replace('{destoon_page}', $k + 1, $demo_url);
+		$T[$k]['linkurl'] = str_replace('{xhxxfb_page}', $k + 1, $demo_url);
 		$T[$k]['page'] = $k + 1;
 		if($page == $k + 1) $j = $i;
 		$i++;
@@ -25,12 +25,12 @@ function side_photo($T, $page, $demo_url) {
 function next_photo($page, $items, $demo_url) {
 	$demo_url = str_replace(array('%7B', '%7D'), array('{', '}'), $demo_url);
 	$p = $page == $items ? 1 : $page + 1;
-	return str_replace('{destoon_page}', $p, $demo_url);
+	return str_replace('{xhxxfb_page}', $p, $demo_url);
 }
 
 function prev_photo($page, $items, $demo_url) {
 	$demo_url = str_replace(array('%7B', '%7D'), array('{', '}'), $demo_url);
 	$p = $page == 1 ? $items : $page - 1;
-	return str_replace('{destoon_page}', $p, $demo_url);
+	return str_replace('{xhxxfb_page}', $p, $demo_url);
 }
 ?>

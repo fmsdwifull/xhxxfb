@@ -26,7 +26,7 @@ show_menu($menus);
 <tr>
 <td class="tl"><span class="f_hid">*</span> 专家介绍</td>
 <td><textarea name="post[content]" id="content" class="dsn"><?php echo $content;?></textarea>
-<?php echo deditor($moduleid, 'content', 'Destoon', '100%', 350);?><br/><span id="dcontent" class="f_red"></span>
+<?php echo deditor($moduleid, 'content', 'xhxxfb', '100%', 350);?><br/><span id="dcontent" class="f_red"></span>
 </td>
 </tr>
 <tr>

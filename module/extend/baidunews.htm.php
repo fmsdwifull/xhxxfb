@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$MOD['baidunews']) {
 	file_del(DT_ROOT.'/baidunews.xml');
 	return false;

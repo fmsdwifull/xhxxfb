@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require DT_ROOT.'/api/pay/'.$bank.'/netpayclient_config.php';
 //加载 netpayclient 组件
 require DT_ROOT.'/api/pay/'.$bank.'/netpayclient.php';

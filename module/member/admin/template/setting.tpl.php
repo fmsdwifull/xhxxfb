@@ -338,14 +338,14 @@ foreach($ECK as $k=>$v) {
 <td>
 <select name="setting[editor]">
 <option value="Default"<?php if($editor == 'Default') echo ' selected';?>>全部</option>
-<option value="Destoon"<?php if($editor == 'Destoon') echo ' selected';?>>精简</option>
+<option value="xhxxfb"<?php if($editor == 'xhxxfb') echo ' selected';?>>精简</option>
 <option value="Simple"<?php if($editor == 'Simple') echo ' selected';?>>简洁</option>
 <option value="Basic"<?php if($editor == 'Basic') echo ' selected';?>>基础</option>
 </select>
 </td>
 </tr>
 <tr>
-<td class="tl">商务中心显示所有菜单</td>
+<td class="tl">个人中心显示所有菜单</td>
 <td>
 <input type="radio" name="setting[show_menu]" value="1" <?php if($show_menu) echo 'checked';?>/> 开启&nbsp;&nbsp;
 <input type="radio" name="setting[show_menu]" value="0" <?php if(!$show_menu) echo 'checked';?>/> 关闭<?php tips('选择关闭 则隐藏无权限访问的菜单');?>
@@ -788,7 +788,7 @@ X
 </tr>
 <tr>
 <td class="tl">整合程序地址</td>
-<td><input name="setting[passport_url]" type="text" size="50" value="<?php echo $passport_url;?>"/><?php tips('整合程序接口地址 例如:http://bbs.destoon.com 结尾不要带斜线');?></td>
+<td><input name="setting[passport_url]" type="text" size="50" value="<?php echo $passport_url;?>"/><?php tips('整合程序接口地址 例如:http://bbs.xhxxfb.com 结尾不要带斜线');?></td>
 </tr>
 <tr>
 <td class="tl">整合密钥</td>
@@ -805,7 +805,7 @@ X
 </tr>
 <tr>
 <td class="tl">API地址</td>
-<td><input name="setting[uc_api]" type="text" size="50" value="<?php echo $uc_api;?>" id="uc_api"/><?php tips('整合程序接口地址 例如:http://bbs.destoon.com 结尾不要带斜线');?></td>
+<td><input name="setting[uc_api]" type="text" size="50" value="<?php echo $uc_api;?>" id="uc_api"/><?php tips('整合程序接口地址 例如:http://bbs.xhxxfb.com 结尾不要带斜线');?></td>
 </tr>
 <tr>
 <td class="tl">主机IP</td>

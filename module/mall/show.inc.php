@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $itemid or dheader($MOD['linkurl']);
 if(!check_group($_groupid, $MOD['group_show'])) include load('403.inc');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
@@ -47,7 +47,7 @@ $update = '';
 if(check_group($_groupid, $MOD['group_contact'])) {
 	if($fee) {
 		$user_status = 4;
-		$destoon_task = "moduleid=$moduleid&html=show&itemid=$itemid";
+		$xhxxfb_task = "moduleid=$moduleid&html=show&itemid=$itemid";
 	} else {
 		$user_status = 3;
 		$member = $item['username'] ? userinfo($item['username']) : array();

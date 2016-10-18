@@ -1,12 +1,12 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 $MOD['guestbook_enable'] or dheader(DT_PATH);
 $TYPE = explode('|', trim($MOD['guestbook_type']));
 require DT_ROOT.'/include/post.func.php';
 require MD_ROOT.'/guestbook.class.php';
 $do = new guestbook();
-$destoon_task = rand_task();
+$xhxxfb_task = rand_task();
 if($submit) {
 	captcha($captcha, $MOD['guestbook_captcha']);
 	if($do->pass($post)) {

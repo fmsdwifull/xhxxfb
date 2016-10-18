@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($html == 'list') {
 	$catid or exit;
 	if($MOD['list_html'] && $task_list && $CAT) {

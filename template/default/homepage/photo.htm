@@ -63,14 +63,14 @@
 		<h1 class="title" id="title">{$title}</h1>
 		日期：<span class="px11">{$adddate}</span>&nbsp;&nbsp;&nbsp;
 		点击：<span id="hits" class="px11">{$hits}</span>&nbsp;&nbsp;&nbsp;
-		<span onclick="window.open('{$MODULE[3][linkurl]}view.php?img='+Dd('destoon_photo').src);" class="c_p">查看原图</span>&nbsp;&nbsp;&nbsp;
+		<span onclick="window.open('{$MODULE[3][linkurl]}view.php?img='+Dd('xhxxfb_photo').src);" class="c_p">查看原图</span>&nbsp;&nbsp;&nbsp;
 		<span onclick="Go('{userurl($username, 'file='.$file.'&itemid='.$itemid.'&view=1', $domain)}#p');" class="c_p">全部图片</span>
 		</div>
 		</div>
 		<div class="b10"></div>
 		<div id="photo">
 		<div><img src="{DT_SKIN}image/spacer.gif" id="cursor_a" onclick="Go('{$prev_photo}#p');" title="上一张"/></a><img src="{DT_SKIN}image/spacer.gif" id="cursor_b" onclick="Go('{$next_photo}#p');" title="下一张"/></div>
-		<div class="t_c"><img src="{$P[src]}" id="destoon_photo" oncontextmenu="return false;" onload="if(this.width>800)this.width=800;if(this.src.indexOf('spacer.gif')!=-1){this.width=800;this.height=1;}"/></div>
+		<div class="t_c"><img src="{$P[src]}" id="xhxxfb_photo" oncontextmenu="return false;" onload="if(this.width>800)this.width=800;if(this.src.indexOf('spacer.gif')!=-1){this.width=800;this.height=1;}"/></div>
 		</div>
 		{if $P[introduce]}<div class="photo_intro">{nl2br($P[introduce])}</div>{/if}
 		<div class="b10"></div>
@@ -99,11 +99,11 @@
 		{if $could_comment && in_array($moduleid, explode(',', $EXT['comment_module']))}
 		<div id="comment_div" style="display:;">
 			<div class="main_head"><div><span class="f_r px12">共<span id="comment_count">0</span>条&nbsp;&nbsp;</span><strong><span id="message_title">相关评论</span></strong></div></div>
-			<div class="main_body"><script type="text/javascript">Df('{DT_PATH}api/comment.php?mid={$moduleid}&itemid={$itemid}&proxy={$comment_proxy}', 'id="destoon_comment" style="width:100%;"');</script></div>
+			<div class="main_body"><script type="text/javascript">Df('{DT_PATH}api/comment.php?mid={$moduleid}&itemid={$itemid}&proxy={$comment_proxy}', 'id="xhxxfb_comment" style="width:100%;"');</script></div>
 		</div>
 		{/if}
 		<script type="text/javascript">
-		window.onload = function() { try{Dd('cursor_a').style.height = Dd('cursor_b').style.height =  Dd('destoon_photo').height+'px';} catch(e) {} }
+		window.onload = function() { try{Dd('cursor_a').style.height = Dd('cursor_b').style.height =  Dd('xhxxfb_photo').height+'px';} catch(e) {} }
 		</script>
 		{/if}
 	{else}

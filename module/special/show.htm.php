@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$MOD['show_html'] || !$itemid) return false;
 $item = $db->get_one("SELECT * FROM {$table} WHERE itemid=$itemid");
 if(!$item || $item['status'] < 3 || $item['islink'] > 0) return false;
@@ -33,7 +33,7 @@ if($item['seo_title']) $seo_title = $item['seo_title'];
 if($item['seo_keywords']) $head_keywords = $item['seo_keywords'];
 if($item['seo_description']) $head_description = $item['seo_description'];
 $template = $item['template'] ? $item['template'] : ($CAT['show_template'] ? $CAT['show_template'] : 'show');
-$destoon_task = "moduleid=$moduleid&html=show&itemid=$itemid";
+$xhxxfb_task = "moduleid=$moduleid&html=show&itemid=$itemid";
 ob_start();
 include template($template, $module);
 $data = ob_get_contents();

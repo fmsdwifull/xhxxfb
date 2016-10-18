@@ -9,7 +9,7 @@ if(!isset($dialog)) show_menu($menus);
 <td rowspan="9" align="center" width="160" class="f_gray">
 <img src="<?php echo useravatar($username, 'large');?>" width="128" height="128"/>
 <div style="padding:5px 0 0 0;">
-<a href="?moduleid=<?php echo $moduleid;?>&action=login&userid=<?php echo $userid;?>" class="t" target="_blank" title="点击登入会员商务中心">会员前台</a> | 
+<a href="?moduleid=<?php echo $moduleid;?>&action=login&userid=<?php echo $userid;?>" class="t" target="_blank" title="点击登入会员个人中心">会员前台</a> | 
 <a href="?moduleid=<?php echo $moduleid;?>&action=edit&userid=<?php echo $userid;?>" class="t"<?php if(isset($dialog)) {?> target="_blank"<?php } ?>>修改资料</a>
 </div>
 <div style="padding:2px 0 2px 0;">

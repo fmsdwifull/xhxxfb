@@ -5,7 +5,7 @@
 <title>{if $seo_title}{$seo_title}{else}{if $head_title}{$head_title}{$DT[seo_delimiter]}{/if}{$COM[company]}{/if}</title>
 {if $head_keywords}<meta name="keywords" content="{$head_keywords}"/>{/if}
 {if $head_description}<meta name="description" content="{$head_description}"/>{/if}
-<meta name="generator" content="DESTOON B2B - www.destoon.com"/>
+<meta name="generator" content="xhxxfb B2B - www.xhxxfb.com"/>
 <meta name="template" content="{$template}"/>
 {if $head_mobile}
 <meta http-equiv="mobile-agent" content="format=html5;url={$head_mobile}">
@@ -36,7 +36,7 @@ document.onselectstart=function(e){return false;};
 </head>
 <body{if $bgcolor || $background} style="background:{if $bgcolor}{$bgcolor}{/if}{if $background}url('{$background}') no-repeat center 0{/if};"{/if}>
 <div class="m"><div class="top" id="top"><script type="text/javascript">addFav('收藏本页');</script> | <a href="{$COM[linkurl]}" onclick="javascript:try{this.style.behavior='url(#default#homepage)';this.setHomePage(location.href);}catch(e){}return false;">设为主页</a> | <a href="{DT_PATH}api/shortcut.php?itemid={$userid}" rel="nofollow">保存桌面</a>{if $EXT[mobile_enable]} | <a href="javascript:Go('{$EXT[mobile_url]}index.php?moduleid=4&username={$username}');">手机版</a>{/if}{if $head_mobile} | <a href="javascript:Dqrcode();">二维码</a>{/if}</div></div>
-{if $head_mobile}<div id="destoon_qrcode" style="display:none;"></div>{/if}
+{if $head_mobile}<div id="xhxxfb_qrcode" style="display:none;"></div>{/if}
 <div class="m">
 <div class="sign">
 {if $COM[vip]}

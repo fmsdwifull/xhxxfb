@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $itemid or dheader($MOD['linkurl']);
 if(!check_group($_groupid, $MOD['group_show'])) include load('403.inc');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
@@ -42,7 +42,7 @@ while($r = $db->fetch_array($result)) {
 	$r['big'] = str_replace('.thumb.'.file_ext($r['thumb']), '', $r['thumb']);
 	$T[] = $r;
 }
-$demo_url = $MOD['linkurl'].itemurl($item, '{destoon_page}');
+$demo_url = $MOD['linkurl'].itemurl($item, '{xhxxfb_page}');
 $next_photo = $items > 1 ? next_photo($page, $items, $demo_url) : $linkurl;
 $prev_photo = $items > 1 ? prev_photo($page, $items, $demo_url) : $linkurl;
 if($T) {
@@ -59,7 +59,7 @@ $update = '';
 $fee = get_fee($item['fee'], $MOD['fee_view']);
 if($fee) {
 	$user_status = 4;
-	$destoon_task = "moduleid=$moduleid&html=show&itemid=$itemid&page=$page";
+	$xhxxfb_task = "moduleid=$moduleid&html=show&itemid=$itemid&page=$page";
 	$description = '';
 } else {
 	$user_status = 3;

@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($DT_BOT) dhttp(403);
 define('MD_ROOT', DT_ROOT.'/module/'.$module);
 require MD_ROOT.'/global.func.php';
@@ -18,7 +18,7 @@ if(defined('DT_ADMIN')) {
 		}
 	}
 	$group_editor = $MG['editor'];
-	in_array($group_editor, array('Default', 'Destoon', 'Simple', 'Basic')) or $group_editor = 'Destoon';
+	in_array($group_editor, array('Default', 'xhxxfb', 'Simple', 'Basic')) or $group_editor = 'xhxxfb';
 	$show_menu = $MOD['show_menu'] ? true : false;
 	$show_oauth = $MOD['oauth'];
 

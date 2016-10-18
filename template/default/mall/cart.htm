@@ -134,7 +134,7 @@ function move(i) {
 function _move() {
 	if(xmlHttp.readyState==4 && xmlHttp.status==200) {
 		var cart_num = get_cart();
-		$('#destoon_cart').html(cart_num > 0 ? '<strong>'+cart_num+'</strong>' : '0');
+		$('#xhxxfb_cart').html(cart_num > 0 ? '<strong>'+cart_num+'</strong>' : '0');
 		if(xmlHttp.responseText == 1 && Dd('total_good').innerHTML == '0') Go('?rand={$DT_TIME}');
 	}
 }

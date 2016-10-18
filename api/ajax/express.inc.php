@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $moduleid == 2 or exit;
 $auth = isset($auth) ? decrypt($auth, DT_KEY.'EXPRESS') : '';
 $auth or exit;

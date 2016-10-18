@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function template_compile($from, $to) {
 	$content = template_parse(file_get($from));
 	file_put($to, $content);
@@ -29,7 +29,7 @@ function template_parse($str) {
 	$str = preg_replace("/\'([A-Za-z]+)\[\'([A-Za-z\.]+)\'\](.?)\'/s", "'\\1[\\2]\\3'", $str);
 	$str = preg_replace("/(\r?\n)\\1+/", "\\1", $str);
 	$str = str_replace("\t", '', $str);
-	$str = "<?php defined('IN_DESTOON') or exit('Access Denied');?>".$str;
+	$str = "<?php defined('IN_XHXXFB') or exit('Access Denied');?>".$str;
 	return $str;
 }
 

@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($DT_BOT) dhttp(403);
 $itemid or dheader($MOD['linkurl']);
 $MG['message_limit'] > -1 or message(lang('message->without_permission'));

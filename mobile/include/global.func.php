@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function mobile_msg($msg, $forward = '') {
 	if(!$msg && $forward) dheader($forward);
 	extract($GLOBALS, EXTR_SKIP);
@@ -27,29 +27,29 @@ function mobile_pages($total, $page = 1, $perpage = 20, $demo = '') {
 		$demo_url = $demo;
 	} else {
 		if(substr($DT_URL, -5) == '.html') {
-			$demo_url = preg_replace("/[0-9]{1,}\.html/", "{destoon_page}.html", $DT_URL);
+			$demo_url = preg_replace("/[0-9]{1,}\.html/", "{xhxxfb_page}.html", $DT_URL);
 		} else {
 			$demo_url = preg_replace("/(.*)([&?]page=[0-9]*)(.*)/i", "\\1\\3", $DT_URL);
 			$s = strpos($demo_url, '?') === false ? '?' : '&';
-			$demo_url = $demo_url.$s.'page={destoon_page}';
+			$demo_url = $demo_url.$s.'page={xhxxfb_page}';
 			$demo_url = urldecode($demo_url);
 		}
 	}
 	$pages = '<a href="javascript:GoPage('.$total.', \''.$demo_url.'\');"><b>'.$page.'</b>/'.$total.'</a> ';
 	$_page = $page >= $total ? 1 : $page + 1;
-	$url = str_replace('{destoon_page}', $_page, $demo_url);
+	$url = str_replace('{xhxxfb_page}', $_page, $demo_url);
 	$pages .= '<a href="'.$url.'" data-transition="none" id="page-next">'.$L['next_page'].'</a> ';
 
 	$_page = $page <= 1 ? $total : ($page - 1);
-	$url = str_replace('{destoon_page}', $_page, $demo_url);
+	$url = str_replace('{xhxxfb_page}', $_page, $demo_url);
 	$pages .= '<a href="'.$url.'" data-transition="none" id="page-prev">'.$L['prev_page'].'</a> ';
 
 	$_page = 1;
-	$url = str_replace('{destoon_page}', $_page, $demo_url);
+	$url = str_replace('{xhxxfb_page}', $_page, $demo_url);
 	$pages .= '<a href="'.$url.'" data-transition="none" id="page-home">'.$L['home_page'].'</a> ';
 
 	$_page = $total;
-	$url = str_replace('{destoon_page}', $_page, $demo_url);
+	$url = str_replace('{xhxxfb_page}', $_page, $demo_url);
 	$pages .= '<a href="'.$url.'" id="page-last">'.$L['last_page'].'</a> ';
 	return $pages;
 }

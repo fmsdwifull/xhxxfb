@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $ips = glob(DT_CACHE.'/ban/*.php');
 if($ips) {
 	$M = cache_read('module-2.php');

@@ -527,7 +527,7 @@ function Ok()
 				var oLinkPathRegEx = new RegExp("//?([^?\"']+)([?].*)?$") ;
 				var asLinkPath = oLinkPathRegEx.exec( sUri ) ;
 				if (asLinkPath != null) sInnerHtml = asLinkPath[1];  // use matched path
-				//ADD By Destoon
+				//ADD By xhxxfb
 				var ext = sInnerHtml.substring(sInnerHtml.lastIndexOf('.')+1, sInnerHtml.length);
 				ext = ext.toLowerCase();
 				if(ext == 'pdf' || ext == 'doc' || ext == 'xls' || ext == 'ppt') {

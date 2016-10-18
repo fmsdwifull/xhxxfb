@@ -15,15 +15,15 @@ if(isIE) {
 <table cellpadding="0" cellspacing="0" width="100%">
 <tr>
 <td valign="top" class="photo_l">
-<input id="destoon_previous" type="hidden" value="{$prev_photo}#p">
-<input id="destoon_next" type="hidden" value="{$next_photo}#p">
+<input id="xhxxfb_previous" type="hidden" value="{$prev_photo}#p">
+<input id="xhxxfb_next" type="hidden" value="{$next_photo}#p">
 <div class="photo_info">
 <div class="photo_info_r"><span class="count_a">{$page}</span> <span class="count_b">/ {$items}</span></div>
 <div>
 <h1 class="title" id="title">{$title}</h1>
 日期：<span class="px11">{$adddate}</span>&nbsp;&nbsp;&nbsp;
 点击：<span id="hits" class="px11">{$hits}</span>&nbsp;&nbsp;&nbsp;
-<span onclick="View(Dd('destoon_photo').src);" class="c_p">查看原图</span>&nbsp;&nbsp;&nbsp;
+<span onclick="View(Dd('xhxxfb_photo').src);" class="c_p">查看原图</span>&nbsp;&nbsp;&nbsp;
 <span onclick="Go('{$MOD[linkurl]}{rewrite('view.php?itemid='.$itemid)}#p');" class="c_p">全部展开</span>
 </div>
 </div>
@@ -81,7 +81,7 @@ if(isIE) {
 </div>
 {if $content}<script type="text/javascript" src="{DT_STATIC}file/script/content.js"></script>{/if}
 <script type="text/javascript">
-window.onload = function() { try{Dd('cursor_a').style.height = Dd('cursor_b').style.height =  Dd('destoon_photo').height+'px';} catch(e) {} }
+window.onload = function() { try{Dd('cursor_a').style.height = Dd('cursor_b').style.height =  Dd('xhxxfb_photo').height+'px';} catch(e) {} }
 </script>
 {template 'footer'}
 {else}

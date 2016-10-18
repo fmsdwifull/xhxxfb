@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function show_url($id, $page = 1) {
 	global $MOD;
 	if($MOD['show_url'] == 2) return 'show/'.$id.'/'.($page == 1 ? '' : $page.'/');

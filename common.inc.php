@@ -1,6 +1,6 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 define('DT_DEBUG', 0);
@@ -22,7 +22,7 @@ foreach(array('_POST', '_GET') as $__R) {
 		}
 	}
 }
-define('IN_DESTOON', true);
+define('IN_XHXXFB', true);
 define('IN_ADMIN', defined('DT_ADMIN') ? true : false);
 define('DT_ROOT', str_replace("\\", '/', dirname(__FILE__)));
 if(defined('DT_REWRITE')) include DT_ROOT.'/include/rewrite.inc.php';
@@ -80,7 +80,7 @@ if($_COOKIE) { $_COOKIE = strip_sql($_COOKIE); strip_key($_COOKIE); }
 if(!IN_ADMIN) {
 	$BANIP = cache_read('banip.php');
 	if($BANIP) banip($BANIP);
-	$destoon_task = '';
+	$xhxxfb_task = '';
 }
 if($_POST) extract($_POST, EXTR_SKIP);
 if($_GET) extract($_GET, EXTR_SKIP);
@@ -116,7 +116,7 @@ if($moduleid > 1) {
 	include DT_ROOT.'/lang/'.DT_LANG.'/'.$module.'.inc.php';
 } else {
 	$moduleid = 1;
-	$module = 'destoon';
+	$module = 'xhxxfb';
 }
 $cityid = 0;
 $city_name = $L['allcity'];
@@ -155,10 +155,10 @@ if($areaid) $ARE = get_area($areaid);
 $_userid = $_admin = $_aid = $_message = $_chat = $_sound = $_online = $_money = $_credit = $_sms = 0;
 $_username = $_company = $_passport = $_truename = '';
 $_groupid = 3;
-$destoon_auth = get_cookie('auth');
-if($destoon_auth) $destoon_auth = decrypt($destoon_auth, DT_KEY.'USER');
-if($destoon_auth) {	
-	$_dauth = explode('|', $destoon_auth);
+$xhxxfb_auth = get_cookie('auth');
+if($xhxxfb_auth) $xhxxfb_auth = decrypt($xhxxfb_auth, DT_KEY.'USER');
+if($xhxxfb_auth) {	
+	$_dauth = explode('|', $xhxxfb_auth);
 	$_userid = isset($_dauth[0]) ? intval($_dauth[0]) : 0;
 	if($_userid) {
 		$_password = isset($_dauth[1]) ? trim($_dauth[1]) : '';
@@ -174,7 +174,7 @@ if($destoon_auth) {
 			$_userid = 0;
 			if($db->linked && !isset($swfupload) && strpos($_SERVER['HTTP_USER_AGENT'], 'Flash') === false) set_cookie('auth', '');
 		}
-		unset($destoon_auth, $USER, $_dauth, $_password);
+		unset($xhxxfb_auth, $USER, $_dauth, $_password);
 	}
 }
 if($_userid == 0) { $_groupid = 3; $_username = ''; }

@@ -1,7 +1,7 @@
 <?php
 defined('DT_ADMIN') or exit('Access Denied');
 ?>
-<div class="menu" onselectstart="return false" id="destoon_menu">
+<div class="menu" onselectstart="return false" id="xhxxfb_menu">
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tr>
 <td valign="bottom">

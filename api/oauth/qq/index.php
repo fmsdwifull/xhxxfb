@@ -25,5 +25,5 @@ if($_SESSION['qq_access_token']) {
 		}
 	}
 }
-require '../destoon.inc.php';
+require '../xhxxfb.inc.php';
 ?>

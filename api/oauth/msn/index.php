@@ -21,5 +21,5 @@ if($_SESSION['access_token']) {
 		$DS = array('access_token');
 	}
 }
-require '../destoon.inc.php';
+require '../xhxxfb.inc.php';
 ?>

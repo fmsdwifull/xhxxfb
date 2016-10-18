@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$MOD['list_html'] || !$catid) return false;
 $CAT or $CAT = get_cat($catid);
 if(!$CAT) return false;
@@ -52,7 +52,7 @@ for(; $page <= $total; $page++) {
 	}
 	$seo_file = 'list';
 	include DT_ROOT.'/include/seo.inc.php';
-	$destoon_task = "moduleid=$moduleid&html=list&catid=$catid&page=$page";
+	$xhxxfb_task = "moduleid=$moduleid&html=list&catid=$catid&page=$page";
 	if($EXT['mobile_enable']) $head_mobile = $EXT['mobile_url'].mobileurl($moduleid, $catid, 0, $page);
 	$filename = DT_ROOT.'/'.$MOD['moduledir'].'/'.listurl($CAT, $page);
 	ob_start();

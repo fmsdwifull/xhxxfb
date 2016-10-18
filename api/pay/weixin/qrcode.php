@@ -88,7 +88,7 @@ if(strpos($rec, 'code_url') !== false) {
 		<div style="padding:0 16px;font-size:16px;color:#555555;line-height:32px;">		
 		<?php
 		if($DT_TOUCH) {
-			echo $DT_MOB['browser'] == 'weixin' ? '请长按上面的二维码<br/>选择识别图中二维码' : '请使用微信扫描二维码完成支付<br/><a href="http://app.destoon.com/scan/" rel="external" style="color:#2E7DC6;text-decoration:none;">如何扫描？</a>';
+			echo $DT_MOB['browser'] == 'weixin' ? '请长按上面的二维码<br/>选择识别图中二维码' : '请使用微信扫描二维码完成支付<br/><a href="http://app.xhxxfb.com/scan/" rel="external" style="color:#2E7DC6;text-decoration:none;">如何扫描？</a>';
 		} else {
 			echo '请打开手机微信<br/>扫一扫上面的二维码';
 		}

@@ -312,7 +312,7 @@ load('profile.js');
 </tr>
 <tr>
 <td class="tl"><span class="f_hid">*</span> 绑定域名</td>
-<td><input type="text" size="30" name="member[domain]" id="domain" value="<?php echo $domain;?>"/><?php tips('例如 www.destoon.com 不带http<br/>同时需要会员将此域名IP指向本站服务器');?></td>
+<td><input type="text" size="30" name="member[domain]" id="domain" value="<?php echo $domain;?>"/><?php tips('例如 www.xhxxfb.com 不带http<br/>同时需要会员将此域名IP指向本站服务器');?></td>
 </tr>
 <tr>
 <td class="tl"><span class="f_hid">*</span> 域名ICP备案号</td>

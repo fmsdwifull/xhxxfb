@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 login();
 if($job == 'item') {
 	$mid > 3 or dheader('DT_PATH');	

@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $partner = trim($PAY[$bank]['partnerid']);
 $key = trim($PAY[$bank]['keycode']);
 $return_url = $receive_url;

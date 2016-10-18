@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_info_22`;
-CREATE TABLE `destoon_info_22` (
+DROP TABLE IF EXISTS `xhxxfb_info_22`;
+CREATE TABLE `xhxxfb_info_22` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `level` tinyint(1) unsigned NOT NULL default '0',
@@ -57,8 +57,8 @@ CREATE TABLE `destoon_info_22` (
   KEY `editdate` (`editdate`,`vip`,`edittime`)
 ) TYPE=MyISAM COMMENT='招商';
 
-DROP TABLE IF EXISTS `destoon_info_data_22`;
-CREATE TABLE `destoon_info_data_22` (
+DROP TABLE IF EXISTS `xhxxfb_info_data_22`;
+CREATE TABLE `xhxxfb_info_data_22` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)

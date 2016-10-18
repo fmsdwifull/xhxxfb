@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $notify_url = DT_PATH.'api/pay/'.$bank.'/'.($PAY[$bank]['notify'] ? $PAY[$bank]['notify'] : 'notify.php');
 $v_mid = $PAY[$bank]['partnerid']; // 商户号
 $v_url = $receive_url; // 返回url
@@ -23,7 +23,7 @@ $remark2 = '[url:='.$notify_url.']'; //备注字段2
 </head>
 <body onload="document.getElementById('pay').submit();">
 <?php if($key == 'SANDBOX') { ?>
-<form method="post" action="http://demo.destoon.com/api/sandbox.php" id="pay">
+<form method="post" action="http://demo.xhxxfb.com/api/sandbox.php" id="pay">
 <input type="hidden" name="v_notify"    value="<?php echo $notify_url;?>"/>
 <?php } else { ?>
 <form method="post" action="https://Pay3.chinabank.com.cn/PayGate" id="pay">

@@ -18,7 +18,7 @@ require 'init.inc.php';
 		<div id="weixin_qrcode"></div>
 		<div style="padding:16px;font-size:16px;color:#999999;">
 		<?php if($DT_TOUCH) { ?>
-		<a href="http://app.destoon.com/scan/" rel="external" style="color:#2E7DC6;text-decoration:none;">如何扫描？</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="http://app.xhxxfb.com/scan/" rel="external" style="color:#2E7DC6;text-decoration:none;">如何扫描？</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 		<?php } ?>
 		<a href="<?php echo $MODULE[2]['linkurl'].$DT['file_login'];?>" style="color:#2E7DC6;text-decoration:none;">取消并返回</a>
 		</div>

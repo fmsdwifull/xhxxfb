@@ -21,8 +21,8 @@ $_CACHE['apps'] = array (
   array (
     'appid' => '2',
     'type' => 'OTHER',
-    'name' => 'Destoon',
-    'url' => 'http://www.destoon.org',
+    'name' => 'xhxxfb',
+    'url' => 'http://www.xhxxfb.org',
     'ip' => '',
     'viewprourl' => '',
     'apifilename' => 'uc.php',

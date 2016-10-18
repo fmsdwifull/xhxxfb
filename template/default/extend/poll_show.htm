@@ -13,7 +13,7 @@
 </head>
 <body oncontextmenu="return false">
 <iframe id="proxy_iframe" src="" style="display:none"></iframe>
-<div id="destoon_poll">
+<div id="xhxxfb_poll">
 	<div id="poll_list">
 	{template $template_poll, 'chip'}
 	</div>
@@ -93,7 +93,7 @@ function C() {
 	{if $verify == 2}Dd('answer').value='';{/if}
 }
 function H() {
-	var h = Dd('destoon_poll').scrollHeight;
+	var h = Dd('xhxxfb_poll').scrollHeight;
 	h = h + 30;
 	Dd('proxy_iframe').src = AJPath+'?action=proxy&itemid=3#'+h+'|{$itemid}';
 }

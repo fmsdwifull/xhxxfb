@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $partner = trim($PAY[$bank]['partnerid']);			//合作伙伴ID
 $security_code = trim($PAY[$bank]['keycode']);		//安全检验码
 $seller_email = trim($PAY[$bank]['email']);	//卖家邮箱

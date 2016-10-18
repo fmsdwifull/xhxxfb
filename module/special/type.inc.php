@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $typeid = isset($tid) ? intval($tid) : 0;
 $typeid or dheader($MOD['linkurl']);
 require DT_ROOT.'/module/'.$module.'/common.inc.php';

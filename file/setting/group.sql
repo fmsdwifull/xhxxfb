@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_group`;
-CREATE TABLE `destoon_group` (
+DROP TABLE IF EXISTS `xhxxfb_group`;
+CREATE TABLE `xhxxfb_group` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -55,15 +55,15 @@ CREATE TABLE `destoon_group` (
   KEY `areaid` (`areaid`)
 ) TYPE=MyISAM COMMENT='团购';
 
-DROP TABLE IF EXISTS `destoon_group_data`;
-CREATE TABLE `destoon_group_data` (
+DROP TABLE IF EXISTS `xhxxfb_group_data`;
+CREATE TABLE `xhxxfb_group_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='团购内容';
 
-DROP TABLE IF EXISTS `destoon_group_order`;
-CREATE TABLE `destoon_group_order` (
+DROP TABLE IF EXISTS `xhxxfb_group_order`;
+CREATE TABLE `xhxxfb_group_order` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `gid` bigint(20) unsigned NOT NULL default '0',
   `buyer` varchar(30) NOT NULL default '',

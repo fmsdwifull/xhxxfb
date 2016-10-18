@@ -1,6 +1,6 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 defined('DT_ADMIN') or exit('Access Denied');
@@ -100,7 +100,7 @@ switch($action) {
 		unset($content);
 		$tpl_content = template_parse($tpl_content);
 		cache_write('_preview.tpl.php', $tpl_content, 'tpl');
-		$module = $dir ? $dir : 'destoon';
+		$module = $dir ? $dir : 'xhxxfb';
 		$head_title = '模板预览';
 		include DT_CACHE.'/tpl/_preview.tpl.php';
 		exit();

@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 class image {
 	var $g_img;
 	var $g_w;
@@ -56,7 +56,7 @@ class image {
 		$this->w_img = DT_ROOT.'/file/image/'.($DT['water_mark'] ? $DT['water_mark'] : 'watermark.png');
 		$this->transition = $DT['water_transition'] ? $DT['water_transition'] : 65;
 		$this->jpeg_quality = $DT['water_jpeg_quality'] ? $DT['water_jpeg_quality'] : 80;
-		$this->text = $DT['water_text'] ? $DT['water_text'] : 'www.destoon.com';
+		$this->text = $DT['water_text'] ? $DT['water_text'] : 'www.xhxxfb.com';
 		$this->text_size = $DT['water_fontsize'] ? $DT['water_fontsize'] : 20;
 		$this->text_font = DT_ROOT.'/file/font/'.($DT['water_font'] ? $DT['water_font'] : 'simhei.ttf');
 		$this->text_color = $DT['water_fontcolor'] ? $DT['water_fontcolor'] : '#000000';

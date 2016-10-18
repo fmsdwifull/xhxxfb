@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($DT_MOB['browser'] == 'weixin' && $EXT['weixin']) {
 	$openid = '';
 	$t = $db->get_one("SELECT openid FROM {$DT_PRE}weixin_user WHERE username='$_username'");

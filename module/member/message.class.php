@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 class message {
 	var $itemid;
 	var $userid;
@@ -146,7 +146,7 @@ class message {
 		if($data) {
 			$names = $L['message_names'];
 			$filename = 'message-'.timetodate($DT_TIME, 'YmdHis');
-			$data = '<html><meta http-equiv="Content-Type" content="text/html;charset='.DT_CHARSET.'"/><title>'.$this->username.' '.$names[$status].''.$DT['sitename'].' '.timetodate($DT_TIME, 5).' - Powered By DESTOON.COM</title><style>*{font-size:13px;font-family:Verdana,Arial;}body{width:750px;margin:auto;line-height:200%;}</style><base target="_blank"/><base href="'.DT_PATH.'"/><body><br/>'.$data.'<a href="http://www.destoon.com"><small>Powered By DESTOON.COM</small></a><br/></body></html>';
+			$data = '<html><meta http-equiv="Content-Type" content="text/html;charset='.DT_CHARSET.'"/><title>'.$this->username.' '.$names[$status].''.$DT['sitename'].' '.timetodate($DT_TIME, 5).' - Powered By xhxxfb.COM</title><style>*{font-size:13px;font-family:Verdana,Arial;}body{width:750px;margin:auto;line-height:200%;}</style><base target="_blank"/><base href="'.DT_PATH.'"/><body><br/>'.$data.'<a href="http://www.xhxxfb.com"><small>Powered By xhxxfb.COM</small></a><br/></body></html>';
 			ob_start();
 			header('Cache-control: max-age=31536000');
 			header('Expires: '.gmdate('D, d M Y H:i:s', $DT_TIME + 31536000).' GMT');

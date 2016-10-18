@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 /**
 	*类名：alipay_service
 	*功能：支付宝外部服务接口控制

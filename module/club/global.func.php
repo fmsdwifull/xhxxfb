@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function get_group($gid) {
 	global $db, $table;
 	return $gid > 0 ? $db->get_one("SELECT * FROM {$table}_group WHERE itemid=$gid") : array();

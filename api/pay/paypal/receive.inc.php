@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($PAY[$bank]['keycode'] && isset($_GET['tx'])) {//PDT
 	$tx_token = $_GET['tx'];
 	$auth_token = $PAY[$bank]['keycode'];

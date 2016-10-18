@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $gid = $catid;
 $GRP = get_group($gid);
 if(!$GRP || $GRP['status'] != 3) include load('404.inc');

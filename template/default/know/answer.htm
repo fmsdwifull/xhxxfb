@@ -15,7 +15,7 @@
 </head>
 <body oncontextmenu="return false">
 <iframe id="proxy_iframe" src="" style="display:none"></iframe>
-<div id="destoon_answer">
+<div id="xhxxfb_answer">
 {if $action == 'vote_show'}
 <div class="m">
 <div class="answer_box">
@@ -100,7 +100,7 @@
 	{/if}
 </div>
 </div>
-	<div id="destoon_answers">
+	<div id="xhxxfb_answers">
 	{if $answers}
 	{loop $answers $k $v}
 	{if $k==count($answers)-1}<a name="last"></a>{/if}
@@ -320,7 +320,7 @@
 {/if}
 <script type="text/javascript">
 function H() {
-	Dd('proxy_iframe').src = '{$MOD[linkurl]}ajax.php?action=proxy&itemid=2#'+Dd('destoon_answer').scrollHeight+'|{if $could_answer}1{else}0{/if}';
+	Dd('proxy_iframe').src = '{$MOD[linkurl]}ajax.php?action=proxy&itemid=2#'+Dd('xhxxfb_answer').scrollHeight+'|{if $could_answer}1{else}0{/if}';
 }
 function ImgZoom(i, m) {
 	var m = m ? m : 550; var w = i.width;
@@ -333,7 +333,7 @@ function ImgZoom(i, m) {
 }
 function Z() {
 	try {
-	var content_id = 'destoon_answers';
+	var content_id = 'xhxxfb_answers';
 	var img_max_width = {$MOD[max_width]};
 	var Imgs = Dd(content_id).getElementsByTagName("img");
 	for(var i=0;i<Imgs.length;i++) {ImgZoom(Imgs[i], img_max_width);}

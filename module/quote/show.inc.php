@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $itemid or dheader($MOD['linkurl']);
 if(!check_group($_groupid, $MOD['group_show'])) include load('403.inc');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
@@ -29,7 +29,7 @@ $update = '';
 $fee = get_fee($item['fee'], $MOD['fee_view']);
 if($fee) {
 	$user_status = 4;
-	$destoon_task = "moduleid=$moduleid&html=show&itemid=$itemid";
+	$xhxxfb_task = "moduleid=$moduleid&html=show&itemid=$itemid";
 	$description = get_description($content, $MOD['pre_view']);
 } else {
 	$user_status = 3;
@@ -38,7 +38,7 @@ $pages = '';
 if(strpos($content, '<hr class="de-pagebreak" />') !== false) {
 	$content = explode('<hr class="de-pagebreak" />', $content);
 	$total = count($content);
-	$pages = pages($total, $page, 1, $MOD['linkurl'].itemurl($item, '{destoon_page}'));
+	$pages = pages($total, $page, 1, $MOD['linkurl'].itemurl($item, '{xhxxfb_page}'));
 	if($pages) $pages = substr($pages, 0, strpos($pages, '<cite>'));
 	$content = $content[$page-1];
 }

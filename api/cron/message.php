@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $condition = 'isread=0 AND issend=0 AND status=3';
 if($DT['message_time']) {
 	$time = $DT_TIME - $DT['message_time']*60;

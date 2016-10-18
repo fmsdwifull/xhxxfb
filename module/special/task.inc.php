@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($html == 'show') {
 	$item = $db->get_one("SELECT * FROM {$table} WHERE itemid=$itemid");
 	if(!$item || $item['status'] < 3) exit;

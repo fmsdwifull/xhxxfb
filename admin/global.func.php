@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function msg($msg = errmsg, $forward = 'goback', $time = '1') {
 	global $CFG;
 	if(!$msg && $forward && $forward != 'goback') dheader($forward);
@@ -17,9 +17,9 @@ function dialog($dcontent) {
     exit;
 }
 
-function tpl($file = 'index', $mod = 'destoon') {
+function tpl($file = 'index', $mod = 'xhxxfb') {
 	global $CFG, $DT;
-	return $mod == 'destoon' ? DT_ROOT.'/admin/template/'.$file.'.tpl.php' : DT_ROOT.'/module/'.$mod.'/admin/template/'.$file.'.tpl.php';
+	return $mod == 'xhxxfb' ? DT_ROOT.'/admin/template/'.$file.'.tpl.php' : DT_ROOT.'/module/'.$mod.'/admin/template/'.$file.'.tpl.php';
 }
 
 function progress($sid, $fid, $tid) {
@@ -275,7 +275,7 @@ function split_sell($part) {
 	global $db, $CFG, $MODULE;
 	$sql = file_get(DT_ROOT.'/file/setting/split_sell.sql');
 	$sql or dalert('请检查文件file/setting/split_sell.sql是否存在');
-	$sql = str_replace('destoon_sell', $db->pre.'sell_5_'.$part, $sql);
+	$sql = str_replace('xhxxfb_sell', $db->pre.'sell_5_'.$part, $sql);
 	if($db->version() > '4.1' && $CFG['db_charset']) {
 		$sql .= " ENGINE=MyISAM DEFAULT CHARSET=".$CFG['db_charset'];
 	} else {

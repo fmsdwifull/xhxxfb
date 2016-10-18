@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 login();
 $MG['club_join_limit'] > -1 or dalert(lang('message->without_permission_and_upgrade'), 'goback');
 require MD_ROOT.'/join.class.php';

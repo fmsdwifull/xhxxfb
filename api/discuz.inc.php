@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $forward = preg_replace("/([?|&])sid=(.*)/", '', $forward);
 if($action == 'login') {
 	$txt = "time=$DT_TIME&cookietime=$cookietime&username=$passport&password=$password&secques=".substr(md5(random(8)), 16, 8)."&gender=$gender&email=$email&regip=$regip&regdate=$regtime&oicq=$qq&msn=$msn&showemail=0";

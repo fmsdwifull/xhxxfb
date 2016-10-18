@@ -40,10 +40,10 @@ switch($action) {
 		if(!$user || $user['groupid'] == 2 || $user['groupid'] == 4) exit('-1');
 		if($_username == $user['username']) exit('1');
 		$cookietime = $DT_TIME + ($cookietime ? $cookietime : 86400*7);
-		$destoon_auth = encrypt($user['userid'].'|'.$user['password'], DT_KEY.'USER');
+		$xhxxfb_auth = encrypt($user['userid'].'|'.$user['password'], DT_KEY.'USER');
 		ob_clean();
 		header('P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"');
-		set_cookie('auth', $destoon_auth, $cookietime);
+		set_cookie('auth', $xhxxfb_auth, $cookietime);
 		$db->query("UPDATE {$DT_PRE}member SET loginip='$DT_IP',logintime=$DT_TIME,logintimes=logintimes+1 WHERE userid=$user[userid]");
 		exit('1');
 	break;

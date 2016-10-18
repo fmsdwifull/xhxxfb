@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 if(!$CAT) exit(include MD_ROOT.'/group.inc.php');
 if($CAT['moduleid'] != $moduleid) include load('404.inc');

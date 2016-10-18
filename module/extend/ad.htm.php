@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$aid) return false;
 $a or $a = $db->get_one("SELECT * FROM {$DT_PRE}ad WHERE aid=$aid");
 $p = $db->get_one("SELECT * FROM {$DT_PRE}ad_place WHERE pid=$a[pid]");

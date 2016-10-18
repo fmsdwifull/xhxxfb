@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $stats_baidu = preg_match("/^[a-z0-9]{32}$/", $stats) ? $stats : '';
 ?>
 <tr id="stats_post_baidu" style="display:none;">

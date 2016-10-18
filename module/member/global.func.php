@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function update_company_setting($userid, $setting) {
 	global $db;
 	$S = get_company_setting($userid);

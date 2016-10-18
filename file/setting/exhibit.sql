@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_exhibit`;
-CREATE TABLE `destoon_exhibit` (
+DROP TABLE IF EXISTS `xhxxfb_exhibit`;
+CREATE TABLE `xhxxfb_exhibit` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -48,15 +48,15 @@ CREATE TABLE `destoon_exhibit` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='展会';
 
-DROP TABLE IF EXISTS `destoon_exhibit_data`;
-CREATE TABLE `destoon_exhibit_data` (
+DROP TABLE IF EXISTS `xhxxfb_exhibit_data`;
+CREATE TABLE `xhxxfb_exhibit_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='展会内容';
 
-DROP TABLE IF EXISTS `destoon_exhibit_order`;
-CREATE TABLE `destoon_exhibit_order` (
+DROP TABLE IF EXISTS `xhxxfb_exhibit_order`;
+CREATE TABLE `xhxxfb_exhibit_order` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `id` bigint(20) unsigned NOT NULL default '0',
   `user` varchar(30) NOT NULL,

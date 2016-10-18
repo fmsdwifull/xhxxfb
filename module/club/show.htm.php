@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$MOD['show_html'] || !$itemid) return false;
 $item = $db->get_one("SELECT * FROM {$table} WHERE itemid=$itemid");
 if(!$item || $item['status'] < 3) return false;
@@ -50,15 +50,15 @@ if(isset($fid) && isset($num) && $fid > 0) {
 }
 $template = $item['template'] ? $item['template'] : ($GRP['show_template'] ? $GRP['show_template'] : 'show');
 for(; $page <= $total; $page++) {
-	$destoon_task = "moduleid=$moduleid&html=show&itemid=$itemid&page=$page";
+	$xhxxfb_task = "moduleid=$moduleid&html=show&itemid=$itemid&page=$page";
 	if($EXT['mobile_enable']) $head_mobile = $EXT['mobile_url'].mobileurl($moduleid, 0, $itemid, $page);
 	$filename = $total == 1 ? DT_ROOT.'/'.$MOD['moduledir'].'/'.$fileurl : DT_ROOT.'/'.$MOD['moduledir'].'/'.itemurl($item, $page);
 	$replys = array();
 	if($items) {
 		$offset = ($page-1)*$pagesize;
-		$pages = pages($items, $page, $pagesize, $MOD['linkurl'].itemurl($item, '{destoon_page}'));
+		$pages = pages($items, $page, $pagesize, $MOD['linkurl'].itemurl($item, '{xhxxfb_page}'));
 		$floor = $page == 1 ? 0 : ($page-1)*$pagesize;
-		$pages = pages($items, $page, $pagesize, $MOD['linkurl'].itemurl($item, '{destoon_page}'));
+		$pages = pages($items, $page, $pagesize, $MOD['linkurl'].itemurl($item, '{xhxxfb_page}'));
 		$result = $db->query("SELECT * FROM {$table}_reply WHERE tid=$itemid AND status=3 ORDER BY itemid ASC LIMIT $offset,$pagesize");
 		while($r = $db->fetch_array($result)) {
 			$r['fname'] = isset($F[$floor]) ? $F[$floor] : '';

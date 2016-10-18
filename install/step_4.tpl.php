@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 include IN_ROOT.'/header.tpl.php';
 ?>
 <div class="head">
@@ -144,7 +144,7 @@ function check() {
 
 <tr>
 <td>超级管理员户名</td>
-<td><input name="username" type="text" id="username" value="destoon" style="width:150px"/></td>
+<td><input name="username" type="text" id="username" value="xhxxfb" style="width:150px"/></td>
 <td colspan="2">只能使用小写字母(a-z)、数字(0-9)</td>
 </tr>
 <tr>

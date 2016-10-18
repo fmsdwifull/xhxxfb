@@ -17,5 +17,5 @@ if($_SESSION['wx_access_token']) {
 		$DS = array('wx_access_token', 'wx_openid');
 	}
 }
-require '../destoon.inc.php';
+require '../xhxxfb.inc.php';
 ?>

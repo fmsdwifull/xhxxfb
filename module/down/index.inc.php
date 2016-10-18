@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 if($MOD['index_html']) {	
 	$html_file = DT_ROOT.'/'.$MOD['moduledir'].'/'.$DT['index'].'.'.$DT['file_ext'];
@@ -11,6 +11,6 @@ $maincat = get_maincat(0, $moduleid, 1);
 $seo_file = 'index';
 include DT_ROOT.'/include/seo.inc.php';
 $template = $MOD['template_index'] ? $MOD['template_index'] : 'index';
-$destoon_task = "moduleid=$moduleid&html=index";
+$xhxxfb_task = "moduleid=$moduleid&html=index";
 include template($template, $module);
 ?>

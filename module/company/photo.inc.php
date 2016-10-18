@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $moduleid = 12;
 $module = 'photo';
 include DT_ROOT.'/lang/'.DT_LANG.'/'.$module.'.inc.php';
@@ -36,7 +36,7 @@ if($itemid) {
 		if($view) {
 			$pagesize = 30;
 			$offset = ($page-1)*$pagesize;
-			$demo_url = userurl($username, 'file='.$file.'&itemid='.$itemid.'&view=1&page={destoon_page}', $domain).'#p';
+			$demo_url = userurl($username, 'file='.$file.'&itemid='.$itemid.'&view=1&page={xhxxfb_page}', $domain).'#p';
 			$pages = home_pages($items, $pagesize, $demo_url, $page);
 			$T = array();
 			$i = 1;
@@ -55,7 +55,7 @@ if($itemid) {
 			while($r = $db->fetch_array($result)) {
 				$T[] = $r;
 			}
-			$demo_url = userurl($username, "file=$file&itemid=$itemid&page=".'{destoon_page}', $domain);
+			$demo_url = userurl($username, "file=$file&itemid=$itemid&page=".'{xhxxfb_page}', $domain);
 			$next_photo = $items > 1 ? next_photo($page, $items, $demo_url) : $linkurl;
 			$prev_photo = $items > 1 ? prev_photo($page, $items, $demo_url) : $linkurl;
 			if($T) {
@@ -98,7 +98,7 @@ if($itemid) {
 		$url .= "&kw=$kw";
 		$head_title = $kw.$DT['seo_delimiter'].$head_title;
 	}
-	$demo_url = userurl($username, $url.'&page={destoon_page}', $domain);
+	$demo_url = userurl($username, $url.'&page={xhxxfb_page}', $domain);
 	$pagesize =intval($menu_num[$menuid]);
 	if(!$pagesize || $pagesize > 100) $pagesize = 16;
 	$offset = ($page-1)*$pagesize;

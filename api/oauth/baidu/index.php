@@ -16,5 +16,5 @@ if($_SESSION['bd_access_token']) {
 		$DS = array('bd_access_token');
 	}
 }
-require '../destoon.inc.php';
+require '../xhxxfb.inc.php';
 ?>

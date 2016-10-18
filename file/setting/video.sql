@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_video_14`;
-CREATE TABLE `destoon_video_14` (
+DROP TABLE IF EXISTS `xhxxfb_video_14`;
+CREATE TABLE `xhxxfb_video_14` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -34,8 +34,8 @@ CREATE TABLE `destoon_video_14` (
   KEY `catid` (`catid`)
 ) TYPE=MyISAM COMMENT='视频';
 
-DROP TABLE IF EXISTS `destoon_video_data_14`;
-CREATE TABLE `destoon_video_data_14` (
+DROP TABLE IF EXISTS `xhxxfb_video_data_14`;
+CREATE TABLE `xhxxfb_video_data_14` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)

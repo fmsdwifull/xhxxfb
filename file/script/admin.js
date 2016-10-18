@@ -1,5 +1,5 @@
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 var dgX = dgY = 0; var dgDiv;
@@ -159,7 +159,7 @@ function reccate(i, o) {if(Dd(o).value.length > 1) {Dh('catesch'); makeRequest('
 function _reccate() {if(xmlHttp.readyState==4 && xmlHttp.status==200) {Ds('catesch'); Dd('catesch').innerHTML = xmlHttp.responseText ? '<strong>'+L['related_found']+'</strong><br/>'+xmlHttp.responseText : '<span class="f_red">'+L['related_not_found']+'</span>';}}
 function ckpath(m, i) {if(Dd('filepath').value.length > 4) {makeRequest('moduleid='+m+'&action=ckpath&itemid='+i+'&path='+Dd('filepath').value, AJPath, '_ckpath');} else {alert(L['type_valid_filepath']); Dd('filepath').focus();}}
 function _ckpath() {if(xmlHttp.readyState==4 && xmlHttp.status==200) Dd('dfilepath').innerHTML = xmlHttp.responseText;}
-function tpl_edit(f, d, i) {var v = Dd('destoon_template_'+i).firstChild.value; var n = v ? v : f; Dwidget('?file=template&action=edit&fileid='+n+'&dir='+d, L['tpl_edit']);}
+function tpl_edit(f, d, i) {var v = Dd('xhxxfb_template_'+i).firstChild.value; var n = v ? v : f; Dwidget('?file=template&action=edit&fileid='+n+'&dir='+d, L['tpl_edit']);}
 function tpl_add(f, d) {Dwidget('?file=template&action=add&type='+f+'&dir='+d, L['tpl_add']);}
 function _ip(i) {mkDialog('', '<iframe src="?file=ip&js=1&ip='+i+'" width="180" height=30" border="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" framespacing="0" frameborder="0" scrolling="no"></iframe>', 'IP:'+i, 200, 0, 0);}
 function _mobile(i) {mkDialog('', '<iframe src="?file=mobile&js=1&mobile='+i+'" width="180" height=30" border="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" framespacing="0" frameborder="0" scrolling="no"></iframe>', i, 200, 0, 0);}

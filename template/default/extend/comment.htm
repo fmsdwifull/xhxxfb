@@ -18,9 +18,9 @@
 <script type="text/javascript">if(parent.location == window.location) Go('{$linkurl}');</script>
 </head>
 <body oncontextmenu="return false">
-<div id="destoon_space" style="display:none;"></div>
+<div id="xhxxfb_space" style="display:none;"></div>
 <iframe id="proxy_iframe" src="" style="display:none;"></iframe>
-<div id="destoon_comment">
+<div id="xhxxfb_comment">
 {if $template == 'close'}
 	<div class="comment_close">[该评论已关闭]</div>
 {else}
@@ -229,7 +229,7 @@ function F() {
 try{parent.Dd('comment_count').innerHTML = {$items};}catch(e){}
 {/if}
 function H() {
-	Dd('proxy_iframe').src = '{if $proxy}{decrypt($proxy, DT_KEY.'PROXY')}{else}{$MODULE[$mid][linkurl]}{/if}ajax.php?action=proxy&itemid=1#'+Dd('destoon_comment').scrollHeight+'|{$items}';
+	Dd('proxy_iframe').src = '{if $proxy}{decrypt($proxy, DT_KEY.'PROXY')}{else}{$MODULE[$mid][linkurl]}{/if}ajax.php?action=proxy&itemid=1#'+Dd('xhxxfb_comment').scrollHeight+'|{$items}';
 }
 H();
 </script> 

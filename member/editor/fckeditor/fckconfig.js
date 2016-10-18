@@ -66,11 +66,11 @@ FCKConfig.ToolbarSets["Default"] = [
 ];
 if(!IsAdmin) FCKConfig.ToolbarSets["Default"][0].splice(0,2);
 
-FCKConfig.ToolbarSets["Destoon"] = [
+FCKConfig.ToolbarSets["xhxxfb"] = [
 	['Source','-','PasteWord','PasteText','-','Bold','TextColor','FontSize','Link','Unlink','Image','Flash','Rule','SpecialChar','JustifyLeft','JustifyCenter','JustifyRight','RemoveFormat','Attach','FitWindow']
 ];
-if(!IsAdmin) FCKConfig.ToolbarSets["Destoon"][0].splice(0,2);
-if(window.parent.ModuleID == 18) FCKConfig.ToolbarSets["Destoon"][0].splice(-1,0,'Smiley');
+if(!IsAdmin) FCKConfig.ToolbarSets["xhxxfb"][0].splice(0,2);
+if(window.parent.ModuleID == 18) FCKConfig.ToolbarSets["xhxxfb"][0].splice(-1,0,'Smiley');
 
 
 FCKConfig.ToolbarSets["Simple"] = [

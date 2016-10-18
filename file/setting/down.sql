@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_down_15`;
-CREATE TABLE `destoon_down_15` (
+DROP TABLE IF EXISTS `xhxxfb_down_15`;
+CREATE TABLE `xhxxfb_down_15` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -34,8 +34,8 @@ CREATE TABLE `destoon_down_15` (
   KEY `catid` (`catid`)
 ) TYPE=MyISAM COMMENT='下载';
 
-DROP TABLE IF EXISTS `destoon_down_data_15`;
-CREATE TABLE `destoon_down_data_15` (
+DROP TABLE IF EXISTS `xhxxfb_down_data_15`;
+CREATE TABLE `xhxxfb_down_data_15` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)

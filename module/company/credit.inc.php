@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $comment = 0;
 if(isset($MODULE[16])) {
 	$table = $DT_PRE.'mall_comment';
@@ -13,7 +13,7 @@ if(isset($MODULE[16])) {
 	} else {
 		$condition = "seller='$username' AND seller_star>0";
 	}
-	$demo_url = userurl($username, $url.'&page={destoon_page}', $domain);
+	$demo_url = userurl($username, $url.'&page={xhxxfb_page}', $domain);
 	$r = $db->get_one("SELECT COUNT(*) AS num FROM {$table} WHERE $condition", 'CACHE');
 	$items = $r['num'];
 	$pages = home_pages($items, $pagesize, $demo_url, $page);

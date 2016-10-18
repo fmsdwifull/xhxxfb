@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function dmail($mail_to, $mail_subject, $mail_body, $mail_from = '', $mail_sign = true) {
 	global $DT;
 	if($DT['mail_type'] == 'close') return 'close';
@@ -34,7 +34,7 @@ function dmail($mail_to, $mail_subject, $mail_body, $mail_from = '', $mail_sign 
 		$headers = '';
 		$headers .= "From: $mail_from".$mail_dlmt;
 		$headers .= "X-Priority: 3".$mail_dlmt;
-		$headers .= "X-Mailer: Destoon".$mail_dlmt;
+		$headers .= "X-Mailer: xhxxfb".$mail_dlmt;
 		$headers .= "MIME-Version: 1.0".$mail_dlmt;
 		$headers .= "Content-type: text/html; charset=".DT_CHARSET.$mail_dlmt;
 		$headers .= "Content-Transfer-Encoding: base64".$mail_dlmt;
@@ -55,7 +55,7 @@ function dmail($mail_to, $mail_subject, $mail_body, $mail_from = '', $mail_sign 
 			log_write($errmsg, 'smtp');
 			return $errmsg;
 		}
-		fputs($fp, ($DT['smtp_auth'] ? 'EHLO' : 'HELO')." Destoon\r\n");
+		fputs($fp, ($DT['smtp_auth'] ? 'EHLO' : 'HELO')." xhxxfb\r\n");
 		$RE = fgets($fp, 512);
 		if(substr($RE, 0, 3) != 220 && substr($RE, 0, 3) != 250) {
 			$errmsg = $host.'HELO/EHLO - '.$RE;

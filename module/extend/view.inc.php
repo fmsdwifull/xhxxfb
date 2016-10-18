@@ -1,8 +1,8 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($DT_BOT) dhttp(403);
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
-$destoon_task = rand_task();
+$xhxxfb_task = rand_task();
 $head_title = $L['view_title'];
 $pass = $img;
 if(strpos($img, DT_DOMAIN ? DT_DOMAIN : DT_PATH) !== false) {

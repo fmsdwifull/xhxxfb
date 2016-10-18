@@ -319,7 +319,7 @@ switch($action) {
 			}
 			$auth = encrypt($userid.'|'.$_username, DT_KEY.'ADMIN');
 			set_cookie('admin_user', $auth);
-			msg('授权成功，正在转入会员商务中心...', $MODULE[2]['linkurl'].'?reload='.$DT_TIME);
+			msg('授权成功，正在转入会员个人中心...', $MODULE[2]['linkurl'].'?reload='.$DT_TIME);
 		} else {
 			msg();
 		}

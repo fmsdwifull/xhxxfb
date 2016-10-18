@@ -1,10 +1,10 @@
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-if(destoon_oauth) {
+if(xhxxfb_oauth) {
 	Ds('weibo_sync');
-	if(destoon_oauth.indexOf('sina') != -1) {
+	if(xhxxfb_oauth.indexOf('sina') != -1) {
 		$('#weibo_show').append('<input type="hidden" name="post[sync_sina]" value="0" id="sync_sina_inp"/>');
 		$('#weibo_show').append('<img src="'+DTPath+'file/image/sync_sina.gif" id="sync_sina_img" onclick="sync_site(\'sina\');" class="c_p" title="'+L['sync_sina']+'"/>&nbsp;&nbsp;');
 		if(get_cookie('sina_token') && get_local('sina_sync')) {
@@ -12,7 +12,7 @@ if(destoon_oauth) {
 			Dd('sync_sina_img').src = DTPath+'file/image/sync_sina_on.gif';
 		}
 	}
-	if(destoon_oauth.indexOf('qq') != -1) {
+	if(xhxxfb_oauth.indexOf('qq') != -1) {
 		$('#weibo_show').append('<input type="hidden" name="post[sync_qq]" value="0" id="sync_qq_inp"/>');
 		$('#weibo_show').append('<img src="'+DTPath+'file/image/sync_qq.gif" id="sync_qq_img" onclick="sync_site(\'qq\');" class="c_p" title="'+L['sync_qq']+'"/>&nbsp;&nbsp;');
 		if(get_cookie('qq_token') && get_local('qq_sync')) {

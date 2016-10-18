@@ -1,12 +1,12 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $id = '';
 if($itemid == 1) {
-	$id = 'destoon_comment';
+	$id = 'xhxxfb_comment';
 } else if($itemid == 2) {
-	$id = 'destoon_answer';
+	$id = 'xhxxfb_answer';
 } else if($itemid == 3) {
-	$id = 'destoon_poll';
+	$id = 'xhxxfb_poll';
 }
 $id or exit;
 ?>

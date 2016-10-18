@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$CAT || $CAT['moduleid'] != $moduleid) include load('404.inc');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 if($MOD['list_html']) {

@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $table = $DT_PRE.'page';
 $table_data = $DT_PRE.'page_data';
 if($itemid) {

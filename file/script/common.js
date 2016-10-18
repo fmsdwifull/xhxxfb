@@ -1,5 +1,5 @@
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 var UA = navigator.userAgent.toLowerCase();
@@ -96,10 +96,10 @@ function Tb(d, t, p, c) {
 }
 function ext(v) {return v.substring(v.lastIndexOf('.')+1, v.length).toLowerCase();}
 function PushNew() {
-	$('#destoon_push').remove();
+	$('#xhxxfb_push').remove();
 	s = document.createElement("script");
 	s.type = "text/javascript";
-	s.id = "destoon_push";
+	s.id = "xhxxfb_push";
 	s.src = DTPath+"api/push.js.php?refresh="+Math.random()+".js";
 	document.body.appendChild(s);
 }
@@ -151,9 +151,9 @@ function get_cart() {var cart = parseInt(get_cookie('cart'));return cart > 0 ? c
 document.onkeydown = function(e) {
 	var k = typeof e == 'undefined' ? event.keyCode : e.keyCode;
 	if(k == 37) {
-		try{if(Dd('destoon_previous').value && typeof document.activeElement.name == 'undefined')Go(Dd('destoon_previous').value);}catch(e){}
+		try{if(Dd('xhxxfb_previous').value && typeof document.activeElement.name == 'undefined')Go(Dd('xhxxfb_previous').value);}catch(e){}
 	} else if(k == 39) {
-		try{if(Dd('destoon_next').value && typeof document.activeElement.name == 'undefined')Go(Dd('destoon_next').value);}catch(e){}
+		try{if(Dd('xhxxfb_next').value && typeof document.activeElement.name == 'undefined')Go(Dd('xhxxfb_next').value);}catch(e){}
 	} else if(k == 38 || k == 40 || k == 13) {
 		try{if(Dd('search_tips').style.display != 'none' || Dd('search_tips').innerHTML != ''){SCTip(k);return false;}}catch(e){}
 	}

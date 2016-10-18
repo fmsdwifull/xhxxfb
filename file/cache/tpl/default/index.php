@@ -1,4 +1,4 @@
-<?php defined('IN_DESTOON') or exit('Access Denied');?><?php $CSS = array('index');?>
+<?php defined('IN_XHXXFB') or exit('Access Denied');?><?php $CSS = array('index');?>
 <?php include template('header');?>
 <div id="ipad_tips" style="display:none;"></div>
 <div class="m">
@@ -406,7 +406,7 @@
 new dmarquee(22, 10, 3000, 'site_stats');
 new dmarquee(22, 30, 3000, 'company');
 if(get_cookie('auth')) {
-$('.iuser_l')[0].title = '商务中心';
+$('.iuser_l')[0].title = '个人中心';
 $('.iuser_l')[0].href = '<?php echo $MODULE['2']['linkurl'];?>';
 $('.iuser_l')[0].className = 'iuser_u';
 $('.iuser_r')[0].title = '完善我的会员资料';

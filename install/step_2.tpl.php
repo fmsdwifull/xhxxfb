@@ -1,11 +1,11 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 include IN_ROOT.'/header.tpl.php';
 ?>
 <div class="head">
 	<div>
 		<strong>检查系统运行环境</strong><br/>
-		检查当前服务器环境配置是否支持DESTOON B2B正常运行
+		检查当前服务器环境配置是否支持xhxxfb B2B正常运行
 	</div>
 </div>
 <div class="body">

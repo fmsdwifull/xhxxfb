@@ -114,8 +114,8 @@ file目录及所有子目录和子文件都必须设置可写，否则会出现�
 <?php } ?>
 
 <?php
-	$dc->set('destoon', 'b2b', 3600);
-	$D = $dc->get('destoon') == 'b2b' ? 1 : 0;
+	$dc->set('xhxxfb', 'b2b', 3600);
+	$D = $dc->get('xhxxfb') == 'b2b' ? 1 : 0;
 ?>
 <tr>
 <td class="t1">系统缓存测试</td>

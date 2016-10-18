@@ -1,6 +1,6 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 defined('DT_ADMIN') or exit('Access Denied');
@@ -8,7 +8,7 @@ $menus = array (
 array('系统首页', '?action=main'),
 array('修改密码', '?action=password'),
 array('信息统计', '?file=count'),
-array('商务中心', $MODULE[2]['linkurl'], 'target="_blank"'),
+array('个人中心', $MODULE[2]['linkurl'], 'target="_blank"'),
 array('网站首页', DT_PATH, 'target="_blank"'),
 array('安全退出', '?file=logout','target="_top" onclick="return confirm(\'确定要退出管理吗?\');"'),
 );
@@ -160,7 +160,7 @@ switch($action) {
 				$install = $DT_TIME;
 				file_put(DT_CACHE.'/install.lock', $DT_TIME);
 			}
-			$notice_url = 'http://www.destoon.com/client.php?action=notice&product=b2b&version='.DT_VERSION.'&release='.DT_RELEASE.'&lang='.DT_LANG.'&charset='.DT_CHARSET.'&domain='.DT_DOMAIN.'&install='.$install.'&os='.PHP_OS.'&soft='.urlencode($_SERVER['SERVER_SOFTWARE']).'&php='.urlencode(phpversion()).'&mysql='.urlencode($db->version()).'&url='.urlencode($DT_URL).'&site='.urlencode($DT['sitename']).'&auth='.strtoupper(md5($DT_URL.$install.$_SERVER['SERVER_SOFTWARE']));
+			$notice_url = 'http://www.xhxxfb.com/client.php?action=notice&product=b2b&version='.DT_VERSION.'&release='.DT_RELEASE.'&lang='.DT_LANG.'&charset='.DT_CHARSET.'&domain='.DT_DOMAIN.'&install='.$install.'&os='.PHP_OS.'&soft='.urlencode($_SERVER['SERVER_SOFTWARE']).'&php='.urlencode(phpversion()).'&mysql='.urlencode($db->version()).'&url='.urlencode($DT_URL).'&site='.urlencode($DT['sitename']).'&auth='.strtoupper(md5($DT_URL.$install.$_SERVER['SERVER_SOFTWARE']));
 			$install = timetodate($install, 5);			
 			$edition = edition(1);
 			include tpl('main');

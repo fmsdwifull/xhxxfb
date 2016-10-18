@@ -49,7 +49,7 @@ show_menu($menus);
 </tr>
 <tr> 
 <td class="tl">手机版绑定域名</td>
-<td><input name="setting[mobile_domain]" type="text" size="30" value="<?php echo $mobile_domain;?>"/><?php tips('例如 http://m.destoon.com/<br/>请将此域名绑定至网站mobile目录');?></td>
+<td><input name="setting[mobile_domain]" type="text" size="30" value="<?php echo $mobile_domain;?>"/><?php tips('例如 http://m.xhxxfb.com/<br/>请将此域名绑定至网站mobile目录');?></td>
 </tr>
 <tr> 
 <td class="tl">手机版网站简称</td>
@@ -86,7 +86,7 @@ show_menu($menus);
 <table cellpadding="2" cellspacing="1" class="tb">
 <tr> 
 <td class="tl">排名推广绑定域名</td>
-<td><input name="setting[spread_domain]"  type="text" size="30" value="<?php echo $spread_domain;?>"/><?php tips('例如 http://spread.destoon.com/<br/>请将此域名绑定至网站spread目录');?></td>
+<td><input name="setting[spread_domain]"  type="text" size="30" value="<?php echo $spread_domain;?>"/><?php tips('例如 http://spread.xhxxfb.com/<br/>请将此域名绑定至网站spread目录');?></td>
 </tr>
 <tr> 
 <td class="tl">供应排名起价</td>
@@ -147,7 +147,7 @@ show_menu($menus);
 </tr>
 <tr> 
 <td class="tl">广告绑定域名</td>
-<td><input name="setting[ad_domain]"  type="text" size="30" value="<?php echo $ad_domain;?>"/><?php tips('例如 http://ad.destoon.com/<br/>请将此域名绑定至网站ad目录');?></td>
+<td><input name="setting[ad_domain]"  type="text" size="30" value="<?php echo $ad_domain;?>"/><?php tips('例如 http://ad.xhxxfb.com/<br/>请将此域名绑定至网站ad目录');?></td>
 </tr>
 <tr>
 <td class="tl">广告位预览</td>
@@ -184,7 +184,7 @@ show_menu($menus);
 </tr>
 <tr> 
 <td class="tl">公告绑定域名</td>
-<td><input name="setting[announce_domain]"  type="text" size="30" value="<?php echo $announce_domain;?>"/><?php tips('例如 http://announce.destoon.com/<br/>请将此域名绑定至网站announce目录');?></td>
+<td><input name="setting[announce_domain]"  type="text" size="30" value="<?php echo $announce_domain;?>"/><?php tips('例如 http://announce.xhxxfb.com/<br/>请将此域名绑定至网站announce目录');?></td>
 </tr>
 </table>
 
@@ -200,7 +200,7 @@ show_menu($menus);
 </tr>
 <tr> 
 <td class="tl">友情链接绑定域名</td>
-<td><input name="setting[link_domain]"  type="text" size="30" value="<?php echo $link_domain;?>"/><?php tips('例如 http://link.destoon.com/<br/>请将此域名绑定至网站link目录');?></td>
+<td><input name="setting[link_domain]"  type="text" size="30" value="<?php echo $link_domain;?>"/><?php tips('例如 http://link.xhxxfb.com/<br/>请将此域名绑定至网站link目录');?></td>
 </tr>
 <tr>
 <td class="tl">友情链接在线申请</td>
@@ -221,7 +221,7 @@ show_menu($menus);
 <table cellpadding="2" cellspacing="1" class="tb">
 <tr> 
 <td class="tl">评论绑定域名</td>
-<td><input name="setting[comment_domain]"  type="text" size="30" value="<?php echo $comment_domain;?>"/><?php tips('例如 http://comment.destoon.com/<br/>请将此域名绑定至网站comment目录');?></td>
+<td><input name="setting[comment_domain]"  type="text" size="30" value="<?php echo $comment_domain;?>"/><?php tips('例如 http://comment.xhxxfb.com/<br/>请将此域名绑定至网站comment目录');?></td>
 </tr>
 <tr>
 <td class="tl">允许评论的模块</td>
@@ -356,7 +356,7 @@ show_menu($menus);
 </tr>
 <tr> 
 <td class="tl">留言绑定域名</td>
-<td><input name="setting[guestbook_domain]"  type="text" size="30" value="<?php echo $guestbook_domain;?>"/><?php tips('例如 http://guestbook.destoon.com/<br/>请将此域名绑定至网站guestbook目录');?></td>
+<td><input name="setting[guestbook_domain]"  type="text" size="30" value="<?php echo $guestbook_domain;?>"/><?php tips('例如 http://guestbook.xhxxfb.com/<br/>请将此域名绑定至网站guestbook目录');?></td>
 </tr>
 <tr> 
 <td class="tl">留言类型</td>
@@ -383,7 +383,7 @@ show_menu($menus);
 </tr>
 <tr> 
 <td class="tl">积分换礼绑定域名</td>
-<td><input name="setting[gift_domain]"  type="text" size="30" value="<?php echo $gift_domain;?>"/><?php tips('例如 http://gift.destoon.com/<br/>请将此域名绑定至网站gift目录');?></td>
+<td><input name="setting[gift_domain]"  type="text" size="30" value="<?php echo $gift_domain;?>"/><?php tips('例如 http://gift.xhxxfb.com/<br/>请将此域名绑定至网站gift目录');?></td>
 </tr>
 </table>
 
@@ -399,7 +399,7 @@ show_menu($menus);
 </tr>
 <tr> 
 <td class="tl">投票绑定域名</td>
-<td><input name="setting[vote_domain]"  type="text" size="30" value="<?php echo $vote_domain;?>"/><?php tips('例如 http://vote.destoon.com/<br/>请将此域名绑定至网站vote目录');?></td>
+<td><input name="setting[vote_domain]"  type="text" size="30" value="<?php echo $vote_domain;?>"/><?php tips('例如 http://vote.xhxxfb.com/<br/>请将此域名绑定至网站vote目录');?></td>
 </tr>
 </table>
 
@@ -415,7 +415,7 @@ show_menu($menus);
 </tr>
 <tr> 
 <td class="tl">票选绑定域名</td>
-<td><input name="setting[poll_domain]"  type="text" size="30" value="<?php echo $poll_domain;?>"/><?php tips('例如 http://poll.destoon.com/<br/>请将此域名绑定至网站poll目录');?></td>
+<td><input name="setting[poll_domain]"  type="text" size="30" value="<?php echo $poll_domain;?>"/><?php tips('例如 http://poll.xhxxfb.com/<br/>请将此域名绑定至网站poll目录');?></td>
 </tr>
 </table>
 
@@ -431,7 +431,7 @@ show_menu($menus);
 </tr>
 <tr> 
 <td class="tl">表单绑定域名</td>
-<td><input name="setting[form_domain]"  type="text" size="30" value="<?php echo $form_domain;?>"/><?php tips('例如 http://form.destoon.com/<br/>请将此域名绑定至网站form目录');?></td>
+<td><input name="setting[form_domain]"  type="text" size="30" value="<?php echo $form_domain;?>"/><?php tips('例如 http://form.xhxxfb.com/<br/>请将此域名绑定至网站form目录');?></td>
 </tr>
 </table>
 
@@ -447,7 +447,7 @@ show_menu($menus);
 </tr>
 <tr> 
 <td class="tl">无图版绑定域名</td>
-<td><input name="setting[archiver_domain]"  type="text" size="30" value="<?php echo $archiver_domain;?>"/><?php tips('例如 http://archiver.destoon.com/<br/>请将此域名绑定至网站archiver目录');?></td>
+<td><input name="setting[archiver_domain]"  type="text" size="30" value="<?php echo $archiver_domain;?>"/><?php tips('例如 http://archiver.xhxxfb.com/<br/>请将此域名绑定至网站archiver目录');?></td>
 </tr>
 </table>
 
@@ -464,7 +464,7 @@ show_menu($menus);
 </tr>
 <tr> 
 <td class="tl">RSS绑定域名</td>
-<td><input name="setting[feed_domain]"  type="text" size="30" value="<?php echo $feed_domain;?>"/><?php tips('例如 http://feed.destoon.com/<br/>请将此域名绑定至网站feed目录');?></td>
+<td><input name="setting[feed_domain]"  type="text" size="30" value="<?php echo $feed_domain;?>"/><?php tips('例如 http://feed.xhxxfb.com/<br/>请将此域名绑定至网站feed目录');?></td>
 </tr>
 <tr> 
 <td class="tl">RSS输出数量</td>

@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 //人民币网关账号，该账号为11位人民币网关商户编号+01,该参数必填。
 $merchantAcctId = $PAY[$bank]['partnerid']."01";
 //编码方式，1代表 UTF-8; 2 代表 GBK; 3代表 GB2312 默认为1,该参数必填。

@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $F = glob(DT_ROOT.'/file/temp/*');
 if($F) {
 	foreach($F as $k=>$v) {

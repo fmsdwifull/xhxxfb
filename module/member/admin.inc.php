@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $admin_user = false;
 if($_groupid == 1) {
 	$admin_user = decrypt(get_cookie('admin_user'), DT_KEY.'ADMIN');

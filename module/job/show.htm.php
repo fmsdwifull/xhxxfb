@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$MOD['show_html'] || !$itemid) return false;
 $item = $db->get_one("SELECT * FROM {$table} WHERE itemid=$itemid");
 if(!$item || $item['status'] < 3) return false;
@@ -37,7 +37,7 @@ if($item['username']) {
 $seo_file = 'show';
 include DT_ROOT.'/include/seo.inc.php';
 $template = $item['template'] ? $item['template'] : ($CAT['show_template'] ? $CAT['show_template'] : 'show');
-$destoon_task = "moduleid=$moduleid&html=show&itemid=$itemid";
+$xhxxfb_task = "moduleid=$moduleid&html=show&itemid=$itemid";
 if($EXT['mobile_enable']) $head_mobile = $EXT['mobile_url'].mobileurl($moduleid, 0, $itemid, $page);
 ob_start();
 include template($template, $module);

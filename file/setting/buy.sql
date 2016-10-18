@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_buy_6`;
-CREATE TABLE `destoon_buy_6` (
+DROP TABLE IF EXISTS `xhxxfb_buy_6`;
+CREATE TABLE `xhxxfb_buy_6` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `typeid` smallint(2) unsigned NOT NULL default '0',
@@ -60,8 +60,8 @@ CREATE TABLE `destoon_buy_6` (
   KEY `areaid` (`areaid`)
 ) TYPE=MyISAM COMMENT='求购';
 
-DROP TABLE IF EXISTS `destoon_buy_data_6`;
-CREATE TABLE `destoon_buy_data_6` (
+DROP TABLE IF EXISTS `xhxxfb_buy_data_6`;
+CREATE TABLE `xhxxfb_buy_data_6` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)

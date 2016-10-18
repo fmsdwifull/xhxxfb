@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_404`;
-CREATE TABLE `destoon_404` (
+DROP TABLE IF EXISTS `xhxxfb_404`;
+CREATE TABLE `xhxxfb_404` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `url` varchar(255) NOT NULL default '',
   `refer` varchar(255) NOT NULL,
@@ -10,8 +10,8 @@ CREATE TABLE `destoon_404` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='404日志';
 
-DROP TABLE IF EXISTS `destoon_ad`;
-CREATE TABLE `destoon_ad` (
+DROP TABLE IF EXISTS `xhxxfb_ad`;
+CREATE TABLE `xhxxfb_ad` (
   `aid` int(10) unsigned NOT NULL auto_increment,
   `title` varchar(100) NOT NULL default '',
   `pid` int(10) unsigned NOT NULL default '0',
@@ -51,8 +51,8 @@ CREATE TABLE `destoon_ad` (
   KEY `pid` (`pid`)
 ) TYPE=MyISAM COMMENT='广告';
 
-DROP TABLE IF EXISTS `destoon_ad_place`;
-CREATE TABLE `destoon_ad_place` (
+DROP TABLE IF EXISTS `xhxxfb_ad_place`;
+CREATE TABLE `xhxxfb_ad_place` (
   `pid` int(10) unsigned NOT NULL auto_increment,
   `moduleid` smallint(6) unsigned NOT NULL default '0',
   `typeid` tinyint(1) unsigned NOT NULL default '0',
@@ -74,8 +74,8 @@ CREATE TABLE `destoon_ad_place` (
   PRIMARY KEY  (`pid`)
 ) TYPE=MyISAM COMMENT='广告位';
 
-DROP TABLE IF EXISTS `destoon_address`;
-CREATE TABLE `destoon_address` (
+DROP TABLE IF EXISTS `xhxxfb_address`;
+CREATE TABLE `xhxxfb_address` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `truename` varchar(30) NOT NULL default '',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -93,8 +93,8 @@ CREATE TABLE `destoon_address` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='收货地址';
 
-DROP TABLE IF EXISTS `destoon_admin`;
-CREATE TABLE `destoon_admin` (
+DROP TABLE IF EXISTS `xhxxfb_admin`;
+CREATE TABLE `xhxxfb_admin` (
   `adminid` smallint(6) unsigned NOT NULL auto_increment,
   `userid` int(10) unsigned NOT NULL default '0',
   `listorder` smallint(4) unsigned NOT NULL default '0',
@@ -108,8 +108,8 @@ CREATE TABLE `destoon_admin` (
   PRIMARY KEY  (`adminid`)
 ) TYPE=MyISAM COMMENT='管理员';
 
-DROP TABLE IF EXISTS `destoon_admin_log`;
-CREATE TABLE `destoon_admin_log` (
+DROP TABLE IF EXISTS `xhxxfb_admin_log`;
+CREATE TABLE `xhxxfb_admin_log` (
   `logid` int(10) unsigned NOT NULL auto_increment,
   `qstring` varchar(255) NOT NULL default '',
   `username` varchar(30) NOT NULL default '',
@@ -118,8 +118,8 @@ CREATE TABLE `destoon_admin_log` (
   PRIMARY KEY  (`logid`)
 ) TYPE=MyISAM COMMENT='管理日志';
 
-DROP TABLE IF EXISTS `destoon_admin_online`;
-CREATE TABLE `destoon_admin_online` (
+DROP TABLE IF EXISTS `xhxxfb_admin_online`;
+CREATE TABLE `xhxxfb_admin_online` (
   `sid` varchar(32) NOT NULL default '',
   `username` varchar(30) NOT NULL default '',
   `ip` varchar(50) NOT NULL default '',
@@ -129,8 +129,8 @@ CREATE TABLE `destoon_admin_online` (
   UNIQUE KEY `sid` (`sid`)
 ) TYPE=HEAP COMMENT='在线管理员';
 
-DROP TABLE IF EXISTS `destoon_alert`;
-CREATE TABLE `destoon_alert` (
+DROP TABLE IF EXISTS `xhxxfb_alert`;
+CREATE TABLE `xhxxfb_alert` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `mid` smallint(6) unsigned NOT NULL default '0',
   `catid` int(10) unsigned NOT NULL default '0',
@@ -148,8 +148,8 @@ CREATE TABLE `destoon_alert` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='贸易提醒';
 
-DROP TABLE IF EXISTS `destoon_announce`;
-CREATE TABLE `destoon_announce` (
+DROP TABLE IF EXISTS `xhxxfb_announce`;
+CREATE TABLE `xhxxfb_announce` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `typeid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -171,8 +171,8 @@ CREATE TABLE `destoon_announce` (
   KEY `addtime` (`addtime`)
 ) TYPE=MyISAM COMMENT='公告';
 
-DROP TABLE IF EXISTS `destoon_area`;
-CREATE TABLE `destoon_area` (
+DROP TABLE IF EXISTS `xhxxfb_area`;
+CREATE TABLE `xhxxfb_area` (
   `areaid` int(10) unsigned NOT NULL auto_increment,
   `areaname` varchar(50) NOT NULL default '',
   `parentid` int(10) unsigned NOT NULL default '0',
@@ -183,8 +183,8 @@ CREATE TABLE `destoon_area` (
   PRIMARY KEY  (`areaid`)
 ) TYPE=MyISAM COMMENT='地区';
 
-DROP TABLE IF EXISTS `destoon_article_21`;
-CREATE TABLE `destoon_article_21` (
+DROP TABLE IF EXISTS `xhxxfb_article_21`;
+CREATE TABLE `xhxxfb_article_21` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -220,15 +220,15 @@ CREATE TABLE `destoon_article_21` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='资讯';
 
-DROP TABLE IF EXISTS `destoon_article_data_21`;
-CREATE TABLE `destoon_article_data_21` (
+DROP TABLE IF EXISTS `xhxxfb_article_data_21`;
+CREATE TABLE `xhxxfb_article_data_21` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` longtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='资讯内容';
 
-DROP TABLE IF EXISTS `destoon_ask`;
-CREATE TABLE `destoon_ask` (
+DROP TABLE IF EXISTS `xhxxfb_ask`;
+CREATE TABLE `xhxxfb_ask` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `typeid` int(10) unsigned NOT NULL default '0',
   `qid` bigint(20) unsigned NOT NULL default '0',
@@ -244,8 +244,8 @@ CREATE TABLE `destoon_ask` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='客服中心';
 
-DROP TABLE IF EXISTS `destoon_banip`;
-CREATE TABLE `destoon_banip` (
+DROP TABLE IF EXISTS `xhxxfb_banip`;
+CREATE TABLE `xhxxfb_banip` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `ip` varchar(50) NOT NULL default '',
   `editor` varchar(30) NOT NULL default '',
@@ -254,8 +254,8 @@ CREATE TABLE `destoon_banip` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='IP禁止';
 
-DROP TABLE IF EXISTS `destoon_banword`;
-CREATE TABLE `destoon_banword` (
+DROP TABLE IF EXISTS `xhxxfb_banword`;
+CREATE TABLE `xhxxfb_banword` (
   `bid` int(10) unsigned NOT NULL auto_increment,
   `replacefrom` varchar(255) NOT NULL default '',
   `replaceto` varchar(255) NOT NULL default '',
@@ -263,8 +263,8 @@ CREATE TABLE `destoon_banword` (
   PRIMARY KEY  (`bid`)
 ) TYPE=MyISAM COMMENT='词语过滤';
 
-DROP TABLE IF EXISTS `destoon_brand_13`;
-CREATE TABLE `destoon_brand_13` (
+DROP TABLE IF EXISTS `xhxxfb_brand_13`;
+CREATE TABLE `xhxxfb_brand_13` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `level` tinyint(1) unsigned NOT NULL default '0',
@@ -313,15 +313,15 @@ CREATE TABLE `destoon_brand_13` (
   KEY `editdate` (`editdate`,`vip`,`edittime`)
 ) TYPE=MyISAM COMMENT='品牌';
 
-DROP TABLE IF EXISTS `destoon_brand_data_13`;
-CREATE TABLE `destoon_brand_data_13` (
+DROP TABLE IF EXISTS `xhxxfb_brand_data_13`;
+CREATE TABLE `xhxxfb_brand_data_13` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='品牌内容';
 
-DROP TABLE IF EXISTS `destoon_buy_6`;
-CREATE TABLE `destoon_buy_6` (
+DROP TABLE IF EXISTS `xhxxfb_buy_6`;
+CREATE TABLE `xhxxfb_buy_6` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `typeid` smallint(2) unsigned NOT NULL default '0',
@@ -382,22 +382,22 @@ CREATE TABLE `destoon_buy_6` (
   KEY `areaid` (`areaid`)
 ) TYPE=MyISAM COMMENT='求购';
 
-DROP TABLE IF EXISTS `destoon_buy_data_6`;
-CREATE TABLE `destoon_buy_data_6` (
+DROP TABLE IF EXISTS `xhxxfb_buy_data_6`;
+CREATE TABLE `xhxxfb_buy_data_6` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='求购内容';
 
-DROP TABLE IF EXISTS `destoon_cache`;
-CREATE TABLE `destoon_cache` (
+DROP TABLE IF EXISTS `xhxxfb_cache`;
+CREATE TABLE `xhxxfb_cache` (
   `cacheid` varchar(32) NOT NULL default '',
   `totime` int(10) unsigned NOT NULL default '0',
   UNIQUE KEY `cacheid` (`cacheid`)
 ) TYPE=MyISAM COMMENT='文件缓存';
 
-DROP TABLE IF EXISTS `destoon_category`;
-CREATE TABLE `destoon_category` (
+DROP TABLE IF EXISTS `xhxxfb_category`;
+CREATE TABLE `xhxxfb_category` (
   `catid` int(10) unsigned NOT NULL auto_increment,
   `moduleid` smallint(6) unsigned NOT NULL default '0',
   `catname` varchar(50) NOT NULL default '',
@@ -424,8 +424,8 @@ CREATE TABLE `destoon_category` (
   PRIMARY KEY  (`catid`)
 ) TYPE=MyISAM COMMENT='栏目分类';
 
-DROP TABLE IF EXISTS `destoon_category_option`;
-CREATE TABLE `destoon_category_option` (
+DROP TABLE IF EXISTS `xhxxfb_category_option`;
+CREATE TABLE `xhxxfb_category_option` (
   `oid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `type` tinyint(1) unsigned NOT NULL default '0',
@@ -439,8 +439,8 @@ CREATE TABLE `destoon_category_option` (
   KEY `catid` (`catid`)
 ) TYPE=MyISAM COMMENT='分类属性';
 
-DROP TABLE IF EXISTS `destoon_category_value`;
-CREATE TABLE `destoon_category_value` (
+DROP TABLE IF EXISTS `xhxxfb_category_value`;
+CREATE TABLE `xhxxfb_category_value` (
   `oid` bigint(20) unsigned NOT NULL default '0',
   `moduleid` smallint(6) NOT NULL default '0',
   `itemid` bigint(20) unsigned NOT NULL default '0',
@@ -448,8 +448,8 @@ CREATE TABLE `destoon_category_value` (
   KEY `moduleid` (`moduleid`,`itemid`)
 ) TYPE=MyISAM COMMENT='分类属性值';
 
-DROP TABLE IF EXISTS `destoon_chat`;
-CREATE TABLE `destoon_chat` (
+DROP TABLE IF EXISTS `xhxxfb_chat`;
+CREATE TABLE `xhxxfb_chat` (
   `chatid` varchar(32) NOT NULL,
   `fromuser` varchar(30) NOT NULL,
   `fgettime` int(10) unsigned NOT NULL default '0',
@@ -468,8 +468,8 @@ CREATE TABLE `destoon_chat` (
   KEY `lasttime` (`lasttime`)
 ) TYPE=MyISAM COMMENT='在线聊天';
 
-DROP TABLE IF EXISTS `destoon_city`;
-CREATE TABLE `destoon_city` (
+DROP TABLE IF EXISTS `xhxxfb_city`;
+CREATE TABLE `xhxxfb_city` (
   `areaid` int(10) unsigned NOT NULL default '0',
   `name` varchar(50) NOT NULL default '',
   `style` varchar(50) NOT NULL default '',
@@ -485,8 +485,8 @@ CREATE TABLE `destoon_city` (
   KEY `domain` (`domain`)
 ) TYPE=MyISAM COMMENT='城市分站';
 
-DROP TABLE IF EXISTS `destoon_club`;
-CREATE TABLE `destoon_club` (
+DROP TABLE IF EXISTS `xhxxfb_club`;
+CREATE TABLE `xhxxfb_club` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -524,15 +524,15 @@ CREATE TABLE `destoon_club` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='商圈帖子';
 
-DROP TABLE IF EXISTS `destoon_club_data`;
-CREATE TABLE `destoon_club_data` (
+DROP TABLE IF EXISTS `xhxxfb_club_data`;
+CREATE TABLE `xhxxfb_club_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` longtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='商圈帖子内容';
 
-DROP TABLE IF EXISTS `destoon_club_fans`;
-CREATE TABLE `destoon_club_fans` (
+DROP TABLE IF EXISTS `xhxxfb_club_fans`;
+CREATE TABLE `xhxxfb_club_fans` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `gid` bigint(20) unsigned NOT NULL default '0',
   `username` varchar(30) NOT NULL default '',
@@ -546,8 +546,8 @@ CREATE TABLE `destoon_club_fans` (
   KEY `status` (`status`)
 ) TYPE=MyISAM COMMENT='商圈粉丝';
 
-DROP TABLE IF EXISTS `destoon_club_group`;
-CREATE TABLE `destoon_club_group` (
+DROP TABLE IF EXISTS `xhxxfb_club_group`;
+CREATE TABLE `xhxxfb_club_group` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -582,8 +582,8 @@ CREATE TABLE `destoon_club_group` (
   KEY `status` (`status`)
 ) TYPE=MyISAM COMMENT='商圈圈子';
 
-DROP TABLE IF EXISTS `destoon_club_manage`;
-CREATE TABLE `destoon_club_manage` (
+DROP TABLE IF EXISTS `xhxxfb_club_manage`;
+CREATE TABLE `xhxxfb_club_manage` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `gid` bigint(20) unsigned NOT NULL default '0',
   `tid` bigint(20) unsigned NOT NULL default '0',
@@ -601,8 +601,8 @@ CREATE TABLE `destoon_club_manage` (
   KEY `addtime` (`addtime`)
 ) TYPE=MyISAM COMMENT='商圈管理';
 
-DROP TABLE IF EXISTS `destoon_club_reply`;
-CREATE TABLE `destoon_club_reply` (
+DROP TABLE IF EXISTS `xhxxfb_club_reply`;
+CREATE TABLE `xhxxfb_club_reply` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `tid` bigint(20) unsigned NOT NULL default '0',
   `gid` bigint(20) unsigned NOT NULL default '0',
@@ -620,8 +620,8 @@ CREATE TABLE `destoon_club_reply` (
   KEY `status` (`status`)
 ) TYPE=MyISAM COMMENT='商圈回复';
 
-DROP TABLE IF EXISTS `destoon_comment`;
-CREATE TABLE `destoon_comment` (
+DROP TABLE IF EXISTS `xhxxfb_comment`;
+CREATE TABLE `xhxxfb_comment` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `item_mid` smallint(6) NOT NULL default '0',
   `item_id` bigint(20) unsigned NOT NULL default '0',
@@ -649,8 +649,8 @@ CREATE TABLE `destoon_comment` (
   KEY `item_id` (`item_id`)
 ) TYPE=MyISAM COMMENT='评论';
 
-DROP TABLE IF EXISTS `destoon_comment_ban`;
-CREATE TABLE `destoon_comment_ban` (
+DROP TABLE IF EXISTS `xhxxfb_comment_ban`;
+CREATE TABLE `xhxxfb_comment_ban` (
   `bid` bigint(20) unsigned NOT NULL auto_increment,
   `moduleid` smallint(6) NOT NULL default '0',
   `itemid` bigint(20) unsigned NOT NULL default '0',
@@ -659,8 +659,8 @@ CREATE TABLE `destoon_comment_ban` (
   PRIMARY KEY  (`bid`)
 ) TYPE=MyISAM COMMENT='评论禁止';
 
-DROP TABLE IF EXISTS `destoon_comment_stat`;
-CREATE TABLE `destoon_comment_stat` (
+DROP TABLE IF EXISTS `xhxxfb_comment_stat`;
+CREATE TABLE `xhxxfb_comment_stat` (
   `sid` bigint(20) unsigned NOT NULL auto_increment,
   `moduleid` smallint(6) NOT NULL default '0',
   `itemid` bigint(20) unsigned NOT NULL default '0',
@@ -671,8 +671,8 @@ CREATE TABLE `destoon_comment_stat` (
   PRIMARY KEY  (`sid`)
 ) TYPE=MyISAM COMMENT='评论统计';
 
-DROP TABLE IF EXISTS `destoon_company`;
-CREATE TABLE `destoon_company` (
+DROP TABLE IF EXISTS `xhxxfb_company`;
+CREATE TABLE `xhxxfb_company` (
   `userid` bigint(20) unsigned NOT NULL default '0',
   `username` varchar(30) NOT NULL default '',
   `groupid` smallint(4) unsigned NOT NULL default '0',
@@ -722,23 +722,23 @@ CREATE TABLE `destoon_company` (
   KEY `groupid` (`groupid`)
 ) TYPE=MyISAM COMMENT='公司';
 
-DROP TABLE IF EXISTS `destoon_company_data`;
-CREATE TABLE `destoon_company_data` (
+DROP TABLE IF EXISTS `xhxxfb_company_data`;
+CREATE TABLE `xhxxfb_company_data` (
   `userid` bigint(20) unsigned NOT NULL default '0',
   `content` text NOT NULL,
   PRIMARY KEY  (`userid`)
 ) TYPE=MyISAM COMMENT='公司内容';
 
-DROP TABLE IF EXISTS `destoon_company_setting`;
-CREATE TABLE `destoon_company_setting` (
+DROP TABLE IF EXISTS `xhxxfb_company_setting`;
+CREATE TABLE `xhxxfb_company_setting` (
   `userid` bigint(20) unsigned NOT NULL default '0',
   `item_key` varchar(100) NOT NULL default '',
   `item_value` text NOT NULL,
   KEY `userid` (`userid`)
 ) TYPE=MyISAM COMMENT='公司设置';
 
-DROP TABLE IF EXISTS `destoon_cron`;
-CREATE TABLE `destoon_cron` (
+DROP TABLE IF EXISTS `xhxxfb_cron`;
+CREATE TABLE `xhxxfb_cron` (
   `itemid` smallint(6) unsigned NOT NULL auto_increment,
   `title` varchar(30) NOT NULL,
   `type` tinyint(1) unsigned NOT NULL default '0',
@@ -752,8 +752,8 @@ CREATE TABLE `destoon_cron` (
   KEY `nexttime` (`nexttime`)
 ) TYPE=MyISAM COMMENT='计划任务';
 
-DROP TABLE IF EXISTS `destoon_down_15`;
-CREATE TABLE `destoon_down_15` (
+DROP TABLE IF EXISTS `xhxxfb_down_15`;
+CREATE TABLE `xhxxfb_down_15` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -788,15 +788,15 @@ CREATE TABLE `destoon_down_15` (
   KEY `catid` (`catid`)
 ) TYPE=MyISAM COMMENT='下载';
 
-DROP TABLE IF EXISTS `destoon_down_data_15`;
-CREATE TABLE `destoon_down_data_15` (
+DROP TABLE IF EXISTS `xhxxfb_down_data_15`;
+CREATE TABLE `xhxxfb_down_data_15` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='下载内容';
 
-DROP TABLE IF EXISTS `destoon_exhibit`;
-CREATE TABLE `destoon_exhibit` (
+DROP TABLE IF EXISTS `xhxxfb_exhibit`;
+CREATE TABLE `xhxxfb_exhibit` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -845,15 +845,15 @@ CREATE TABLE `destoon_exhibit` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='展会';
 
-DROP TABLE IF EXISTS `destoon_exhibit_data`;
-CREATE TABLE `destoon_exhibit_data` (
+DROP TABLE IF EXISTS `xhxxfb_exhibit_data`;
+CREATE TABLE `xhxxfb_exhibit_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='展会内容';
 
-DROP TABLE IF EXISTS `destoon_exhibit_order`;
-CREATE TABLE `destoon_exhibit_order` (
+DROP TABLE IF EXISTS `xhxxfb_exhibit_order`;
+CREATE TABLE `xhxxfb_exhibit_order` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `id` bigint(20) unsigned NOT NULL default '0',
   `user` varchar(30) NOT NULL,
@@ -875,8 +875,8 @@ CREATE TABLE `destoon_exhibit_order` (
   KEY `id` (`id`)
 ) TYPE=MyISAM COMMENT='展会报名';
 
-DROP TABLE IF EXISTS `destoon_favorite`;
-CREATE TABLE `destoon_favorite` (
+DROP TABLE IF EXISTS `xhxxfb_favorite`;
+CREATE TABLE `xhxxfb_favorite` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `listorder` smallint(4) unsigned NOT NULL default '0',
   `userid` bigint(20) unsigned NOT NULL default '0',
@@ -890,8 +890,8 @@ CREATE TABLE `destoon_favorite` (
   KEY `userid` (`userid`)
 ) TYPE=MyISAM COMMENT='商机收藏';
 
-DROP TABLE IF EXISTS `destoon_fetch`;
-CREATE TABLE `destoon_fetch` (
+DROP TABLE IF EXISTS `xhxxfb_fetch`;
+CREATE TABLE `xhxxfb_fetch` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `sitename` varchar(100) NOT NULL default '',
   `domain` varchar(255) NOT NULL default '',
@@ -903,8 +903,8 @@ CREATE TABLE `destoon_fetch` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='单页采编';
 
-DROP TABLE IF EXISTS `destoon_fields`;
-CREATE TABLE `destoon_fields` (
+DROP TABLE IF EXISTS `xhxxfb_fields`;
+CREATE TABLE `xhxxfb_fields` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `tb` varchar(30) NOT NULL default '',
   `name` varchar(50) NOT NULL default '',
@@ -926,8 +926,8 @@ CREATE TABLE `destoon_fields` (
   KEY `tablename` (`tb`)
 ) TYPE=MyISAM COMMENT='自定义字段';
 
-DROP TABLE IF EXISTS `destoon_finance_card`;
-CREATE TABLE `destoon_finance_card` (
+DROP TABLE IF EXISTS `xhxxfb_finance_card`;
+CREATE TABLE `xhxxfb_finance_card` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `number` varchar(30) NOT NULL default '',
   `password` varchar(30) NOT NULL default '',
@@ -942,8 +942,8 @@ CREATE TABLE `destoon_finance_card` (
   UNIQUE KEY `number` (`number`)
 ) TYPE=MyISAM COMMENT='充值卡';
 
-DROP TABLE IF EXISTS `destoon_finance_cash`;
-CREATE TABLE `destoon_finance_cash` (
+DROP TABLE IF EXISTS `xhxxfb_finance_cash`;
+CREATE TABLE `xhxxfb_finance_cash` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `bank` varchar(50) NOT NULL default '',
@@ -963,8 +963,8 @@ CREATE TABLE `destoon_finance_cash` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='申请提现';
 
-DROP TABLE IF EXISTS `destoon_finance_charge`;
-CREATE TABLE `destoon_finance_charge` (
+DROP TABLE IF EXISTS `xhxxfb_finance_charge`;
+CREATE TABLE `xhxxfb_finance_charge` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `bank` varchar(20) NOT NULL default '',
@@ -981,8 +981,8 @@ CREATE TABLE `destoon_finance_charge` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='在线充值';
 
-DROP TABLE IF EXISTS `destoon_finance_credit`;
-CREATE TABLE `destoon_finance_credit` (
+DROP TABLE IF EXISTS `xhxxfb_finance_credit`;
+CREATE TABLE `xhxxfb_finance_credit` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `amount` int(10) NOT NULL default '0',
@@ -995,8 +995,8 @@ CREATE TABLE `destoon_finance_credit` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='积分流水';
 
-DROP TABLE IF EXISTS `destoon_finance_deposit`;
-CREATE TABLE `destoon_finance_deposit` (
+DROP TABLE IF EXISTS `xhxxfb_finance_deposit`;
+CREATE TABLE `xhxxfb_finance_deposit` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `amount` decimal(10,2) NOT NULL default '0.00',
@@ -1008,8 +1008,8 @@ CREATE TABLE `destoon_finance_deposit` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='保证金';
 
-DROP TABLE IF EXISTS `destoon_finance_pay`;
-CREATE TABLE `destoon_finance_pay` (
+DROP TABLE IF EXISTS `xhxxfb_finance_pay`;
+CREATE TABLE `xhxxfb_finance_pay` (
   `pid` bigint(20) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `fee` float unsigned NOT NULL default '0',
@@ -1023,8 +1023,8 @@ CREATE TABLE `destoon_finance_pay` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='支付记录';
 
-DROP TABLE IF EXISTS `destoon_finance_promo`;
-CREATE TABLE `destoon_finance_promo` (
+DROP TABLE IF EXISTS `xhxxfb_finance_promo`;
+CREATE TABLE `xhxxfb_finance_promo` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `number` varchar(30) NOT NULL default '',
   `type` tinyint(1) unsigned NOT NULL default '0',
@@ -1040,8 +1040,8 @@ CREATE TABLE `destoon_finance_promo` (
   UNIQUE KEY `number` (`number`)
 ) TYPE=MyISAM COMMENT='优惠码';
 
-DROP TABLE IF EXISTS `destoon_finance_record`;
-CREATE TABLE `destoon_finance_record` (
+DROP TABLE IF EXISTS `xhxxfb_finance_record`;
+CREATE TABLE `xhxxfb_finance_record` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `bank` varchar(30) NOT NULL default '',
@@ -1055,8 +1055,8 @@ CREATE TABLE `destoon_finance_record` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='财务流水';
 
-DROP TABLE IF EXISTS `destoon_finance_sms`;
-CREATE TABLE `destoon_finance_sms` (
+DROP TABLE IF EXISTS `xhxxfb_finance_sms`;
+CREATE TABLE `xhxxfb_finance_sms` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `amount` int(10) NOT NULL default '0',
@@ -1069,8 +1069,8 @@ CREATE TABLE `destoon_finance_sms` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='短信增减';
 
-DROP TABLE IF EXISTS `destoon_form`;
-CREATE TABLE `destoon_form` (
+DROP TABLE IF EXISTS `xhxxfb_form`;
+CREATE TABLE `xhxxfb_form` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `typeid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -1095,8 +1095,8 @@ CREATE TABLE `destoon_form` (
   KEY `addtime` (`addtime`)
 ) TYPE=MyISAM COMMENT='表单';
 
-DROP TABLE IF EXISTS `destoon_form_answer`;
-CREATE TABLE `destoon_form_answer` (
+DROP TABLE IF EXISTS `xhxxfb_form_answer`;
+CREATE TABLE `xhxxfb_form_answer` (
   `aid` bigint(20) unsigned NOT NULL auto_increment,
   `fid` bigint(20) unsigned NOT NULL default '0',
   `rid` bigint(20) unsigned NOT NULL default '0',
@@ -1110,8 +1110,8 @@ CREATE TABLE `destoon_form_answer` (
   PRIMARY KEY  (`aid`)
 ) TYPE=MyISAM COMMENT='表单回复';
 
-DROP TABLE IF EXISTS `destoon_form_question`;
-CREATE TABLE `destoon_form_question` (
+DROP TABLE IF EXISTS `xhxxfb_form_question`;
+CREATE TABLE `xhxxfb_form_question` (
   `qid` bigint(20) unsigned NOT NULL auto_increment,
   `fid` int(10) unsigned NOT NULL default '0',
   `type` tinyint(1) unsigned NOT NULL default '0',
@@ -1124,8 +1124,8 @@ CREATE TABLE `destoon_form_question` (
   KEY `fid` (`fid`)
 ) TYPE=MyISAM COMMENT='表单选项';
 
-DROP TABLE IF EXISTS `destoon_form_record`;
-CREATE TABLE `destoon_form_record` (
+DROP TABLE IF EXISTS `xhxxfb_form_record`;
+CREATE TABLE `xhxxfb_form_record` (
   `rid` bigint(20) unsigned NOT NULL auto_increment,
   `fid` bigint(20) unsigned NOT NULL default '0',
   `username` varchar(30) NOT NULL default '',
@@ -1135,8 +1135,8 @@ CREATE TABLE `destoon_form_record` (
   PRIMARY KEY  (`rid`)
 ) TYPE=MyISAM COMMENT='表单回复记录';
 
-DROP TABLE IF EXISTS `destoon_friend`;
-CREATE TABLE `destoon_friend` (
+DROP TABLE IF EXISTS `xhxxfb_friend`;
+CREATE TABLE `xhxxfb_friend` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `listorder` smallint(4) unsigned NOT NULL default '0',
   `userid` bigint(20) unsigned NOT NULL default '0',
@@ -1160,8 +1160,8 @@ CREATE TABLE `destoon_friend` (
   KEY `userid` (`userid`)
 ) TYPE=MyISAM COMMENT='我的商友';
 
-DROP TABLE IF EXISTS `destoon_gift`;
-CREATE TABLE `destoon_gift` (
+DROP TABLE IF EXISTS `xhxxfb_gift`;
+CREATE TABLE `xhxxfb_gift` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `typeid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -1184,8 +1184,8 @@ CREATE TABLE `destoon_gift` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='积分换礼';
 
-DROP TABLE IF EXISTS `destoon_gift_order`;
-CREATE TABLE `destoon_gift_order` (
+DROP TABLE IF EXISTS `xhxxfb_gift_order`;
+CREATE TABLE `xhxxfb_gift_order` (
   `oid` bigint(20) unsigned NOT NULL auto_increment,
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `credit` int(10) unsigned NOT NULL default '0',
@@ -1198,8 +1198,8 @@ CREATE TABLE `destoon_gift_order` (
   KEY `itemid` (`itemid`)
 ) TYPE=MyISAM COMMENT='积分换礼订单';
 
-DROP TABLE IF EXISTS `destoon_group`;
-CREATE TABLE `destoon_group` (
+DROP TABLE IF EXISTS `xhxxfb_group`;
+CREATE TABLE `xhxxfb_group` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -1255,15 +1255,15 @@ CREATE TABLE `destoon_group` (
   KEY `areaid` (`areaid`)
 ) TYPE=MyISAM COMMENT='团购';
 
-DROP TABLE IF EXISTS `destoon_group_data`;
-CREATE TABLE `destoon_group_data` (
+DROP TABLE IF EXISTS `xhxxfb_group_data`;
+CREATE TABLE `xhxxfb_group_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='团购内容';
 
-DROP TABLE IF EXISTS `destoon_group_order`;
-CREATE TABLE `destoon_group_order` (
+DROP TABLE IF EXISTS `xhxxfb_group_order`;
+CREATE TABLE `xhxxfb_group_order` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `gid` bigint(20) unsigned NOT NULL default '0',
   `buyer` varchar(30) NOT NULL default '',
@@ -1298,8 +1298,8 @@ CREATE TABLE `destoon_group_order` (
   KEY `seller` (`seller`)
 ) TYPE=MyISAM COMMENT='团购订单';
 
-DROP TABLE IF EXISTS `destoon_guestbook`;
-CREATE TABLE `destoon_guestbook` (
+DROP TABLE IF EXISTS `xhxxfb_guestbook`;
+CREATE TABLE `xhxxfb_guestbook` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `areaid` int(10) unsigned NOT NULL default '0',
   `title` varchar(100) NOT NULL default '',
@@ -1323,8 +1323,8 @@ CREATE TABLE `destoon_guestbook` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='留言本';
 
-DROP TABLE IF EXISTS `destoon_honor`;
-CREATE TABLE `destoon_honor` (
+DROP TABLE IF EXISTS `xhxxfb_honor`;
+CREATE TABLE `xhxxfb_honor` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `title` varchar(100) NOT NULL default '',
   `style` varchar(50) NOT NULL default '',
@@ -1346,8 +1346,8 @@ CREATE TABLE `destoon_honor` (
   KEY `addtime` (`addtime`)
 ) TYPE=MyISAM COMMENT='荣誉资质';
 
-DROP TABLE IF EXISTS `destoon_info_22`;
-CREATE TABLE `destoon_info_22` (
+DROP TABLE IF EXISTS `xhxxfb_info_22`;
+CREATE TABLE `xhxxfb_info_22` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `level` tinyint(1) unsigned NOT NULL default '0',
@@ -1405,15 +1405,15 @@ CREATE TABLE `destoon_info_22` (
   KEY `editdate` (`editdate`,`vip`,`edittime`)
 ) TYPE=MyISAM COMMENT='招商';
 
-DROP TABLE IF EXISTS `destoon_info_data_22`;
-CREATE TABLE `destoon_info_data_22` (
+DROP TABLE IF EXISTS `xhxxfb_info_data_22`;
+CREATE TABLE `xhxxfb_info_data_22` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='招商内容';
 
-DROP TABLE IF EXISTS `destoon_job`;
-CREATE TABLE `destoon_job` (
+DROP TABLE IF EXISTS `xhxxfb_job`;
+CREATE TABLE `xhxxfb_job` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -1473,8 +1473,8 @@ CREATE TABLE `destoon_job` (
   KEY `areaid` (`areaid`)
 ) TYPE=MyISAM COMMENT='招聘';
 
-DROP TABLE IF EXISTS `destoon_job_apply`;
-CREATE TABLE `destoon_job_apply` (
+DROP TABLE IF EXISTS `xhxxfb_job_apply`;
+CREATE TABLE `xhxxfb_job_apply` (
   `applyid` bigint(20) unsigned NOT NULL auto_increment,
   `jobid` bigint(20) unsigned NOT NULL default '0',
   `resumeid` bigint(20) unsigned NOT NULL default '0',
@@ -1488,15 +1488,15 @@ CREATE TABLE `destoon_job_apply` (
   KEY `apply_username` (`apply_username`)
 ) TYPE=MyISAM COMMENT='应聘工作';
 
-DROP TABLE IF EXISTS `destoon_job_data`;
-CREATE TABLE `destoon_job_data` (
+DROP TABLE IF EXISTS `xhxxfb_job_data`;
+CREATE TABLE `xhxxfb_job_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='招聘内容';
 
-DROP TABLE IF EXISTS `destoon_job_talent`;
-CREATE TABLE `destoon_job_talent` (
+DROP TABLE IF EXISTS `xhxxfb_job_talent`;
+CREATE TABLE `xhxxfb_job_talent` (
   `talentid` bigint(20) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `resumeid` bigint(20) unsigned NOT NULL default '0',
@@ -1505,8 +1505,8 @@ CREATE TABLE `destoon_job_talent` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='人才库';
 
-DROP TABLE IF EXISTS `destoon_keylink`;
-CREATE TABLE `destoon_keylink` (
+DROP TABLE IF EXISTS `xhxxfb_keylink`;
+CREATE TABLE `xhxxfb_keylink` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `title` varchar(255) NOT NULL default '',
   `url` varchar(255) NOT NULL default '',
@@ -1516,8 +1516,8 @@ CREATE TABLE `destoon_keylink` (
   KEY `item` (`item`)
 ) TYPE=MyISAM COMMENT='关联链接';
 
-DROP TABLE IF EXISTS `destoon_keyword`;
-CREATE TABLE `destoon_keyword` (
+DROP TABLE IF EXISTS `xhxxfb_keyword`;
+CREATE TABLE `xhxxfb_keyword` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `moduleid` smallint(6) NOT NULL default '0',
   `word` varchar(255) NOT NULL default '',
@@ -1537,8 +1537,8 @@ CREATE TABLE `destoon_keyword` (
   KEY `keyword` (`keyword`)
 ) TYPE=MyISAM COMMENT='关键词';
 
-DROP TABLE IF EXISTS `destoon_know`;
-CREATE TABLE `destoon_know` (
+DROP TABLE IF EXISTS `xhxxfb_know`;
+CREATE TABLE `xhxxfb_know` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -1583,8 +1583,8 @@ CREATE TABLE `destoon_know` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='知道';
 
-DROP TABLE IF EXISTS `destoon_know_answer`;
-CREATE TABLE `destoon_know_answer` (
+DROP TABLE IF EXISTS `xhxxfb_know_answer`;
+CREATE TABLE `xhxxfb_know_answer` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `qid` bigint(20) unsigned NOT NULL default '0',
   `linkurl` varchar(255) NOT NULL default '',
@@ -1603,15 +1603,15 @@ CREATE TABLE `destoon_know_answer` (
   KEY `qid` (`qid`)
 ) TYPE=MyISAM COMMENT='知道回答';
 
-DROP TABLE IF EXISTS `destoon_know_data`;
-CREATE TABLE `destoon_know_data` (
+DROP TABLE IF EXISTS `xhxxfb_know_data`;
+CREATE TABLE `xhxxfb_know_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` longtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='知道内容';
 
-DROP TABLE IF EXISTS `destoon_know_expert`;
-CREATE TABLE `destoon_know_expert` (
+DROP TABLE IF EXISTS `xhxxfb_know_expert`;
+CREATE TABLE `xhxxfb_know_expert` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `title` varchar(100) NOT NULL,
   `style` varchar(50) NOT NULL default '',
@@ -1632,8 +1632,8 @@ CREATE TABLE `destoon_know_expert` (
   KEY `addtime` (`addtime`)
 ) TYPE=MyISAM COMMENT='知道专家';
 
-DROP TABLE IF EXISTS `destoon_know_vote`;
-CREATE TABLE `destoon_know_vote` (
+DROP TABLE IF EXISTS `xhxxfb_know_vote`;
+CREATE TABLE `xhxxfb_know_vote` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `qid` bigint(20) unsigned NOT NULL default '0',
   `aid` bigint(20) unsigned NOT NULL default '0',
@@ -1644,8 +1644,8 @@ CREATE TABLE `destoon_know_vote` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='知道投票';
 
-DROP TABLE IF EXISTS `destoon_link`;
-CREATE TABLE `destoon_link` (
+DROP TABLE IF EXISTS `xhxxfb_link`;
+CREATE TABLE `xhxxfb_link` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `typeid` bigint(20) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -1666,8 +1666,8 @@ CREATE TABLE `destoon_link` (
   KEY `listorder` (`listorder`)
 ) TYPE=MyISAM COMMENT='友情链接';
 
-DROP TABLE IF EXISTS `destoon_login`;
-CREATE TABLE `destoon_login` (
+DROP TABLE IF EXISTS `xhxxfb_login`;
+CREATE TABLE `xhxxfb_login` (
   `logid` bigint(20) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `password` varchar(32) NOT NULL default '',
@@ -1680,8 +1680,8 @@ CREATE TABLE `destoon_login` (
   PRIMARY KEY  (`logid`)
 ) TYPE=MyISAM COMMENT='登录日志';
 
-DROP TABLE IF EXISTS `destoon_mail`;
-CREATE TABLE `destoon_mail` (
+DROP TABLE IF EXISTS `xhxxfb_mail`;
+CREATE TABLE `xhxxfb_mail` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `typeid` bigint(20) unsigned NOT NULL default '0',
   `title` varchar(255) NOT NULL default '',
@@ -1693,8 +1693,8 @@ CREATE TABLE `destoon_mail` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='邮件订阅';
 
-DROP TABLE IF EXISTS `destoon_mail_list`;
-CREATE TABLE `destoon_mail_list` (
+DROP TABLE IF EXISTS `xhxxfb_mail_list`;
+CREATE TABLE `xhxxfb_mail_list` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `email` varchar(50) NOT NULL default '',
@@ -1705,8 +1705,8 @@ CREATE TABLE `destoon_mail_list` (
   UNIQUE KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='订阅列表';
 
-DROP TABLE IF EXISTS `destoon_mail_log`;
-CREATE TABLE `destoon_mail_log` (
+DROP TABLE IF EXISTS `xhxxfb_mail_log`;
+CREATE TABLE `xhxxfb_mail_log` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `email` varchar(50) NOT NULL default '',
   `title` varchar(255) NOT NULL default '',
@@ -1719,8 +1719,8 @@ CREATE TABLE `destoon_mail_log` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='邮件记录';
 
-DROP TABLE IF EXISTS `destoon_mall`;
-CREATE TABLE `destoon_mall` (
+DROP TABLE IF EXISTS `xhxxfb_mall`;
+CREATE TABLE `xhxxfb_mall` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `mycatid` bigint(20) unsigned NOT NULL default '0',
@@ -1800,16 +1800,16 @@ CREATE TABLE `destoon_mall` (
   KEY `areaid` (`areaid`)
 ) TYPE=MyISAM COMMENT='商城';
 
-DROP TABLE IF EXISTS `destoon_mall_cart`;
-CREATE TABLE `destoon_mall_cart` (
+DROP TABLE IF EXISTS `xhxxfb_mall_cart`;
+CREATE TABLE `xhxxfb_mall_cart` (
   `userid` bigint(20) unsigned NOT NULL default '0',
   `data` text NOT NULL,
   `edittime` int(10) unsigned NOT NULL default '0',
   UNIQUE KEY `userid` (`userid`)
 ) TYPE=MyISAM COMMENT='购物车';
 
-DROP TABLE IF EXISTS `destoon_mall_comment`;
-CREATE TABLE `destoon_mall_comment` (
+DROP TABLE IF EXISTS `xhxxfb_mall_comment`;
+CREATE TABLE `xhxxfb_mall_comment` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `mallid` bigint(20) unsigned NOT NULL default '0',
   `buyer` varchar(30) NOT NULL default '',
@@ -1829,15 +1829,15 @@ CREATE TABLE `destoon_mall_comment` (
   KEY `seller` (`seller`)
 ) TYPE=MyISAM COMMENT='订单评论';
 
-DROP TABLE IF EXISTS `destoon_mall_data`;
-CREATE TABLE `destoon_mall_data` (
+DROP TABLE IF EXISTS `xhxxfb_mall_data`;
+CREATE TABLE `xhxxfb_mall_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='商城内容';
 
-DROP TABLE IF EXISTS `destoon_mall_express`;
-CREATE TABLE `destoon_mall_express` (
+DROP TABLE IF EXISTS `xhxxfb_mall_express`;
+CREATE TABLE `xhxxfb_mall_express` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `parentid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -1853,8 +1853,8 @@ CREATE TABLE `destoon_mall_express` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='运费模板';
 
-DROP TABLE IF EXISTS `destoon_mall_order`;
-CREATE TABLE `destoon_mall_order` (
+DROP TABLE IF EXISTS `xhxxfb_mall_order`;
+CREATE TABLE `xhxxfb_mall_order` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `mid` smallint(6) unsigned NOT NULL default '16',
   `mallid` bigint(20) unsigned NOT NULL default '0',
@@ -1894,8 +1894,8 @@ CREATE TABLE `destoon_mall_order` (
   KEY `seller` (`seller`)
 ) TYPE=MyISAM COMMENT='商城订单';
 
-DROP TABLE IF EXISTS `destoon_mall_stat`;
-CREATE TABLE `destoon_mall_stat` (
+DROP TABLE IF EXISTS `xhxxfb_mall_stat`;
+CREATE TABLE `xhxxfb_mall_stat` (
   `mallid` bigint(20) unsigned NOT NULL default '0',
   `seller` varchar(30) NOT NULL default '',
   `scomment` int(10) unsigned NOT NULL default '0',
@@ -1910,8 +1910,8 @@ CREATE TABLE `destoon_mall_stat` (
   UNIQUE KEY `mallid` (`mallid`)
 ) TYPE=MyISAM COMMENT='评分统计';
 
-DROP TABLE IF EXISTS `destoon_member`;
-CREATE TABLE `destoon_member` (
+DROP TABLE IF EXISTS `xhxxfb_member`;
+CREATE TABLE `xhxxfb_member` (
   `userid` bigint(20) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `passport` varchar(30) NOT NULL default '',
@@ -1977,8 +1977,8 @@ CREATE TABLE `destoon_member` (
   KEY `groupid` (`groupid`)
 ) TYPE=MyISAM COMMENT='会员';
 
-DROP TABLE IF EXISTS `destoon_member_check`;
-CREATE TABLE `destoon_member_check` (
+DROP TABLE IF EXISTS `xhxxfb_member_check`;
+CREATE TABLE `xhxxfb_member_check` (
   `userid` bigint(20) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `content` mediumtext NOT NULL,
@@ -1987,8 +1987,8 @@ CREATE TABLE `destoon_member_check` (
   UNIQUE KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='会员资料审核';
 
-DROP TABLE IF EXISTS `destoon_member_group`;
-CREATE TABLE `destoon_member_group` (
+DROP TABLE IF EXISTS `xhxxfb_member_group`;
+CREATE TABLE `xhxxfb_member_group` (
   `groupid` smallint(4) unsigned NOT NULL auto_increment,
   `groupname` varchar(50) NOT NULL default '',
   `vip` smallint(2) unsigned NOT NULL default '0',
@@ -1996,8 +1996,8 @@ CREATE TABLE `destoon_member_group` (
   PRIMARY KEY  (`groupid`)
 ) TYPE=MyISAM COMMENT='会员组';
 
-DROP TABLE IF EXISTS `destoon_message`;
-CREATE TABLE `destoon_message` (
+DROP TABLE IF EXISTS `xhxxfb_message`;
+CREATE TABLE `xhxxfb_message` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `title` varchar(100) NOT NULL default '',
   `style` varchar(50) NOT NULL default '',
@@ -2016,8 +2016,8 @@ CREATE TABLE `destoon_message` (
   KEY `touser` (`touser`)
 ) TYPE=MyISAM COMMENT='站内信件';
 
-DROP TABLE IF EXISTS `destoon_module`;
-CREATE TABLE `destoon_module` (
+DROP TABLE IF EXISTS `xhxxfb_module`;
+CREATE TABLE `xhxxfb_module` (
   `moduleid` smallint(6) unsigned NOT NULL auto_increment,
   `module` varchar(20) NOT NULL default '',
   `name` varchar(20) NOT NULL default '',
@@ -2035,8 +2035,8 @@ CREATE TABLE `destoon_module` (
   PRIMARY KEY  (`moduleid`)
 ) TYPE=MyISAM COMMENT='模型';
 
-DROP TABLE IF EXISTS `destoon_news`;
-CREATE TABLE `destoon_news` (
+DROP TABLE IF EXISTS `xhxxfb_news`;
+CREATE TABLE `xhxxfb_news` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `typeid` bigint(20) unsigned NOT NULL default '0',
   `level` tinyint(1) unsigned NOT NULL default '0',
@@ -2055,15 +2055,15 @@ CREATE TABLE `destoon_news` (
   KEY `addtime` (`addtime`)
 ) TYPE=MyISAM COMMENT='公司新闻';
 
-DROP TABLE IF EXISTS `destoon_news_data`;
-CREATE TABLE `destoon_news_data` (
+DROP TABLE IF EXISTS `xhxxfb_news_data`;
+CREATE TABLE `xhxxfb_news_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='公司新闻内容';
 
-DROP TABLE IF EXISTS `destoon_oauth`;
-CREATE TABLE `destoon_oauth` (
+DROP TABLE IF EXISTS `xhxxfb_oauth`;
+CREATE TABLE `xhxxfb_oauth` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `site` varchar(30) NOT NULL default '',
@@ -2079,8 +2079,8 @@ CREATE TABLE `destoon_oauth` (
   KEY `site` (`site`,`openid`)
 ) TYPE=MyISAM COMMENT='一键登录';
 
-DROP TABLE IF EXISTS `destoon_online`;
-CREATE TABLE `destoon_online` (
+DROP TABLE IF EXISTS `xhxxfb_online`;
+CREATE TABLE `xhxxfb_online` (
   `userid` bigint(20) unsigned NOT NULL default '0',
   `username` varchar(30) NOT NULL default '',
   `ip` varchar(50) NOT NULL default '',
@@ -2090,8 +2090,8 @@ CREATE TABLE `destoon_online` (
   UNIQUE KEY `userid` (`userid`)
 ) TYPE=HEAP COMMENT='在线会员';
 
-DROP TABLE IF EXISTS `destoon_page`;
-CREATE TABLE `destoon_page` (
+DROP TABLE IF EXISTS `xhxxfb_page`;
+CREATE TABLE `xhxxfb_page` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `title` varchar(100) NOT NULL default '',
   `style` varchar(50) NOT NULL default '',
@@ -2109,15 +2109,15 @@ CREATE TABLE `destoon_page` (
   KEY `addtime` (`addtime`)
 ) TYPE=MyISAM COMMENT='公司单页';
 
-DROP TABLE IF EXISTS `destoon_page_data`;
-CREATE TABLE `destoon_page_data` (
+DROP TABLE IF EXISTS `xhxxfb_page_data`;
+CREATE TABLE `xhxxfb_page_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='公司单页内容';
 
-DROP TABLE IF EXISTS `destoon_photo_12`;
-CREATE TABLE `destoon_photo_12` (
+DROP TABLE IF EXISTS `xhxxfb_photo_12`;
+CREATE TABLE `xhxxfb_photo_12` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -2151,15 +2151,15 @@ CREATE TABLE `destoon_photo_12` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='图库';
 
-DROP TABLE IF EXISTS `destoon_photo_data_12`;
-CREATE TABLE `destoon_photo_data_12` (
+DROP TABLE IF EXISTS `xhxxfb_photo_data_12`;
+CREATE TABLE `xhxxfb_photo_data_12` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` longtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='图库内容';
 
-DROP TABLE IF EXISTS `destoon_photo_item_12`;
-CREATE TABLE `destoon_photo_item_12` (
+DROP TABLE IF EXISTS `xhxxfb_photo_item_12`;
+CREATE TABLE `xhxxfb_photo_item_12` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `item` bigint(20) unsigned NOT NULL default '0',
   `introduce` text NOT NULL,
@@ -2170,8 +2170,8 @@ CREATE TABLE `destoon_photo_item_12` (
   KEY `item` (`item`)
 ) TYPE=MyISAM COMMENT='图库图片';
 
-DROP TABLE IF EXISTS `destoon_poll`;
-CREATE TABLE `destoon_poll` (
+DROP TABLE IF EXISTS `xhxxfb_poll`;
+CREATE TABLE `xhxxfb_poll` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `typeid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -2202,8 +2202,8 @@ CREATE TABLE `destoon_poll` (
   KEY `addtime` (`addtime`)
 ) TYPE=MyISAM COMMENT='票选';
 
-DROP TABLE IF EXISTS `destoon_poll_item`;
-CREATE TABLE `destoon_poll_item` (
+DROP TABLE IF EXISTS `xhxxfb_poll_item`;
+CREATE TABLE `xhxxfb_poll_item` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `pollid` bigint(20) unsigned NOT NULL default '0',
   `title` varchar(100) NOT NULL default '',
@@ -2217,8 +2217,8 @@ CREATE TABLE `destoon_poll_item` (
   KEY `pollid` (`pollid`)
 ) TYPE=MyISAM COMMENT='票选选项';
 
-DROP TABLE IF EXISTS `destoon_poll_record`;
-CREATE TABLE `destoon_poll_record` (
+DROP TABLE IF EXISTS `xhxxfb_poll_record`;
+CREATE TABLE `xhxxfb_poll_record` (
   `rid` bigint(20) unsigned NOT NULL auto_increment,
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `pollid` bigint(20) unsigned NOT NULL default '0',
@@ -2228,16 +2228,16 @@ CREATE TABLE `destoon_poll_record` (
   PRIMARY KEY  (`rid`)
 ) TYPE=MyISAM COMMENT='票选记录';
 
-DROP TABLE IF EXISTS `destoon_question`;
-CREATE TABLE `destoon_question` (
+DROP TABLE IF EXISTS `xhxxfb_question`;
+CREATE TABLE `xhxxfb_question` (
   `qid` int(10) unsigned NOT NULL auto_increment,
   `question` varchar(255) NOT NULL default '',
   `answer` varchar(255) NOT NULL default '',
   PRIMARY KEY  (`qid`)
 ) TYPE=MyISAM COMMENT='验证问题';
 
-DROP TABLE IF EXISTS `destoon_quote`;
-CREATE TABLE `destoon_quote` (
+DROP TABLE IF EXISTS `xhxxfb_quote`;
+CREATE TABLE `xhxxfb_quote` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -2268,15 +2268,15 @@ CREATE TABLE `destoon_quote` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='行情';
 
-DROP TABLE IF EXISTS `destoon_quote_data`;
-CREATE TABLE `destoon_quote_data` (
+DROP TABLE IF EXISTS `xhxxfb_quote_data`;
+CREATE TABLE `xhxxfb_quote_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` longtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='行情内容';
 
-DROP TABLE IF EXISTS `destoon_quote_price`;
-CREATE TABLE `destoon_quote_price` (
+DROP TABLE IF EXISTS `xhxxfb_quote_price`;
+CREATE TABLE `xhxxfb_quote_price` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `pid` bigint(20) unsigned NOT NULL default '0',
   `price` decimal(10,2) NOT NULL,
@@ -2297,8 +2297,8 @@ CREATE TABLE `destoon_quote_price` (
   KEY `pid` (`pid`)
 ) TYPE=MyISAM COMMENT='行情报价';
 
-DROP TABLE IF EXISTS `destoon_quote_product`;
-CREATE TABLE `destoon_quote_product` (
+DROP TABLE IF EXISTS `xhxxfb_quote_product`;
+CREATE TABLE `xhxxfb_quote_product` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -2329,8 +2329,8 @@ CREATE TABLE `destoon_quote_product` (
   KEY `addtime` (`addtime`)
 ) TYPE=MyISAM COMMENT='行情产品';
 
-DROP TABLE IF EXISTS `destoon_resume`;
-CREATE TABLE `destoon_resume` (
+DROP TABLE IF EXISTS `xhxxfb_resume`;
+CREATE TABLE `xhxxfb_resume` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -2384,15 +2384,15 @@ CREATE TABLE `destoon_resume` (
   KEY `areaid` (`areaid`)
 ) TYPE=MyISAM COMMENT='简历';
 
-DROP TABLE IF EXISTS `destoon_resume_data`;
-CREATE TABLE `destoon_resume_data` (
+DROP TABLE IF EXISTS `xhxxfb_resume_data`;
+CREATE TABLE `xhxxfb_resume_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='简历内容';
 
-DROP TABLE IF EXISTS `destoon_sell_5`;
-CREATE TABLE `destoon_sell_5` (
+DROP TABLE IF EXISTS `xhxxfb_sell_5`;
+CREATE TABLE `xhxxfb_sell_5` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `mycatid` bigint(20) unsigned NOT NULL default '0',
@@ -2458,15 +2458,15 @@ CREATE TABLE `destoon_sell_5` (
   KEY `areaid` (`areaid`)
 ) TYPE=MyISAM COMMENT='供应';
 
-DROP TABLE IF EXISTS `destoon_sell_data_5`;
-CREATE TABLE `destoon_sell_data_5` (
+DROP TABLE IF EXISTS `xhxxfb_sell_data_5`;
+CREATE TABLE `xhxxfb_sell_data_5` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='供应内容';
 
-DROP TABLE IF EXISTS `destoon_sell_search_5`;
-CREATE TABLE `destoon_sell_search_5` (
+DROP TABLE IF EXISTS `xhxxfb_sell_search_5`;
+CREATE TABLE `xhxxfb_sell_search_5` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -2477,24 +2477,24 @@ CREATE TABLE `destoon_sell_search_5` (
   KEY `catid` (`catid`)
 ) TYPE=MyISAM COMMENT='供应搜索';
 
-DROP TABLE IF EXISTS `destoon_session`;
-CREATE TABLE `destoon_session` (
+DROP TABLE IF EXISTS `xhxxfb_session`;
+CREATE TABLE `xhxxfb_session` (
   `sessionid` varchar(32) NOT NULL default '',
   `data` text NOT NULL,
   `lastvisit` int(10) unsigned NOT NULL default '0',
   UNIQUE KEY `sessionid` (`sessionid`)
 ) TYPE=MyISAM COMMENT='SESSION';
 
-DROP TABLE IF EXISTS `destoon_setting`;
-CREATE TABLE `destoon_setting` (
+DROP TABLE IF EXISTS `xhxxfb_setting`;
+CREATE TABLE `xhxxfb_setting` (
   `item` varchar(30) NOT NULL default '',
   `item_key` varchar(100) NOT NULL default '',
   `item_value` text NOT NULL,
   KEY `item` (`item`)
 ) TYPE=MyISAM COMMENT='网站设置';
 
-DROP TABLE IF EXISTS `destoon_sms`;
-CREATE TABLE `destoon_sms` (
+DROP TABLE IF EXISTS `xhxxfb_sms`;
+CREATE TABLE `xhxxfb_sms` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `mobile` varchar(30) NOT NULL default '',
   `message` text NOT NULL,
@@ -2505,8 +2505,8 @@ CREATE TABLE `destoon_sms` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='短信记录';
 
-DROP TABLE IF EXISTS `destoon_special`;
-CREATE TABLE `destoon_special` (
+DROP TABLE IF EXISTS `xhxxfb_special`;
+CREATE TABLE `xhxxfb_special` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -2544,15 +2544,15 @@ CREATE TABLE `destoon_special` (
   KEY `catid` (`catid`)
 ) TYPE=MyISAM COMMENT='专题';
 
-DROP TABLE IF EXISTS `destoon_special_data`;
-CREATE TABLE `destoon_special_data` (
+DROP TABLE IF EXISTS `xhxxfb_special_data`;
+CREATE TABLE `xhxxfb_special_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` longtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='专题内容';
 
-DROP TABLE IF EXISTS `destoon_special_item`;
-CREATE TABLE `destoon_special_item` (
+DROP TABLE IF EXISTS `xhxxfb_special_item`;
+CREATE TABLE `xhxxfb_special_item` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `specialid` bigint(20) unsigned NOT NULL default '0',
   `typeid` bigint(20) unsigned NOT NULL default '0',
@@ -2573,15 +2573,15 @@ CREATE TABLE `destoon_special_item` (
   KEY `specialid` (`specialid`)
 ) TYPE=MyISAM COMMENT='专题信息';
 
-DROP TABLE IF EXISTS `destoon_sphinx`;
-CREATE TABLE `destoon_sphinx` (
+DROP TABLE IF EXISTS `xhxxfb_sphinx`;
+CREATE TABLE `xhxxfb_sphinx` (
   `moduleid` int(10) unsigned NOT NULL default '0',
   `maxid` bigint(20) unsigned NOT NULL default '0',
   UNIQUE KEY `moduleid` (`moduleid`)
 ) TYPE=MyISAM COMMENT='Sphinx';
 
-DROP TABLE IF EXISTS `destoon_spread`;
-CREATE TABLE `destoon_spread` (
+DROP TABLE IF EXISTS `xhxxfb_spread`;
+CREATE TABLE `xhxxfb_spread` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `mid` smallint(6) unsigned NOT NULL default '0',
   `tid` bigint(20) unsigned NOT NULL default '0',
@@ -2600,8 +2600,8 @@ CREATE TABLE `destoon_spread` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='排名推广';
 
-DROP TABLE IF EXISTS `destoon_spread_price`;
-CREATE TABLE `destoon_spread_price` (
+DROP TABLE IF EXISTS `xhxxfb_spread_price`;
+CREATE TABLE `xhxxfb_spread_price` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `word` varchar(50) NOT NULL default '',
   `sell_price` float NOT NULL default '0',
@@ -2612,8 +2612,8 @@ CREATE TABLE `destoon_spread_price` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='排名起价';
 
-DROP TABLE IF EXISTS `destoon_style`;
-CREATE TABLE `destoon_style` (
+DROP TABLE IF EXISTS `xhxxfb_style`;
+CREATE TABLE `xhxxfb_style` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `typeid` bigint(20) unsigned NOT NULL default '0',
   `title` varchar(100) NOT NULL default '',
@@ -2633,8 +2633,8 @@ CREATE TABLE `destoon_style` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='公司主页模板';
 
-DROP TABLE IF EXISTS `destoon_type`;
-CREATE TABLE `destoon_type` (
+DROP TABLE IF EXISTS `xhxxfb_type`;
+CREATE TABLE `xhxxfb_type` (
   `typeid` bigint(20) unsigned NOT NULL auto_increment,
   `parentid` bigint(20) unsigned NOT NULL default '0',
   `listorder` smallint(4) NOT NULL default '0',
@@ -2647,8 +2647,8 @@ CREATE TABLE `destoon_type` (
   KEY `item` (`item`)
 ) TYPE=MyISAM COMMENT='分类';
 
-DROP TABLE IF EXISTS `destoon_upgrade`;
-CREATE TABLE `destoon_upgrade` (
+DROP TABLE IF EXISTS `xhxxfb_upgrade`;
+CREATE TABLE `xhxxfb_upgrade` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `userid` bigint(20) unsigned NOT NULL default '0',
   `username` varchar(30) NOT NULL default '',
@@ -2677,8 +2677,8 @@ CREATE TABLE `destoon_upgrade` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='会员升级';
 
-DROP TABLE IF EXISTS `destoon_upload_0`;
-CREATE TABLE `destoon_upload_0` (
+DROP TABLE IF EXISTS `xhxxfb_upload_0`;
+CREATE TABLE `xhxxfb_upload_0` (
   `pid` int(10) unsigned NOT NULL auto_increment,
   `item` varchar(32) NOT NULL default '',
   `moduleid` smallint(6) unsigned NOT NULL default '0',
@@ -2696,8 +2696,8 @@ CREATE TABLE `destoon_upload_0` (
   KEY `item` (`item`)
 ) TYPE=MyISAM COMMENT='上传记录0';
 
-DROP TABLE IF EXISTS `destoon_upload_1`;
-CREATE TABLE `destoon_upload_1` (
+DROP TABLE IF EXISTS `xhxxfb_upload_1`;
+CREATE TABLE `xhxxfb_upload_1` (
   `pid` int(10) unsigned NOT NULL auto_increment,
   `item` varchar(32) NOT NULL default '',
   `moduleid` smallint(6) unsigned NOT NULL default '0',
@@ -2715,8 +2715,8 @@ CREATE TABLE `destoon_upload_1` (
   KEY `item` (`item`)
 ) TYPE=MyISAM COMMENT='上传记录1';
 
-DROP TABLE IF EXISTS `destoon_upload_2`;
-CREATE TABLE `destoon_upload_2` (
+DROP TABLE IF EXISTS `xhxxfb_upload_2`;
+CREATE TABLE `xhxxfb_upload_2` (
   `pid` int(10) unsigned NOT NULL auto_increment,
   `item` varchar(32) NOT NULL default '',
   `moduleid` smallint(6) unsigned NOT NULL default '0',
@@ -2734,8 +2734,8 @@ CREATE TABLE `destoon_upload_2` (
   KEY `item` (`item`)
 ) TYPE=MyISAM COMMENT='上传记录2';
 
-DROP TABLE IF EXISTS `destoon_upload_3`;
-CREATE TABLE `destoon_upload_3` (
+DROP TABLE IF EXISTS `xhxxfb_upload_3`;
+CREATE TABLE `xhxxfb_upload_3` (
   `pid` int(10) unsigned NOT NULL auto_increment,
   `item` varchar(32) NOT NULL default '',
   `moduleid` smallint(6) unsigned NOT NULL default '0',
@@ -2753,8 +2753,8 @@ CREATE TABLE `destoon_upload_3` (
   KEY `item` (`item`)
 ) TYPE=MyISAM COMMENT='上传记录3';
 
-DROP TABLE IF EXISTS `destoon_upload_4`;
-CREATE TABLE `destoon_upload_4` (
+DROP TABLE IF EXISTS `xhxxfb_upload_4`;
+CREATE TABLE `xhxxfb_upload_4` (
   `pid` int(10) unsigned NOT NULL auto_increment,
   `item` varchar(32) NOT NULL default '',
   `moduleid` smallint(6) unsigned NOT NULL default '0',
@@ -2772,8 +2772,8 @@ CREATE TABLE `destoon_upload_4` (
   KEY `item` (`item`)
 ) TYPE=MyISAM COMMENT='上传记录4';
 
-DROP TABLE IF EXISTS `destoon_upload_5`;
-CREATE TABLE `destoon_upload_5` (
+DROP TABLE IF EXISTS `xhxxfb_upload_5`;
+CREATE TABLE `xhxxfb_upload_5` (
   `pid` int(10) unsigned NOT NULL auto_increment,
   `item` varchar(32) NOT NULL default '',
   `moduleid` smallint(6) unsigned NOT NULL default '0',
@@ -2791,8 +2791,8 @@ CREATE TABLE `destoon_upload_5` (
   KEY `item` (`item`)
 ) TYPE=MyISAM COMMENT='上传记录5';
 
-DROP TABLE IF EXISTS `destoon_upload_6`;
-CREATE TABLE `destoon_upload_6` (
+DROP TABLE IF EXISTS `xhxxfb_upload_6`;
+CREATE TABLE `xhxxfb_upload_6` (
   `pid` int(10) unsigned NOT NULL auto_increment,
   `item` varchar(32) NOT NULL default '',
   `moduleid` smallint(6) unsigned NOT NULL default '0',
@@ -2810,8 +2810,8 @@ CREATE TABLE `destoon_upload_6` (
   KEY `item` (`item`)
 ) TYPE=MyISAM COMMENT='上传记录6';
 
-DROP TABLE IF EXISTS `destoon_upload_7`;
-CREATE TABLE `destoon_upload_7` (
+DROP TABLE IF EXISTS `xhxxfb_upload_7`;
+CREATE TABLE `xhxxfb_upload_7` (
   `pid` int(10) unsigned NOT NULL auto_increment,
   `item` varchar(32) NOT NULL default '',
   `moduleid` smallint(6) unsigned NOT NULL default '0',
@@ -2829,8 +2829,8 @@ CREATE TABLE `destoon_upload_7` (
   KEY `item` (`item`)
 ) TYPE=MyISAM COMMENT='上传记录7';
 
-DROP TABLE IF EXISTS `destoon_upload_8`;
-CREATE TABLE `destoon_upload_8` (
+DROP TABLE IF EXISTS `xhxxfb_upload_8`;
+CREATE TABLE `xhxxfb_upload_8` (
   `pid` int(10) unsigned NOT NULL auto_increment,
   `item` varchar(32) NOT NULL default '',
   `moduleid` smallint(6) unsigned NOT NULL default '0',
@@ -2848,8 +2848,8 @@ CREATE TABLE `destoon_upload_8` (
   KEY `item` (`item`)
 ) TYPE=MyISAM COMMENT='上传记录8';
 
-DROP TABLE IF EXISTS `destoon_upload_9`;
-CREATE TABLE `destoon_upload_9` (
+DROP TABLE IF EXISTS `xhxxfb_upload_9`;
+CREATE TABLE `xhxxfb_upload_9` (
   `pid` int(10) unsigned NOT NULL auto_increment,
   `item` varchar(32) NOT NULL default '',
   `moduleid` smallint(6) unsigned NOT NULL default '0',
@@ -2867,8 +2867,8 @@ CREATE TABLE `destoon_upload_9` (
   KEY `item` (`item`)
 ) TYPE=MyISAM COMMENT='上传记录9';
 
-DROP TABLE IF EXISTS `destoon_validate`;
-CREATE TABLE `destoon_validate` (
+DROP TABLE IF EXISTS `xhxxfb_validate`;
+CREATE TABLE `xhxxfb_validate` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `title` varchar(255) NOT NULL default '',
   `type` varchar(30) NOT NULL default '',
@@ -2884,8 +2884,8 @@ CREATE TABLE `destoon_validate` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='资料认证';
 
-DROP TABLE IF EXISTS `destoon_video_14`;
-CREATE TABLE `destoon_video_14` (
+DROP TABLE IF EXISTS `xhxxfb_video_14`;
+CREATE TABLE `xhxxfb_video_14` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -2920,15 +2920,15 @@ CREATE TABLE `destoon_video_14` (
   KEY `catid` (`catid`)
 ) TYPE=MyISAM COMMENT='视频';
 
-DROP TABLE IF EXISTS `destoon_video_data_14`;
-CREATE TABLE `destoon_video_data_14` (
+DROP TABLE IF EXISTS `xhxxfb_video_data_14`;
+CREATE TABLE `xhxxfb_video_data_14` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='视频内容';
 
-DROP TABLE IF EXISTS `destoon_vote`;
-CREATE TABLE `destoon_vote` (
+DROP TABLE IF EXISTS `xhxxfb_vote`;
+CREATE TABLE `xhxxfb_vote` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `typeid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -2975,8 +2975,8 @@ CREATE TABLE `destoon_vote` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='投票';
 
-DROP TABLE IF EXISTS `destoon_vote_record`;
-CREATE TABLE `destoon_vote_record` (
+DROP TABLE IF EXISTS `xhxxfb_vote_record`;
+CREATE TABLE `xhxxfb_vote_record` (
   `rid` bigint(20) unsigned NOT NULL auto_increment,
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `username` varchar(30) NOT NULL default '',
@@ -2987,8 +2987,8 @@ CREATE TABLE `destoon_vote_record` (
   KEY `itemid` (`itemid`)
 ) TYPE=MyISAM COMMENT='投票记录';
 
-DROP TABLE IF EXISTS `destoon_webpage`;
-CREATE TABLE `destoon_webpage` (
+DROP TABLE IF EXISTS `xhxxfb_webpage`;
+CREATE TABLE `xhxxfb_webpage` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `item` varchar(30) NOT NULL default '',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -3010,16 +3010,16 @@ CREATE TABLE `destoon_webpage` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='单网页';
 
-DROP TABLE IF EXISTS `destoon_weixin_bind`;
-CREATE TABLE `destoon_weixin_bind` (
+DROP TABLE IF EXISTS `xhxxfb_weixin_bind`;
+CREATE TABLE `xhxxfb_weixin_bind` (
   `username` varchar(30) NOT NULL default '',
   `sid` int(10) unsigned NOT NULL default '0',
   `addtime` int(10) unsigned NOT NULL default '0',
   UNIQUE KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='微信扫码绑定';
 
-DROP TABLE IF EXISTS `destoon_weixin_chat`;
-CREATE TABLE `destoon_weixin_chat` (
+DROP TABLE IF EXISTS `xhxxfb_weixin_chat`;
+CREATE TABLE `xhxxfb_weixin_chat` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `editor` varchar(30) NOT NULL,
   `openid` varchar(255) NOT NULL default '',
@@ -3034,8 +3034,8 @@ CREATE TABLE `destoon_weixin_chat` (
   KEY `event` (`event`)
 ) TYPE=MyISAM COMMENT='微信消息';
 
-DROP TABLE IF EXISTS `destoon_weixin_user`;
-CREATE TABLE `destoon_weixin_user` (
+DROP TABLE IF EXISTS `xhxxfb_weixin_user`;
+CREATE TABLE `xhxxfb_weixin_user` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `username` varchar(30) NOT NULL default '',
   `openid` varchar(255) NOT NULL default '',

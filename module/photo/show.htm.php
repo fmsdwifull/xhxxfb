@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$MOD['show_html'] || !$itemid) return false;
 $item = $db->get_one("SELECT * FROM {$table} WHERE itemid=$itemid");
 if(!$item || $item['status'] < 3) return false;
@@ -35,7 +35,7 @@ while($r = $db->fetch_array($result)) {
 	$r['big'] = str_replace('.thumb.'.file_ext($r['thumb']), '', $r['thumb']);
 	$T[] = $r;
 }
-$demo_url = $MOD['linkurl'].itemurl($item, '{destoon_page}');
+$demo_url = $MOD['linkurl'].itemurl($item, '{xhxxfb_page}');
 $total = $items = count($T);
 $user_status = 3;
 $seo_file = 'show';
@@ -57,7 +57,7 @@ for(; $page <= $total; $page++) {
 	}
 	$P = $T[$page-1];
 	$P['src'] = str_replace('.thumb.'.file_ext($P['thumb']), '', $P['thumb']);
-	$destoon_task = "moduleid=$moduleid&html=show&itemid=$itemid&page=$page";
+	$xhxxfb_task = "moduleid=$moduleid&html=show&itemid=$itemid&page=$page";
 	if($EXT['mobile_enable']) $head_mobile = $EXT['mobile_url'].mobileurl($moduleid, 0, $itemid, $page);
 	$filename = $total == 1 ? DT_ROOT.'/'.$MOD['moduledir'].'/'.$fileurl : DT_ROOT.'/'.$MOD['moduledir'].'/'.itemurl($item, $page);
 	ob_start();

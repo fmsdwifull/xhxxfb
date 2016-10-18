@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_mall`;
-CREATE TABLE `destoon_mall` (
+DROP TABLE IF EXISTS `xhxxfb_mall`;
+CREATE TABLE `xhxxfb_mall` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `mycatid` bigint(20) unsigned NOT NULL default '0',
@@ -79,16 +79,16 @@ CREATE TABLE `destoon_mall` (
   KEY `areaid` (`areaid`)
 ) TYPE=MyISAM COMMENT='商城';
 
-DROP TABLE IF EXISTS `destoon_mall_cart`;
-CREATE TABLE `destoon_mall_cart` (
+DROP TABLE IF EXISTS `xhxxfb_mall_cart`;
+CREATE TABLE `xhxxfb_mall_cart` (
   `userid` bigint(20) unsigned NOT NULL default '0',
   `data` text NOT NULL,
   `edittime` int(10) unsigned NOT NULL default '0',
   UNIQUE KEY `userid` (`userid`)
 ) TYPE=MyISAM COMMENT='购物车';
 
-DROP TABLE IF EXISTS `destoon_mall_comment`;
-CREATE TABLE `destoon_mall_comment` (
+DROP TABLE IF EXISTS `xhxxfb_mall_comment`;
+CREATE TABLE `xhxxfb_mall_comment` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `mallid` bigint(20) unsigned NOT NULL default '0',
   `buyer` varchar(30) NOT NULL default '',
@@ -108,15 +108,15 @@ CREATE TABLE `destoon_mall_comment` (
   KEY `seller` (`seller`)
 ) TYPE=MyISAM COMMENT='订单评论';
 
-DROP TABLE IF EXISTS `destoon_mall_data`;
-CREATE TABLE `destoon_mall_data` (
+DROP TABLE IF EXISTS `xhxxfb_mall_data`;
+CREATE TABLE `xhxxfb_mall_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` mediumtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='商城内容';
 
-DROP TABLE IF EXISTS `destoon_mall_express`;
-CREATE TABLE `destoon_mall_express` (
+DROP TABLE IF EXISTS `xhxxfb_mall_express`;
+CREATE TABLE `xhxxfb_mall_express` (
   `itemid` int(10) unsigned NOT NULL auto_increment,
   `parentid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -132,8 +132,8 @@ CREATE TABLE `destoon_mall_express` (
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='运费模板';
 
-DROP TABLE IF EXISTS `destoon_mall_order`;
-CREATE TABLE `destoon_mall_order` (
+DROP TABLE IF EXISTS `xhxxfb_mall_order`;
+CREATE TABLE `xhxxfb_mall_order` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `mid` smallint(6) unsigned NOT NULL default '16',
   `mallid` bigint(20) unsigned NOT NULL default '0',
@@ -173,8 +173,8 @@ CREATE TABLE `destoon_mall_order` (
   KEY `seller` (`seller`)
 ) TYPE=MyISAM COMMENT='商城订单';
 
-DROP TABLE IF EXISTS `destoon_mall_stat`;
-CREATE TABLE `destoon_mall_stat` (
+DROP TABLE IF EXISTS `xhxxfb_mall_stat`;
+CREATE TABLE `xhxxfb_mall_stat` (
   `mallid` bigint(20) unsigned NOT NULL default '0',
   `seller` varchar(30) NOT NULL default '',
   `scomment` int(10) unsigned NOT NULL default '0',

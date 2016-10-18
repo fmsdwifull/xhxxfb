@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `destoon_club`;
-CREATE TABLE `destoon_club` (
+DROP TABLE IF EXISTS `xhxxfb_club`;
+CREATE TABLE `xhxxfb_club` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -37,15 +37,15 @@ CREATE TABLE `destoon_club` (
   KEY `username` (`username`)
 ) TYPE=MyISAM COMMENT='商圈帖子';
 
-DROP TABLE IF EXISTS `destoon_club_data`;
-CREATE TABLE `destoon_club_data` (
+DROP TABLE IF EXISTS `xhxxfb_club_data`;
+CREATE TABLE `xhxxfb_club_data` (
   `itemid` bigint(20) unsigned NOT NULL default '0',
   `content` longtext NOT NULL,
   PRIMARY KEY  (`itemid`)
 ) TYPE=MyISAM COMMENT='商圈帖子内容';
 
-DROP TABLE IF EXISTS `destoon_club_fans`;
-CREATE TABLE `destoon_club_fans` (
+DROP TABLE IF EXISTS `xhxxfb_club_fans`;
+CREATE TABLE `xhxxfb_club_fans` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `gid` bigint(20) unsigned NOT NULL default '0',
   `username` varchar(30) NOT NULL default '',
@@ -59,8 +59,8 @@ CREATE TABLE `destoon_club_fans` (
   KEY `status` (`status`)
 ) TYPE=MyISAM COMMENT='商圈粉丝';
 
-DROP TABLE IF EXISTS `destoon_club_group`;
-CREATE TABLE `destoon_club_group` (
+DROP TABLE IF EXISTS `xhxxfb_club_group`;
+CREATE TABLE `xhxxfb_club_group` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `catid` int(10) unsigned NOT NULL default '0',
   `areaid` int(10) unsigned NOT NULL default '0',
@@ -95,8 +95,8 @@ CREATE TABLE `destoon_club_group` (
   KEY `status` (`status`)
 ) TYPE=MyISAM COMMENT='商圈圈子';
 
-DROP TABLE IF EXISTS `destoon_club_manage`;
-CREATE TABLE `destoon_club_manage` (
+DROP TABLE IF EXISTS `xhxxfb_club_manage`;
+CREATE TABLE `xhxxfb_club_manage` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `gid` bigint(20) unsigned NOT NULL default '0',
   `tid` bigint(20) unsigned NOT NULL default '0',
@@ -114,8 +114,8 @@ CREATE TABLE `destoon_club_manage` (
   KEY `addtime` (`addtime`)
 ) TYPE=MyISAM COMMENT='商圈管理';
 
-DROP TABLE IF EXISTS `destoon_club_reply`;
-CREATE TABLE `destoon_club_reply` (
+DROP TABLE IF EXISTS `xhxxfb_club_reply`;
+CREATE TABLE `xhxxfb_club_reply` (
   `itemid` bigint(20) unsigned NOT NULL auto_increment,
   `tid` bigint(20) unsigned NOT NULL default '0',
   `gid` bigint(20) unsigned NOT NULL default '0',

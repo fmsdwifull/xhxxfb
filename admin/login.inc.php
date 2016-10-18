@@ -1,13 +1,14 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 defined('DT_ADMIN') or exit('Access Denied');
 $DT_LICENSE = md5(file_get(DT_ROOT.'/license.txt'));
-if($DT_LICENSE != '15b4b2ae1be9e2020f8de85fc4d81148' && $DT_LICENSE != '49ced4ae66626e1d9d261a7dcaac2ff9') msg('网站根目录license.txt不允许修改或删除，请检查');
+//if($DT_LICENSE != '15b4b2ae1be9e2020f8de85fc4d81148' && $DT_LICENSE != '49ced4ae66626e1d9d261a7dcaac2ff9') 
+//    msg('网站根目录license.txt不允许修改或删除，请检查');
 if(!$forward) $forward = '?';
-if($_destoon_admin && $_userid && $_destoon_admin == $_userid) dheader($forward);
+if($_xhxxfb_admin && $_userid && $_xhxxfb_admin == $_userid) dheader($forward);
 if($DT['admin_area']) {
 	$AA = explode("|", trim($DT['admin_area']));
 	$A = ip2area($DT_IP);

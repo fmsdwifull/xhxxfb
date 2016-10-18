@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 function fields_update($post_fields, $table, $itemid, $keyname = 'itemid', $fd = array()) {
 	global $FD, $db;
 	if(!$table || !$itemid) return '';
@@ -201,7 +201,7 @@ function fields_show($itemid, $left = '<td class="tl">', $right = '<td>', $value
 				$html .= ' <span class="f_red" id="d'.$v['name'].'"></span>';
 			break;
 			case 'editor':
-				$toolbar = isset($group_editor) ? $group_editor : 'Destoon';
+				$toolbar = isset($group_editor) ? $group_editor : 'xhxxfb';
 				if(DT_EDITOR == 'fckeditor') {
 					$html .= '<textarea name="post_fields['.$v['name'].']" id="'.$v['name'].'" style="display:none">'.$value.'</textarea><iframe id="'.$v['name'].'___Frame" src="'.$MODULE[2]['linkurl'].'editor/fckeditor/editor/fckeditor.html?InstanceName='.$v['name'].'&Toolbar='.$toolbar.'" width="'.$v['width'].'" height="'.$v['height'].'" frameborder="no" scrolling="no"></iframe>';
 					$html .= '<br/><span class="f_red" id="d'.$v['name'].'"></span>';

@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 ?>
 <tr style="display:<?php echo $trade ? '' : 'none';?>;">
 <td class="tl">支付宝担保交易</td>

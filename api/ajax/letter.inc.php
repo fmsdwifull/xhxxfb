@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 preg_match("/[a-z]{1}/", $letter) or exit;
 $cols = isset($cols) ? intval($cols) : 5;
 $precent = ceil(100/$cols);

@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 //DT include 'merchantProperties.php';
 
 $p1_MerId = $PAY[$bank]['partnerid'];//"10001126856";

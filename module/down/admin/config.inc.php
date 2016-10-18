@@ -2,8 +2,8 @@
 defined('DT_ADMIN') or exit('Access Denied');
 $MCFG['module'] = 'down';
 $MCFG['name'] = '下载';
-$MCFG['author'] = 'DESTOON.COM';
-$MCFG['homepage'] = 'www.destoon.com';
+$MCFG['author'] = 'xhxxfb.COM';
+$MCFG['homepage'] = 'www.xhxxfb.com';
 $MCFG['copy'] = true;
 $MCFG['uninstall'] = true;
 $MCFG['moduleid'] = 0;

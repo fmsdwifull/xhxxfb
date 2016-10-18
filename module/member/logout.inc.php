@@ -1,7 +1,9 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 require MD_ROOT.'/member.class.php';
+
+
 $do = new member;
 $do->logout();
 $session = new dsession();
@@ -9,7 +11,10 @@ session_destroy();
 $forward = $forward ? linkurl($forward) : DT_PATH;
 $action = 'logout';
 $api_msg = $api_url = '';
+
+//echo $MOD['passport'];die;
 if($MOD['passport']) {
+        //echo $MOD['passport'];die;
 	include DT_ROOT.'/api/'.$MOD['passport'].'.inc.php';
 	if($api_url) $forward = $api_url;
 }

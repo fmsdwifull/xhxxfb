@@ -1,6 +1,6 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 defined('DT_ADMIN') or exit('Access Denied');
@@ -9,7 +9,7 @@ $menus = array (
     array('登录锁定', '?file='.$file.'&action=ban'),
     array('IP库更新', '?file='.$file.'&action=data'),
 );
-$http = decrypt('d0b5BA8OvRjCMbKiF6r0t7Qz5cfeOctTBMnzOuJ7mtHDC1uzbeXHCz1EckQAeYlm6dC3zGA83ZKqPCFXjIX27FQ', 'DESTOON');
+$http = decrypt('d0b5BA8OvRjCMbKiF6r0t7Qz5cfeOctTBMnzOuJ7mtHDC1uzbeXHCz1EckQAeYlm6dC3zGA83ZKqPCFXjIX27FQ', 'xhxxfb');
 switch($action) {
 	case 'add':
 		if(!$ip) msg('请填写IP地址或IP段');

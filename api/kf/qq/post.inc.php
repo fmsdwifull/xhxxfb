@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $kf_qq = preg_match("/^[0-9a-z]{32,}$/i", $kf) ? $kf : '';
 ?>
 <tr id="kf_post_qq" style="display:none;">

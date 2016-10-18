@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 /* *
  * 类名：AlipaySubmit
  * 功能：支付宝各接口请求提交类

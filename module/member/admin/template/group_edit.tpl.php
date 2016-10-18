@@ -69,7 +69,7 @@ show_menu($menus);
 <td>
 <select name="setting[editor]">
 <option value="Default"<?php if($editor == 'Default') echo ' selected';?>>全部</option>
-<option value="Destoon"<?php if($editor == 'Destoon') echo ' selected';?>>精简</option>
+<option value="xhxxfb"<?php if($editor == 'xhxxfb') echo ' selected';?>>精简</option>
 <option value="Simple"<?php if($editor == 'Simple') echo ' selected';?>>简洁</option>
 <option value="Basic"<?php if($editor == 'Basic') echo ' selected';?>>基础</option>
 </select>&nbsp;

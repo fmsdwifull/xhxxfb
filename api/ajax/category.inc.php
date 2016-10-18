@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $category_title = convert($category_title, 'UTF-8', DT_CHARSET);
 $category_extend = isset($category_extend) ? decrypt($category_extend, DT_KEY.'CAT') : '';
 $category_moduleid = isset($category_moduleid) ? intval($category_moduleid) : 1;

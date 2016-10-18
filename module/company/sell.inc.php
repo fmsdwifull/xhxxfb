@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $could_inquiry = check_group($_groupid, $MOD['group_inquiry']);
 if($username == $_username || $domain) $could_inquiry = true;
 $moduleid = 5;
@@ -59,7 +59,7 @@ if($itemid) {
 	if($view) {
 		$url .= "&view=$view";
 	}
-	$demo_url = userurl($username, $url.'&page={destoon_page}', $domain);
+	$demo_url = userurl($username, $url.'&page={xhxxfb_page}', $domain);
 	$pagesize =intval($menu_num[$menuid]);
 	if(!$pagesize || $pagesize > 100) $pagesize = 16;
 	if($view) $pagesize = ceil($pagesize/2);

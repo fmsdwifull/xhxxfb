@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 define("UC_DBHOST", $MOD['uc_dbhost']) ;
 define("UC_DBUSER", $MOD['uc_dbuser']) ;
 define("UC_DBPW", $MOD['uc_dbpwd']) ;

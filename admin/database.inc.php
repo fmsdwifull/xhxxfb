@@ -1,6 +1,6 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 defined('DT_ADMIN') or exit('Access Denied');
@@ -344,7 +344,7 @@ switch($action) {
 				$filename = $D.$filename.'.sql';
 				if(is_file($filename)) {
 					$sql = file_get($filename);
-					if(substr($sql, 0, 11) == '# Destoon V') {
+					if(substr($sql, 0, 11) == '# xhxxfb V') {
 						$v = substr($sql, 11, 3);
 						if(DT_VERSION != $v) msg('由于数据结构存在差异，备份数据不可以跨版本导入<br/>备份版本：V'.$v.'<br/>当前系统：V'.DT_VERSION);
 					}
@@ -441,7 +441,7 @@ switch($action) {
 				$startfrom = 0;
 			}
 			if(trim($sqldump)) {
-				$sqldump = "# Destoon V".DT_VERSION." R".DT_RELEASE." http://www.destoon.com\n# ".timetodate($DT_TIME, 6)."\n# --------------------------------------------------------\n\n\n".$sqldump;
+				$sqldump = "# xhxxfb V".DT_VERSION." R".DT_RELEASE." http://www.xhxxfb.com\n# ".timetodate($DT_TIME, 6)."\n# --------------------------------------------------------\n\n\n".$sqldump;
 				$tableid = $i;
 				$filename = $random.'/'.$fileid.'.sql';
 				file_put($D.$filename, $sqldump);
@@ -449,8 +449,8 @@ switch($action) {
 				msg('分卷 <strong>#'.$fileid++.'</strong> 备份成功.. 程序将自动继续...'.progress(0, $fid, $tid), '?file='.$file.'&sizelimit='.$sizelimit.'&sqlcompat='.$sqlcompat.'&sqlcharset='.$sqlcharset.'&tableid='.$tableid.'&fileid='.$fileid.'&fileid='.$fileid.'&tid='.$tid.'&startfrom='.$startrow.'&random='.$random.'&backup=1');
 			} else {
 			   cache_delete($_username.'_backup.php');
-			   $db->query("DELETE FROM {$DT_PRE}setting WHERE item='destoon' AND item_key='backtime'");
-			   $db->query("INSERT INTO {$DT_PRE}setting (item,item_key,item_value) VALUES('destoon','backtime','$DT_TIME')");
+			   $db->query("DELETE FROM {$DT_PRE}setting WHERE item='xhxxfb' AND item_key='backtime'");
+			   $db->query("INSERT INTO {$DT_PRE}setting (item,item_key,item_value) VALUES('xhxxfb','backtime','$DT_TIME')");
 			   msg('数据库备份成功', '?file='.$file.'&action=import');
 			}
 		} else {

@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 login();
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 require MD_ROOT.'/member.class.php';
@@ -13,7 +13,7 @@ $CFD = cache_read('fields-company.php');
 isset($post_fields) or $post_fields = array();
 if($MFD || $CFD) require DT_ROOT.'/include/fields.func.php';
 $group_editor = $MG['editor'];
-in_array($group_editor, array('Default', 'Destoon', 'Simple', 'Basic')) or $group_editor = 'Destoon';
+in_array($group_editor, array('Default', 'xhxxfb', 'Simple', 'Basic')) or $group_editor = 'xhxxfb';
 $tab = isset($tab) ? intval($tab) : 0;
 $is_company = $_groupid > 5 || ($_groupid == 4 && $user['regid'] > 5);
 $_E = ($MOD['edit_check'] && $user['edittime'] > 0 && $is_company) ? explode(',', $MOD['edit_check']) : array();

@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 login();
 $DT['im_web'] or dheader($MOD['linkurl']);
 require DT_ROOT.'/module/'.$module.'/common.inc.php';

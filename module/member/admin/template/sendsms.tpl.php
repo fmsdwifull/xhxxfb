@@ -74,7 +74,7 @@ show_menu($menus);
 <?php } else { ?>
 
 <span class="f_red">
-- 由于政策原因，并非所有内容都可以正常发送...<a href="<?php echo DT_PATH;?>api/redirect.php?url=http://help.destoon.com/use/29.html%23faq" target="_blank" class="t">了解详情</a><br/>
+- 由于政策原因，并非所有内容都可以正常发送...<a href="<?php echo DT_PATH;?>api/redirect.php?url=http://help.xhxxfb.com/use/29.html%23faq" target="_blank" class="t">了解详情</a><br/>
 - 发送任何违法信息，帐号会被禁用且不退款<br/>
 </span><br/>
 <?php } ?>

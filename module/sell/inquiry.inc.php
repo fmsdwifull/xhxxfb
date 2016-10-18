@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if($DT_BOT) dhttp(403);
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 $MG['inquiry_limit'] > -1 or dalert(lang('message->without_permission'), 'goback');

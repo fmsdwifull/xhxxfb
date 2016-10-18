@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(!$MOD['show_html'] || !$itemid) return false;
 $item = $db->get_one("SELECT * FROM {$table} WHERE itemid=$itemid");
 if(!$item || $item['status'] < 3) return false;
@@ -36,11 +36,11 @@ $seo_file = 'show';
 include DT_ROOT.'/include/seo.inc.php';
 $template = $item['template'] ? $item['template'] : ($CAT['show_template'] ? $CAT['show_template'] : 'show');
 for(; $page <= $total; $page++) {
-	$destoon_task = "moduleid=$moduleid&html=show&itemid=$itemid&page=$page";
+	$xhxxfb_task = "moduleid=$moduleid&html=show&itemid=$itemid&page=$page";
 	if($EXT['mobile_enable']) $head_mobile = $EXT['mobile_url'].mobileurl($moduleid, 0, $itemid, $page);
 	$filename = $total == 1 ? DT_ROOT.'/'.$MOD['moduledir'].'/'.$fileurl : DT_ROOT.'/'.$MOD['moduledir'].'/'.itemurl($item, $page);
 	if($total > 1) {
-		$pages = pages($total, $page, 1, $MOD['linkurl'].itemurl($item, '{destoon_page}'));
+		$pages = pages($total, $page, 1, $MOD['linkurl'].itemurl($item, '{xhxxfb_page}'));
 		if($pages) $pages = substr($pages, 0, strpos($pages, '<cite>'));
 		$content = $contents[$page-1];
 	}

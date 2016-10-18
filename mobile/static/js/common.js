@@ -1,5 +1,5 @@
 /*
-	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2016 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
 function Dd(i) {return document.getElementById(i);}
@@ -21,7 +21,7 @@ function Dback(u, r, e) {
 function GoPage(max, url) {
 	if(max < 2) return;
 	var page = parseInt(prompt('Go to page of (1-'+max+')', ''));
-	if(page >= 1 && page <= max) Go(url.replace(/\{destoon_page\}/, page));
+	if(page >= 1 && page <= max) Go(url.replace(/\{xhxxfb_page\}/, page));
 }
 function DTrim(s) {
 	s = s.trim();

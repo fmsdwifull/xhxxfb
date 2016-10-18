@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 if(DT_CHARSET == 'GBK') @header("Content-Type:text/html;charset=UTF-8");
 require DT_ROOT.'/api/pay/'.$bank.'/config.inc.php';
 require DT_ROOT.'/api/pay/'.$bank.'/submit.class.php';

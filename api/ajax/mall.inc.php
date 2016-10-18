@@ -1,5 +1,5 @@
 <?php
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $module == 'mall' or exit;
 require DT_ROOT.'/module/'.$module.'/common.inc.php';
 if($job == 'comment') {
@@ -17,7 +17,7 @@ if($job == 'comment') {
 	$r = $db->get_one("SELECT COUNT(*) AS num FROM {$DT_PRE}mall_comment WHERE $condition");
 	$items = $r['num'];
 	if($sum && $items != $sum && !$star) $db->query("UPDATE {$DT_PRE}mall SET comments=$items WHERE itemid=$itemid");
-	$pages = pages($items, $page, $pagesize, '#comment" onclick="javascript:load_comment(\'{destoon_page}&star='.$star.'\');');
+	$pages = pages($items, $page, $pagesize, '#comment" onclick="javascript:load_comment(\'{xhxxfb_page}&star='.$star.'\');');
 	$tmp = explode('<input type="text"', $pages);
 	$pages = $tmp[0];
 	$result = $db->query("SELECT * FROM {$DT_PRE}mall_comment WHERE $condition ORDER BY seller_ctime DESC LIMIT $offset,$pagesize");
@@ -47,7 +47,7 @@ if($job == 'comment') {
 	$r = $db->get_one("SELECT COUNT(*) AS num FROM {$DT_PRE}mall_order WHERE mallid=$itemid AND status=4");
 	$items = $r['num'];
 	if($sum && $items != $sum) $db->query("UPDATE {$DT_PRE}mall SET orders=$items WHERE itemid=$itemid");
-	$pages = pages($items, $page, $pagesize, '#order" onclick="javascript:load_order({destoon_page});');
+	$pages = pages($items, $page, $pagesize, '#order" onclick="javascript:load_order({xhxxfb_page});');
 	$tmp = explode('<input type="text"', $pages);
 	$pages = $tmp[0];
 	$result = $db->query("SELECT * FROM {$DT_PRE}mall_order WHERE mallid=$itemid AND status=4 ORDER BY itemid DESC LIMIT $offset,$pagesize");

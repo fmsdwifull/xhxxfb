@@ -1,5 +1,5 @@
 <?php 
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $filename = DT_CACHE.'/htm/company.htm';
 if(!$MOD['index_html']) {
 	if(is_file($filename)) file_del($filename);
@@ -13,7 +13,7 @@ if($DT['rewrite']) {
 $GLOBALS['DT_URL'] = $DT_URL = 'index.php';
 $seo_file = 'index';
 include DT_ROOT.'/include/seo.inc.php';
-$destoon_task = "moduleid=$moduleid&html=index";
+$xhxxfb_task = "moduleid=$moduleid&html=index";
 if($page == 1) $head_canonical = $MOD['linkurl'];
 if($EXT['mobile_enable']) $head_mobile = $EXT['mobile_url'].mobileurl($moduleid, 0, 0, $page);
 ob_start();

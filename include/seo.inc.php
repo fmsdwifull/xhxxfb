@@ -1,9 +1,9 @@
 <?php
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[xhxxfb B2B System] Copyright (c) 2008-2015 www.xhxxfb.com
 	This is NOT a freeware, use is subject to license.txt
 */
-defined('IN_DESTOON') or exit('Access Denied');
+defined('IN_XHXXFB') or exit('Access Denied');
 $seo_modulename = $MOD['name'];
 $seo_sitename = $city_sitename ? $city_sitename : $DT['sitename'];
 $seo_sitetitle = $DT['seo_title'];
@@ -15,8 +15,8 @@ $seo_catname = $seo_cattitle = $seo_parentname = $seo_catkeywords = $seo_catdesc
 if($catid) {
 	if($CAT['parentid']) {
 		$seo_catname = '';
-		$tmp = strip_tags(cat_pos($CAT, 'DESTOON'));
-		$tmp = explode('DESTOON', $tmp);
+		$tmp = strip_tags(cat_pos($CAT, 'xhxxfb'));
+		$tmp = explode('xhxxfb', $tmp);
 		$tmp = array_reverse($tmp);
 		foreach($tmp as $k=>$v) {
 			$seo_catname .= $v.$seo_delimiter;

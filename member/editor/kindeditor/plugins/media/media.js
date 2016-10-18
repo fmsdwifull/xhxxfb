@@ -6,7 +6,7 @@
 * @site http://www.kindsoft.net/
 * @licence http://www.kindsoft.net/license.php
 *******************************************************************************/
-/*DESTOON*/
+/*xhxxfb*/
 function url2video(url) {
 	var video,t1,t2;
 	if(url.indexOf('v.youku.com') != -1) {
@@ -111,7 +111,7 @@ KindEditor.plugin('media', function(K) {
 							return;
 						}
 
-						/*DESTOON*/
+						/*xhxxfb*/
 						var vurl = url2video(url);
 						if(vurl && vurl != url) url = vurl;
 

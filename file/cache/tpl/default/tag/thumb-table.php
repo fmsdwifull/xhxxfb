@@ -1,4 +1,4 @@
-<?php defined('IN_DESTOON') or exit('Access Denied');?><table width="100%">
+<?php defined('IN_XHXXFB') or exit('Access Denied');?><table width="100%">
 <?php if(is_array($tags)) { foreach($tags as $i => $t) { ?>
 <?php if($i%$cols==0) { ?><tr align="center"><?php } ?>
 <td width="<?php echo $percent;?>" valign="top"><a href="<?php echo $t['linkurl'];?>"<?php if($target) { ?> target="<?php echo $target;?>"<?php } ?>
