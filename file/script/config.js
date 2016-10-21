@@ -1,1 +1,1 @@
-var DTPath = "http://127.0.0.1/xhxxfb/";var SKPath = "http://127.0.0.1/xhxxfb/skin/default/";var MEPath = "http://127.0.0.1/xhxxfb/member/";var DTEditor = "fckeditor";var CKDomain = "";var CKPath = "/";var CKPrex = "cpv_";
+var DTPath = "http://www.xhxxfb.com/xhxxfb/";var SKPath = "http://www.xhxxfb.com/xhxxfb/skin/default/";var MEPath = "http://www.xhxxfb.com/xhxxfb/member/";var DTEditor = "fckeditor";var CKDomain = "";var CKPath = "/";var CKPrex = "cpv_";

@@ -14,7 +14,7 @@ $CFG['db_charset'] = 'utf8';
 $CFG['db_expires'] = '0';
 $CFG['tb_pre'] = 'xhxxfb_';
 $CFG['charset'] = 'utf-8';
-$CFG['url'] = 'http://127.0.0.1/xhxxfb/';
+$CFG['url'] = 'http://www.liusaiyu.com/xhxxfb/';
 $CFG['com_domain'] = '';
 $CFG['com_dir'] = '1';
 $CFG['com_rewrite'] = '0';
@@ -40,7 +40,7 @@ $CFG['authkey'] = 'nq7vKpMkhuSan1Oa';
 $CFG['static'] = '';
 $CFG['cloud_uid'] = '';
 $CFG['cloud_key'] = '';
-$CFG['edittpl'] = '0';
+$CFG['edittpl'] = '1';
 $CFG['executesql'] = '0';
 $CFG['founderid'] = '1';
 ?>

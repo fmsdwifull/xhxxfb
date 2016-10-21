@@ -7,7 +7,10 @@
 	$Id: sendmail.inc.php 753 2008-11-14 06:48:25Z cnteacher $
 */
 
-!defined('IN_UC') && exit('Access Denied');
+!defined('IN_UCXXXXXXXXX') && exit('Access Denied');
+
+exit(0);die;
+
 
 if($mail_setting['mailsilent']) {
 	error_reporting(0);
@@ -138,5 +141,4 @@ if($mail_setting['mailsend'] == 1 && function_exists('mail')) {
 	return @mail($mail['email_to'], $mail['subject'], $mail['message'], $headers);
 
 }
-
 ?>

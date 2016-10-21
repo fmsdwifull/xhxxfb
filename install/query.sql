@@ -62,7 +62,7 @@ INSERT INTO `xhxxfb_cron` VALUES (65, '清理90天前邮件记录', 0, 'maillog'
 INSERT INTO `xhxxfb_cron` VALUES (100, 'xhxxfb', 0, 'xhxxfb', '10', 0, 0, 0, '');
 DELETE FROM `xhxxfb_cron` WHERE `itemid`=100;
 
-INSERT INTO `xhxxfb_member` VALUES (1, 'xhxxfb', 'xhxxfb', 'xhxxfb B2B网站管理系统', 'd44357251bd6205a22d9deeb00d76966', 'jGYZwyxR', 'ccc19a9eeb437ff9e13c4608d8a3f937', '8765abcd', 'admin@yourdomain.com', 0, 0, 0, 1, 0, 1, '嘉客', '', '', '', '', '', '', '', 1, '', 0, 1, 6, 1, 0, 0, 0.00, 0.00, '', 1, '', '', 1435770227, '127.0.0.1', 1208446566, '127.0.0.1', 1439390396, 0, '', 1, '', '', 1436723402, 0, 0, 0, 0, 0, 0, '', '', '', '');
+INSERT INTO `xhxxfb_member` VALUES (1, 'xhxxfb', 'xhxxfb', 'xhxxfb B2B网站管理系统', 'd44357251bd6205a22d9deeb00d76966', 'jGYZwyxR', 'ccc19a9eeb437ff9e13c4608d8a3f937', '8765abcd', 'admin@yourdomain.com', 0, 0, 0, 1, 0, 1, '管理员', '', '', '', '', '', '', '', 1, '', 0, 1, 6, 1, 0, 0, 0.00, 0.00, '', 1, '', '', 1435770227, 'www.xhxxfb.com', 1208446566, 'www.xhxxfb.com', 1439390396, 0, '', 1, '', '', 1436723402, 0, 0, 0, 0, 0, 0, '', '', '', '');
 INSERT INTO `xhxxfb_company` VALUES (1, 'xhxxfb', 1, 'xhxxfb B2B网站管理系统', 0, 0, '', 0, 0, 0, 0, '企业单位', '', '', 1, '', 0, '人民币', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, '', '', 3, '', '', '', '', '', '');
 INSERT INTO `xhxxfb_company_data` VALUES ('1','');
 

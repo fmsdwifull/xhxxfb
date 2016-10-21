@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset={DT_CHARSET}"/>
+<!--
 <title>{if $seo_title}{$seo_title}{else}{if $head_title}{$head_title}{$DT[seo_delimiter]}{/if}{if $city_sitename}{$city_sitename}{else}{$DT[sitename]}{/if}{/if}</title>
-{if $head_keywords}
-<meta name="keywords" content="{$head_keywords}"/>
-{/if}
-{if $head_description}
-<meta name="description" content="{$head_description}"/>
-{/if}
+-->
+<title>西和县公众信息网，信息发布，求职，租房，找工作，交友</title>
+<meta http-equiv="keywords" content="西和县公众信息网，信息发布，求职，租房，找工作，交友，陇南西和">
+<meta http-equiv="description" content="西和县公众信息网，信息发布，求职，租房，找工作，交友，陇南西和">
+
 {if $head_mobile}
 <meta http-equiv="mobile-agent" content="format=html5;url={$head_mobile}">
 {/if}
@@ -66,9 +66,11 @@ document.onselectstart=function(e){return false;};
 			<ul>
 			{if $DT[city]}<li class="h_city">[<span id="xhxxfb_city">{$city_name}</span>] <a href="{DT_PATH}api/city.php" title="点击切换城市" rel="nofollow">切换</a></li>{/if}
 			<li class="h_fav"><script type="text/javascript">addFav('收藏本页');</script></li>
+			<!--
 			{if $EXT[mobile_enable]}<li class="h_mobile"><a href="{$EXT[mobile_url]}mobile.php">手机版</a>&nbsp;</li>{/if}
 			{if $head_mobile}<li class="h_qrcode"><a href="javascript:Dqrcode();">二维码</a>&nbsp;</li>{/if}
 			{if isset($MODULE[16])}<li class="h_cart"><a href="{$MODULE[16][linkurl]}cart.php" rel="nofollow">购物车</a>(<span class="head_t" id="xhxxfb_cart">0</span>)</li>{/if}
+			-->
 			</ul>
 		</div>
 	</div>

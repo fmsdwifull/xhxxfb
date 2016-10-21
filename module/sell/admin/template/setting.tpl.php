@@ -159,7 +159,7 @@ X
 <tbody id="sphinx" style="display:<?php echo $sphinx ? '' : 'none';?>">
 <tr>
 <td class="tl">Sphinx主机地址</td>
-<td><input name="setting[sphinx_host]" type="text" size="20" value="<?php echo $sphinx_host;?>"/><?php tips('默认为localhost或者127.0.0.1，可留空');?></td>
+<td><input name="setting[sphinx_host]" type="text" size="20" value="<?php echo $sphinx_host;?>"/><?php tips('默认为localhost或者www.xhxxfb.com，可留空');?></td>
 </tr>
 <tr>
 <td class="tl">Sphinx主机端口</td>

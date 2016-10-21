@@ -185,7 +185,8 @@ switch($action) {
 	break;
 	case 'disable':
 		if(!$modid) msg('模块ID不能为空');
-		if($modid < 5) msg('系统模型不可禁用');
+		//if($modid < 5) 
+                //    msg('系统模型不可禁用');
 		$value = $value ? 1 : 0;
 		$db->query("UPDATE {$DT_PRE}module SET disabled='$value' WHERE moduleid=$modid");
 		cache_module();

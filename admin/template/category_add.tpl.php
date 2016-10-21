@@ -23,7 +23,7 @@ show_menu($menus);
 </tr>
 <tr>
 <td class="tl"><span class="f_hid">*</span> 字母索引</td>
-<td><input name="category[letter]" type="text" id="letter" size="2" /><?php tips('填写分类名称后系统会自动获取 如果没有获取成功请填写<br/>例如 分类名称为 嘉客 则填写 j');?></td>
+<td><input name="category[letter]" type="text" id="letter" size="2" /><?php tips('填写分类名称后系统会自动获取 如果没有获取成功请填写<br/>例如 分类名称为 管理员 则填写 j');?></td>
 </tr>
 <tr>
 <td class="tl"><span class="f_hid">*</span> 级别</td>

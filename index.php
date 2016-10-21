@@ -33,6 +33,7 @@ if(isset($homepage) && check_name($homepage)) {
 				$c = $db->get_one("SELECT userid FROM {$DT_PRE}company WHERE domain='$w3'");
 				if($c) d301('http://'.$w3);
 			}
+                        
 			$c = $db->get_one("SELECT username,domain FROM {$DT_PRE}company WHERE domain='$whost'".($host == $whost ? '' : " OR domain='$host'"), 'CACHE');
 			if($c) {
 				$username = $homepage = $c['username'];
@@ -48,9 +49,12 @@ if($username) {
 	$module = 'company';
 	$MOD = cache_read('module-'.$moduleid.'.php');
 	include load('company.lang');
+        //require DT_ROOT.'tag.func.php';
+
 	require DT_ROOT.'/module/'.$module.'/common.inc.php';
 	include DT_ROOT.'/module/'.$module.'/init.inc.php';
 } else {
+        //include DT_ROOT.'tag.func.php';
 
 	if($DT['safe_domain']) {
 		$safe_domain = explode('|', $DT['safe_domain']);
@@ -64,14 +68,20 @@ if($username) {
 	
         if($DT['index_html']) {
             
-            set_cookie('oauth_user','ddddddf');
+            //set_cookie('oauth_user','ddddddf');
 		$html_file = $CFG['com_dir'] ? DT_ROOT.'/'.$DT['index'].'.'.$DT['file_ext'] : DT_CACHE.'/index.inc.html';
+
 		if(!is_file($html_file)) 
-                    tohtml('index');		
+                {
+                    //echo "ssssssssssssssssssss";
+                    tohtml('index');
+                }
 		if(is_file($html_file)) 
+                {
                     exit(include($html_file));
+                }
 	}
-        die;
+        //die;
         
 	$AREA or $AREA = cache_read('area.php');
 	if($EXT['mobile_enable']) $head_mobile = $EXT['mobile_url'];
